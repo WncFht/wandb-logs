@@ -58,6 +58,15 @@ make csv PROJECT=MirrorOPD-verl RUN=krkmq098
 
 CSV 写到对应的 `derived/.../history.csv`。JSONL 保留各 step 实际记录的键；CSV 使用所有键的并集，缺失值留空，不补零。嵌套对象在 CSV 中编码为 JSON 字符串。JSONL 是分析的主格式，CSV 只用于方便查看。
 
+MirrorOPD 的指标横轴、统计及绘图仍由训练源码仓库维护，不放进通用解码器。在 `MirrorOPD-verl` 源码仓库中执行：
+
+```bash
+python3 examples/mirroropd/docs/scripts/analyze_run.py export \
+  --run wncfht/MirrorOPD-verl/krkmq098 --out outputs/e15-local-新快照
+```
+
+该入口调用本仓库的独立 Python 解码，并转换为项目分析所需的快照格式，不读云端或凭据。源码仓库的 `examples/mirroropd/docs/分析复现.md` 是项目分析的使用入口；本 README 是原始日志与解码协议的使用入口。旧云端导出在项目中改名为 `export-cloud`，不作为自动回退。
+
 当前分析机器的本地仓库放在 `/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/wandb-logs`，与训练源码仓库并列。该机器的 Git SSH 操作先在同一 shell 中执行：
 
 ```bash
