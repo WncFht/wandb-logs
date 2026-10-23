@@ -2,6 +2,8 @@
 ._*
 __pycache__/
 .venv/
+/derived/
+*.pyc
 
 # Machine-local W&B synchronization state
 *.wandb.synced
@@ -12,3 +14,4 @@ __pycache__/
 /MirrorOPD-verl/wandb/debug.log
 /MirrorOPD-verl/wandb/debug-internal.log
 /MirrorOPD-verl/wandb/debug-cli*.log
+/MirrorOPD-verl/wandb/logs/
