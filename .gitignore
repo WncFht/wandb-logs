@@ -1,0 +1,14 @@
+.DS_Store
+._*
+__pycache__/
+.venv/
+
+# Machine-local W&B synchronization state
+*.wandb.synced
+*.wandb.syncstate
+
+# Local convenience links and top-level CLI debug logs
+/MirrorOPD-verl/wandb/latest-run
+/MirrorOPD-verl/wandb/debug.log
+/MirrorOPD-verl/wandb/debug-internal.log
+/MirrorOPD-verl/wandb/debug-cli*.log
