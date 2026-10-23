@@ -1,0 +1,8 @@
+{"time":"2026-10-21T13:19:05.970125891+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpu8cmelwd/port-2056651.txt","pid":2056651,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-21T13:19:05.970609045+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2056651}
+{"time":"2026-10-21T13:19:05.970594181+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-2056651-2061953-787991985/socket","Net":"unix"}}
+{"time":"2026-10-21T13:19:06.150787818+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-21T13:19:06.16659252+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"6jpqrtw0","id":"1(@)"}
+{"time":"2026-10-21T13:19:06.440246782+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"6jpqrtw0","id":"1(@)"}
+{"time":"2026-10-21T13:24:07.585595292+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"6jpqrtw0","id":"1(@)"}
+{"time":"2026-10-21T13:24:07.645059274+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"6jpqrtw0","id":"1(@)"}

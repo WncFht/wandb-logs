@@ -1,0 +1,8 @@
+{"time":"2026-10-21T14:17:34.247912611+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpfzlw0qtv/port-2177338.txt","pid":2177338,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-21T14:17:34.248491722+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2177338}
+{"time":"2026-10-21T14:17:34.248494002+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-2177338-2185901-1959255948/socket","Net":"unix"}}
+{"time":"2026-10-21T14:17:34.429827967+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-21T14:17:34.44560387+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"dgyajowp","id":"1(@)"}
+{"time":"2026-10-21T14:17:34.710396191+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"dgyajowp","id":"1(@)"}
+{"time":"2026-10-21T14:20:41.740613181+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"dgyajowp","id":"1(@)"}
+{"time":"2026-10-21T14:20:41.791022364+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"dgyajowp","id":"1(@)"}

@@ -1,0 +1,8 @@
+{"time":"2026-10-22T11:21:38.360349873+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpx0l1ovsa/port-385325.txt","pid":385325,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-22T11:21:38.360828586+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":385325}
+{"time":"2026-10-22T11:21:38.360822258+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-385325-392826-2821686696/socket","Net":"unix"}}
+{"time":"2026-10-22T11:21:38.542017891+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-22T11:21:38.557885029+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"egoefigi","id":"1(@)"}
+{"time":"2026-10-22T11:21:39.132851532+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"egoefigi","id":"1(@)"}
+{"time":"2026-10-22T11:30:07.019496179+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"egoefigi","id":"1(@)"}
+{"time":"2026-10-22T11:30:07.06785389+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"egoefigi","id":"1(@)"}

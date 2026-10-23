@@ -1,0 +1,8 @@
+{"time":"2026-10-22T10:48:36.68139759+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpzk0t7o8u/port-321718.txt","pid":321718,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-22T10:48:36.682007368+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":321718}
+{"time":"2026-10-22T10:48:36.681985958+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-321718-329610-1118910138/socket","Net":"unix"}}
+{"time":"2026-10-22T10:48:36.862692307+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-22T10:48:36.878204401+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"sb65mtq4","id":"1(@)"}
+{"time":"2026-10-22T10:48:37.156175144+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"sb65mtq4","id":"1(@)"}
+{"time":"2026-10-22T11:02:10.575531177+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"sb65mtq4","id":"1(@)"}
+{"time":"2026-10-22T11:02:10.63662022+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"sb65mtq4","id":"1(@)"}
