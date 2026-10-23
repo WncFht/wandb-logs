@@ -1,1 +1,8 @@
-/root/.cache/wandb/logs/core-debug-20261021_121607.log
+{"time":"2026-10-21T12:16:07.459120071+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpb5lzlkzs/port-1995567.txt","pid":1995567,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-21T12:16:07.459689386+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":1995567}
+{"time":"2026-10-21T12:16:07.45968889+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-1995567-2000895-2023525601/socket","Net":"unix"}}
+{"time":"2026-10-21T12:16:07.640354495+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-21T12:16:07.663679885+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"cy5nr43p","id":"1(@)"}
+{"time":"2026-10-21T12:16:07.946241355+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"cy5nr43p","id":"1(@)"}
+{"time":"2026-10-21T12:24:53.294017076+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"cy5nr43p","id":"1(@)"}
+{"time":"2026-10-21T12:24:53.360440086+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"cy5nr43p","id":"1(@)"}

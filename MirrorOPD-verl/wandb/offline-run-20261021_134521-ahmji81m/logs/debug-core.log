@@ -1,1 +1,6 @@
-/root/.cache/wandb/logs/core-debug-20261021_134521.log
+{"time":"2026-10-21T13:45:21.710870341+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpx8dh8wgt/port-2102382.txt","pid":2102382,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-21T13:45:21.711435477+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2102382}
+{"time":"2026-10-21T13:45:21.71142412+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-2102382-2109303-173204497/socket","Net":"unix"}}
+{"time":"2026-10-21T13:45:21.893326531+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-21T13:45:21.911245927+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"ahmji81m","id":"1(@)"}
+{"time":"2026-10-21T13:45:22.185831162+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ahmji81m","id":"1(@)"}

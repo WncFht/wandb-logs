@@ -1,1 +1,8 @@
-/root/.cache/wandb/logs/core-debug-20261021_133622.log
+{"time":"2026-10-21T13:36:22.365342685+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpk7f_969_/port-2084852.txt","pid":2084852,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-21T13:36:22.365896157+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2084852}
+{"time":"2026-10-21T13:36:22.36587226+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-2084852-2090320-1210322669/socket","Net":"unix"}}
+{"time":"2026-10-21T13:36:22.545599827+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-21T13:36:22.562655091+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"ot1vy6w9","id":"1(@)"}
+{"time":"2026-10-21T13:36:23.036144889+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ot1vy6w9","id":"1(@)"}
+{"time":"2026-10-21T13:41:04.502144625+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"ot1vy6w9","id":"1(@)"}
+{"time":"2026-10-21T13:41:04.570538586+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"ot1vy6w9","id":"1(@)"}

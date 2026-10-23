@@ -1,1 +1,8 @@
-/root/.cache/wandb/logs/core-debug-20261021_140655.log
+{"time":"2026-10-21T14:06:55.291202084+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpkza1fkii/port-2149717.txt","pid":2149717,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-21T14:06:55.291712345+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2149717}
+{"time":"2026-10-21T14:06:55.291707447+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-2149717-2160635-2580936058/socket","Net":"unix"}}
+{"time":"2026-10-21T14:06:55.472049791+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-21T14:06:55.488508637+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"oqhotg75","id":"1(@)"}
+{"time":"2026-10-21T14:06:55.75971861+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"oqhotg75","id":"1(@)"}
+{"time":"2026-10-21T14:09:55.181388538+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"oqhotg75","id":"1(@)"}
+{"time":"2026-10-21T14:09:55.262062223+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"oqhotg75","id":"1(@)"}

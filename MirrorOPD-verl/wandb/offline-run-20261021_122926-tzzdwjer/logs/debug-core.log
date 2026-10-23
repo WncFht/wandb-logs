@@ -1,1 +1,8 @@
-/root/.cache/wandb/logs/core-debug-20261021_122927.log
+{"time":"2026-10-21T12:29:27.217178488+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpqh46np5q/port-2012008.txt","pid":2012008,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-21T12:29:27.217756711+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2012008}
+{"time":"2026-10-21T12:29:27.21770678+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-2012008-2017950-1695600099/socket","Net":"unix"}}
+{"time":"2026-10-21T12:29:27.399237769+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-21T12:29:27.415388579+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"tzzdwjer","id":"1(@)"}
+{"time":"2026-10-21T12:29:27.703770882+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"tzzdwjer","id":"1(@)"}
+{"time":"2026-10-21T12:33:19.304576146+08:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"tzzdwjer","id":"1(@)"}
+{"time":"2026-10-21T12:33:19.369295459+08:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"tzzdwjer","id":"1(@)"}
