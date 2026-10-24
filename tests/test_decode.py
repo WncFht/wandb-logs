@@ -105,6 +105,22 @@ class DecodeTest(unittest.TestCase):
         row = json.loads((self.output / "history.jsonl").read_text())
         self.assertEqual(row, {"a.b": 3, "a/b": 4, "a": {"b": 5}})
 
+    def test_environment_records_preserve_partial_updates_and_writer_identity(self):
+        first, second = pb.Record(), pb.Record()
+        first.environment.python = "CPython 3.12"
+        first.environment.writer_id = "driver"
+        second.environment.gpu_count = 8
+        second.environment.gpu_type = "NVIDIA A800"
+        second.environment.writer_id = "driver"
+        self.write([first, history(_step=1), second])
+        self.decode()
+        rows = [json.loads(x) for x in (self.output / "environment.jsonl").read_text().splitlines()]
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["python"], "CPython 3.12")
+        self.assertNotIn("python", rows[1])
+        self.assertEqual(rows[1]["gpu_count"], 8)
+        self.assertEqual(rows[1]["writer_id"], "driver")
+
     def test_truncated_fragment_preserves_prefix_and_reports_error(self):
         self.write([history(_step=1, loss=0.5), history(_step=2, text="x" * 80000)])
         self.source.write_bytes(self.source.read_bytes()[:32768])

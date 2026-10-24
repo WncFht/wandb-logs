@@ -20,7 +20,7 @@ from wandb.proto import wandb_internal_pb2 as pb
 from wandb.sdk.internal.datastore import DataStore
 
 ROOT = Path(__file__).resolve().parents[1]
-DECODER_VERSION = 1
+DECODER_VERSION = 2
 
 
 class SnapshotStore(DataStore):
@@ -118,6 +118,7 @@ def decode_file(source, destination, force=False):
         "console.jsonl",
         "metric-definitions.jsonl",
         "artifacts.jsonl",
+        "environment.jsonl",
     )
     if not force and metadata_path.is_file():
         previous = json.loads(metadata_path.read_text(encoding="utf-8"))
@@ -200,6 +201,8 @@ def decode_file(source, destination, force=False):
                         write_row(streams["metric-definitions.jsonl"], protobuf_dict(record.metric))
                     elif kind == "artifact":
                         write_row(streams["artifacts.jsonl"], protobuf_dict(record.artifact))
+                    elif kind == "environment":
+                        write_row(streams["environment.jsonl"], protobuf_dict(record.environment))
                     elif kind == "exit":
                         exit_code = record.exit.exit_code
             except (AssertionError, DecodeError, EOFError, IndexError, KeyError, ValueError, struct.error) as exc:

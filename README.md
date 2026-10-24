@@ -87,6 +87,7 @@ source /mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/.ssh/activate.b
 | `metric-definitions.jsonl` | 原始指标定义，包括自定义 step 轴等信息 |
 | `console.jsonl` | 日志中包含的控制台输出记录 |
 | `artifacts.jsonl` | 日志中包含的 artifact 描述和引用；不下载外部内容 |
+| `environment.jsonl` | 按原顺序保留环境记录及 writer ID；启动信息与 GPU 信息可以分批到达，不将缺字段当作删除 |
 
 `_step` 是 W&B history 的 step，不自动等同于 optimizer step 或训练外层步。分析时应结合 `metric-definitions.jsonl`、`training/global_step`、`step/outer` 等实际存在的字段选择横轴。
 
