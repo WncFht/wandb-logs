@@ -10,6 +10,7 @@
 | position-convergence-20261024 | E16/E17 批内与后期收敛统计 |
 | oneshot-student-6uorrk2k-api-20261020 | 历史学生 val-only API 快照 |
 | oneshot-teacher-u87buult-api-20261020 | 历史教师 val-only API 快照 |
+| equal-update-budget-20261025 | E18–E20：共同 optimizer 预算、批内 KL、生成行为、验证与成本，含全部指标序列 |
 | inventory-20261025 | 首次盘点的云端清单、配置与末次结果；作为历史快照保留，日常更新不再复制整套配置 |
 
 原始 .wandb 在 `../wandb/`，可重建解码结果在仓库根目录的 `derived/MirrorOPD-verl/`。日常运行汇总也写在 `derived/MirrorOPD-verl/inventory/`；只有具体报告需要固定数据边界时才新增归档。
