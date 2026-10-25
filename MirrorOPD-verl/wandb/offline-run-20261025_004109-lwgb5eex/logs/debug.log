@@ -17,3 +17,7 @@ config: {'model_engine': 'dp', 'actor_rollout_ref': {'actor': {'optim': {'_targe
 2026-10-25 00:41:11,378 INFO    MainThread:6521 [wandb_run.py:_redirect():2540] Wrapping output streams.
 2026-10-25 00:41:11,379 INFO    MainThread:6521 [wandb_run.py:_redirect():2563] Redirects installed.
 2026-10-25 00:41:11,381 INFO    MainThread:6521 [wandb_init.py:init():1016] run started, returning control to user process
+2026-10-25 12:39:00,919 INFO    MainThread:6521 [wandb_run.py:_finish():2383] finishing run MirrorOPD-verl/lwgb5eex
+2026-10-25 12:39:00,934 INFO    MainThread:6521 [wandb_run.py:_atexit_cleanup():2588] got exitcode: 0
+2026-10-25 12:39:00,936 INFO    MainThread:6521 [wandb_run.py:_restore():2570] restore
+2026-10-25 12:39:00,937 INFO    MainThread:6521 [wandb_run.py:_restore():2576] restore done
