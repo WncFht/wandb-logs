@@ -25,6 +25,10 @@ wandb-logs/
 
 同一 run ID 的不同目录分别导出，不按 run ID 自动合并，避免把重启或重复快照混成一次训练。下面的 `RUN` 可以是 run ID，也可以是完整目录名；CSV 导出必须匹配唯一目录。
 
+## 项目报告的冻结证据
+
+[MirrorOPD 分析证据](MirrorOPD-verl/analysis/README.md)保存报告明确引用的冻结输入和统计结果，随日志仓库维护。源码仓库保留实验设计、分析正文、展示图和项目专用脚本。日常解码与运行汇总放在忽略的 `derived/`，不为每次盘点复制各 run 的配置；仅在报告需要固定输入边界时归档。
+
 ## 安装与日常使用
 
 需要 Python 3.10 或更新版本、Git 和 Make。解码依赖固定为 `wandb==0.28.1`，安装在仓库自己的 `.venv`，不改训练环境。
@@ -62,10 +66,10 @@ MirrorOPD 的指标横轴、统计及绘图仍由训练源码仓库维护，不�
 
 ```bash
 python3 examples/mirroropd/docs/scripts/analyze_run.py export \
-  --run wncfht/MirrorOPD-verl/krkmq098 --out outputs/e15-local-新快照
+  --run wncfht/MirrorOPD-verl/krkmq098 --out ../wandb-logs/derived/MirrorOPD-verl/e15-export-新快照
 ```
 
-该入口调用本仓库的独立 Python 解码，并转换为项目分析所需的快照格式，不读云端或凭据。源码仓库的 `examples/mirroropd/docs/分析复现.md` 是项目分析的使用入口；本 README 是原始日志与解码协议的使用入口。旧云端导出在项目中改名为 `export-cloud`，不作为自动回退。
+该入口调用本仓库的独立 Python 解码，并转换为项目分析所需的快照格式，不读云端或凭据。源码仓库的 `examples/mirroropd/docs/experiments/复现与维护.md` 是项目分析的使用入口；本 README 是原始日志与解码协议的使用入口。旧云端导出在项目中改名为 `export-cloud`，不作为自动回退。
 
 当前分析机器的本地仓库放在 `/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/wandb-logs`，与训练源码仓库并列。该机器的 Git SSH 操作先在同一 shell 中执行：
 
@@ -74,6 +78,18 @@ source /mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/.ssh/activate.b
 ```
 
 该机器还在日志仓库的本地 Git 配置中设置了对应的 SSH config，使 `make refresh` 内部调用 Git 时也能认证。这个机器专用配置不进入 Git，Mac 使用自己的 GitHub 认证。
+
+## 原始日志更新后的解码
+
+当前采用文件级缓存与全量重放，不维护追加读取偏移，也不在后台监听文件。接收新日志后执行 `make decode`；需要同时拉取时执行 `make refresh`。调用解码时，源路径、文件大小、纳秒修改时间、解码器版本和 W&B reader 版本相同且输出完整，才复用缓存；`--force` 可强制重建。没有计算内容摘要，所以同大小、同修改时间的人工替换需要显式 `--force`。
+
+文件变化时，从头重放事务日志到临时目录，然后替换该 run 的旧派生目录。历史行不会重复追加；config/summary 的更新和删除重新按顺序应用。旧 `history.csv` 随目录替换删除，需要 `make csv RUN=...` 再生成，避免保留过期 CSV。
+
+例如一份日志只同步到中途：完整记录结束且无退出标记时为 `snapshot`；最后记录未完整写入时为 `partial_snapshot`，只输出前面的完整记录。后来同步补齐，下一次解码失效旧缓存并重建，读到退出记录后为 `finished`，成功与否另看 `exit_code`。文件读取前后若大小或修改时间变化，则标为 `source_changed`，CLI 返回非零，等待源文件稳定后重试。
+
+派生目录的发布目前使用删除旧目录再移动临时目录，没有并发读写锁或版本化原子切换。使用顺序为“接收／拉取完成 → 解码完成 → 项目分析”；不要在同一个 run 的解码替换期间读取它。分析过程使用的是已读入内存的快照，不保证覆盖之后才追加的记录。
+
+这套策略适用于现有离线日志批量接收。文件级重放更容易保持 config/summary 重建和截断恢复正确；只有实际解码成本成为瓶颈，才需要增加带状态检查的增量解码。
 
 ## 导出的数据
 

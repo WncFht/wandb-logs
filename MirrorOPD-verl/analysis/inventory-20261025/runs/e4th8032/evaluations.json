@@ -1,0 +1,12 @@
+[
+  {
+    "outer": 20,
+    "optimizer": 20,
+    "metrics": {
+      "livecodebench": {
+        "key": "val-core/livecodebench/acc/mean@16",
+        "value": 0.21428571428571427
+      }
+    }
+  }
+]

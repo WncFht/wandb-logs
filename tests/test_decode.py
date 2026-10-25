@@ -130,6 +130,54 @@ class DecodeTest(unittest.TestCase):
         self.assertIsNotNone(metadata["error"])
         self.assertEqual(len((self.output / "history.jsonl").read_text().splitlines()), 1)
 
+    def test_partial_snapshot_refreshes_to_finished_without_duplicate_rows(self):
+        first = pb.Record()
+        first.summary.update.add(key="loss", value_json="0.5")
+        last = pb.Record()
+        last.summary.update.add(key="loss", value_json="0.1")
+        ended = pb.Record()
+        ended.exit.exit_code = 0
+        self.write(
+            [
+                history(_step=1, loss=0.5),
+                first,
+                history(_step=2, text="x" * 80000),
+                last,
+                ended,
+            ]
+        )
+        complete = self.source.read_bytes()
+        self.source.write_bytes(complete[:32768])
+        partial, _ = self.decode()
+        self.assertEqual(partial["status"], "partial_snapshot")
+        self.assertEqual(partial["history_rows"], 1)
+        self.assertTrue(self.decode()[1])
+        decoder.export_csv(self.output)
+        self.source.write_bytes(complete)
+        finished, cached = self.decode()
+        self.assertFalse(cached)
+        self.assertEqual(finished["status"], "finished")
+        self.assertEqual(finished["exit_code"], 0)
+        self.assertIsNone(finished["error"])
+        rows = [json.loads(line) for line in (self.output / "history.jsonl").read_text().splitlines()]
+        self.assertEqual([row["_step"] for row in rows], [1, 2])
+        self.assertEqual(json.loads((self.output / "summary.json").read_text()), {"loss": 0.1})
+        self.assertFalse((self.output / "history.csv").exists())
+        with decoder.export_csv(self.output).open() as stream:
+            self.assertEqual(len(list(csv.DictReader(stream))), 2)
+        self.assertTrue(self.decode()[1])
+
+    def test_source_change_during_read_is_not_cacheable(self):
+        self.write([history(_step=1)])
+        stamp = decoder.source_stat(self.source)
+        with patch.object(decoder, "source_stat", side_effect=[stamp, {**stamp, "mtime_ns": stamp["mtime_ns"] + 1}]):
+            metadata, cached = self.decode()
+        self.assertEqual(metadata["status"], "source_changed")
+        self.assertFalse(cached)
+        stable, cached = self.decode()
+        self.assertEqual(stable["status"], "snapshot")
+        self.assertFalse(cached)
+
     def test_bad_header_and_missing_value_are_not_silently_accepted(self):
         self.source.write_bytes(b"invalid")
         self.assertEqual(self.decode()[0]["status"], "decode_error")

@@ -1,0 +1,182 @@
+[
+  {
+    "outer": 20,
+    "optimizer": 320,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.878875
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.875
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.3145833333333333
+      }
+    }
+  },
+  {
+    "outer": 40,
+    "optimizer": 640,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.874375
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.8625
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.3458333333333333
+      }
+    }
+  },
+  {
+    "outer": 60,
+    "optimizer": 960,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.877125
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.875
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.34375
+      }
+    }
+  },
+  {
+    "outer": 80,
+    "optimizer": 1280,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.882625
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.8734375
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.31666666666666665
+      }
+    }
+  },
+  {
+    "outer": 100,
+    "optimizer": 1600,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.877125
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.896875
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.36041666666666666
+      }
+    }
+  },
+  {
+    "outer": 120,
+    "optimizer": 1920,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.882875
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.8859375
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.33958333333333335
+      }
+    }
+  },
+  {
+    "outer": 140,
+    "optimizer": 2240,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.87675
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.8953125
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.33958333333333335
+      }
+    }
+  },
+  {
+    "outer": 160,
+    "optimizer": 2560,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.88025
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.89375
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.35625
+      }
+    }
+  },
+  {
+    "outer": 180,
+    "optimizer": 2880,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.882875
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.8984375
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.34791666666666665
+      }
+    }
+  },
+  {
+    "outer": 200,
+    "optimizer": 3200,
+    "metrics": {
+      "math500": {
+        "key": "eval/math500/acc/mean",
+        "value": 0.882625
+      },
+      "amc23": {
+        "key": "eval/amc23/acc/mean",
+        "value": 0.896875
+      },
+      "aime25": {
+        "key": "eval/aime25/acc/mean",
+        "value": 0.33541666666666664
+      }
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "outer": 32,
+    "optimizer": 128,
+    "metrics": {
+      "math500": {
+        "key": "val-core/MATH-500/acc/mean@16",
+        "value": 0.849125
+      },
+      "amc23": {
+        "key": "val-core/AMC23/acc/mean@16",
+        "value": 0.8265625
+      },
+      "aime25": {
+        "key": "val-core/AIME25/acc/mean@16",
+        "value": 0.32083333333333336
+      }
+    }
+  }
+]
