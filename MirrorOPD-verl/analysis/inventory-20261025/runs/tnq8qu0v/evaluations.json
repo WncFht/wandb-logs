@@ -1,0 +1,82 @@
+[
+  {
+    "outer": 20,
+    "optimizer": 20,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.2125
+      }
+    }
+  },
+  {
+    "outer": 40,
+    "optimizer": 40,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.22321428571428573
+      }
+    }
+  },
+  {
+    "outer": 60,
+    "optimizer": 60,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.22785714285714287
+      }
+    }
+  },
+  {
+    "outer": 80,
+    "optimizer": 80,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.24464285714285713
+      }
+    }
+  },
+  {
+    "outer": 100,
+    "optimizer": 100,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.2475
+      }
+    }
+  },
+  {
+    "outer": 120,
+    "optimizer": 120,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.24964285714285714
+      }
+    }
+  },
+  {
+    "outer": 140,
+    "optimizer": 140,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.26
+      }
+    }
+  },
+  {
+    "outer": 160,
+    "optimizer": 160,
+    "metrics": {
+      "livecodebench": {
+        "key": "eval/livecodebench/acc_mean",
+        "value": 0.2507142857142857
+      }
+    }
+  }
+]
