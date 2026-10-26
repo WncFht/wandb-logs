@@ -7,4 +7,4 @@
 
 历史参考只叠加 mean accuracy，不将旧 bootstrap best/majority 估计器冒充新 pass/majority；不把历史参考作为五个 run 的 step 0。批内统计首末均为更新前测量，覆盖 E16 的 3 次、E17 的 15 次已执行更新。
 
-复现入口见[分析复现](../../../../MirrorOPD-verl/examples/mirroropd/docs/experiments/复现与维护.md)。图表在 `figures/teacher-convergence-20261024`；沿用原五组比较的[单文件离线 HTML](../five-run-comparison-20261024/dashboard.html)，其中数据和绘图库全部内嵌。图审计没有错误，仅提示三个数据集面板采用独立纵轴；五条实验曲线加两条灰色历史参考线已人工检查。
+复现入口见[分析复现](../../../../MirrorOPD-verl/examples/mirroropd/docs/experiments/复现与维护.md)。图表在 `figures/teacher-convergence-20261024`。图审计没有错误，仅提示三个数据集面板采用独立纵轴；五条实验曲线加两条灰色历史参考线已人工检查。

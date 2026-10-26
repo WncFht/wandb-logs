@@ -1,6 +1,6 @@
 # 五组 Math 实验的冻结分析数据
 
-报告：[五组 Math 实验对比分析](../../../../MirrorOPD-verl/examples/mirroropd/docs/experiments/full-kl-comparison/2026-10-24-五组Math实验对比分析.md)。本地生成的[离线 HTML](dashboard.html)包含全部指标和绘图库，可单文件下载；该生成文件不进入源码提交，跨机需单独复制或按下列命令重建。
+报告：[五组 Math 实验对比分析](../../../../MirrorOPD-verl/examples/mirroropd/docs/experiments/full-kl-comparison/2026-10-24-五组Math实验对比分析.md)。完整数值指标保留为 JSON/CSV 数据，报告使用静态图表。
 
 | 标签 | Run | 本地解码状态 | 完整 outer | 成功更新 | 最后验证 outer |
 | --- | --- | --- | ---: | ---: | ---: |
@@ -17,7 +17,7 @@
 ## 派生文件与口径
 
 - `analysis.json`：配置、覆盖、专题使用的验证字段、训练工作量、计时、梯度裁剪、批内 KL 与资源统计；其余验证字段完整保留在曲线与指标目录中。
-- `comparison.json.gz`：全部数值指标的原始轴曲线、坐标映射和分析结果，供绘图及 HTML 使用。
+- `comparison.json.gz`：全部数值指标的原始轴曲线、坐标映射和分析结果，供统计复算及绘图使用。
 - `metric-catalog.csv`：每个 run/metric 的轴、观测数、首尾、极值、均值、中位数与常量标记。`first20_mean/last20_mean` 指该指标前/后最多 20 个观测，不是统一的 20 个 outer step；验证不足 20 点时是全部观测。
 - `metric-coverage.csv`：2378 个指标名称的跨 run 覆盖，缺失写为 `missing`。
 - `config-differences.json`：全部 13 个不同配置字段，保留实验路径等非算法差异。
@@ -29,7 +29,7 @@
 
 ## 复现
 
-统计、绘图、离线 HTML 与测试的唯一命令入口见[分析复现](../../../../MirrorOPD-verl/examples/mirroropd/docs/experiments/复现与维护.md#五组-math-实验比较)。统计不需模型/GPU/凭据；绘图和 HTML 使用已有分析依赖。
+统计、静态绘图与测试的唯一命令入口见[分析复现](../../../../MirrorOPD-verl/examples/mirroropd/docs/experiments/复现与维护.md#五组-math-实验比较)。统计不需模型/GPU/凭据；绘图使用已有分析依赖。
 
 更新原始数据时使用新的快照目录，不覆盖本目录：先按[分析复现](../../../../MirrorOPD-verl/examples/mirroropd/docs/experiments/复现与维护.md)用 `analyze_run.py export --run ... --out ...` 导出各 run，再向比较器提供 `--snapshot-from /新导出父目录` 与新的 `--data`。无需复制或另写一套 W&B 二进制解码器。
 

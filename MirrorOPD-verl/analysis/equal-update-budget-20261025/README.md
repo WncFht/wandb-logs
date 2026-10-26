@@ -8,8 +8,7 @@
 | configurations.json / config-differences.json | 实际配置的扁平表示与 11 个差异字段 |
 | evaluation.csv | 每个实际验证点的 mean/CI、pass/majority、长度、终止与解析缺失 |
 | metric-catalog.csv / metric-coverage.csv | 2235 个指标的逐 run 原始轴、观测次数、范围和覆盖；first20/last20 表示观测数，不是统一的更新窗口 |
-| comparison.json.gz | 全部 history 数值指标的原始轴序列、真实坐标映射与分析结果；用于绘图和离线交互 |
-| dashboard.html | 可搜索全部指标的独立 HTML，包含 Plotly；生成文件不进入 Git，跨机按报告命令重建 |
+| comparison.json.gz | 全部 history 数值指标的原始轴序列、真实坐标映射与分析结果；用于统计复算与绘图 |
 
 三组完整记录分别为 64/128/189 outer、4096/4096/3024 updates；共同验证坐标为 512/1024/1536/2048/2560。E20 的 partial_snapshot 不代表远端作业必然失败，缺少最后退出证据。原始日志文件状态、记录数和截断位置保留在 analysis.json 的 source 字段。
 
