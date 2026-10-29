@@ -1,0 +1,140 @@
+{
+  "actor_rollout_ref.actor.fsdp_config.forward_precision": {
+    "E17": null,
+    "E20": null,
+    "E50": "fp16",
+    "E52": "bf16_fp32"
+  },
+  "actor_rollout_ref.actor.optim.total_training_steps": {
+    "E17": 200,
+    "E20": 256,
+    "E50": 256,
+    "E52": 256
+  },
+  "actor_rollout_ref.rollout.max_model_len": {
+    "E17": 35841,
+    "E20": 35841,
+    "E50": 35840,
+    "E52": 35840
+  },
+  "actor_rollout_ref.rollout.trace.experiment_name": {
+    "E17": "math-opd-E17-20261024-000136-2558",
+    "E20": "math-opd-E20-20261025-003534-2563",
+    "E50": "math-opd-E50-fp16-20261027-175128-2564",
+    "E52": "math-opd-E52-bf16_fp32-20261028-154736-2569"
+  },
+  "critic.optim.total_training_steps": {
+    "E17": 200,
+    "E20": 256,
+    "E50": 256,
+    "E52": 256
+  },
+  "distillation.distillation_loss.full_vocab.backend": {
+    "E17": "precompute",
+    "E20": "precompute",
+    "E50": "precompute_fused",
+    "E52": "precompute_fused"
+  },
+  "distillation.distillation_loss.full_vocab.forward_teacher_support": {
+    "E17": null,
+    "E20": null,
+    "E50": "equal",
+    "E52": "equal"
+  },
+  "distillation.distillation_loss.full_vocab.termination_token_ids": {
+    "E17": null,
+    "E20": null,
+    "E50": [],
+    "E52": []
+  },
+  "distillation.distillation_loss.full_vocab.token_chunk_size": {
+    "E17": 512,
+    "E20": 512,
+    "E50": 128,
+    "E52": 128
+  },
+  "distillation.distillation_loss.loss_mode": {
+    "E17": "full_reverse_kl",
+    "E20": "full_reverse_kl",
+    "E50": "mirror",
+    "E52": "mirror"
+  },
+  "distillation.distillation_loss.mirror.diagnostics": {
+    "E17": null,
+    "E20": null,
+    "E50": true,
+    "E52": true
+  },
+  "distillation.distillation_loss.mirror.estimator": {
+    "E17": null,
+    "E20": null,
+    "E50": "full_vocab",
+    "E52": "full_vocab"
+  },
+  "distillation.distillation_loss.mirror.eta": {
+    "E17": null,
+    "E20": null,
+    "E50": 1,
+    "E52": 1
+  },
+  "distillation.distillation_loss.mirror.kappa": {
+    "E17": null,
+    "E20": null,
+    "E50": 0,
+    "E52": 0
+  },
+  "distillation.distillation_loss.mirror.objective": {
+    "E17": null,
+    "E20": null,
+    "E50": "mdpo",
+    "E52": "mdpo"
+  },
+  "reward.custom_reward_function.path": {
+    "E17": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/examples/mirroropd/reward.py",
+    "E20": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/examples/mirroropd/reward.py",
+    "E50": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/examples/mirroropd/rewards/reward.py",
+    "E52": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/examples/mirroropd/rewards/reward.py"
+  },
+  "trainer.default_local_dir": {
+    "E17": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E17-20261024-000136-2558/checkpoints",
+    "E20": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E20-20261025-003534-2563/checkpoints",
+    "E50": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E50-fp16-20261027-175128-2564/checkpoints",
+    "E52": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E52-bf16_fp32-20261028-154736-2569/checkpoints"
+  },
+  "trainer.experiment_name": {
+    "E17": "math-opd-E17-20261024-000136-2558",
+    "E20": "math-opd-E20-20261025-003534-2563",
+    "E50": "math-opd-E50-fp16-20261027-175128-2564",
+    "E52": "math-opd-E52-bf16_fp32-20261028-154736-2569"
+  },
+  "trainer.max_actor_ckpt_to_keep": {
+    "E17": 2,
+    "E20": 4,
+    "E50": 4,
+    "E52": 4
+  },
+  "trainer.save_freq": {
+    "E17": 100,
+    "E20": 64,
+    "E50": 128,
+    "E52": 128
+  },
+  "trainer.test_freq": {
+    "E17": 20,
+    "E20": 32,
+    "E50": 32,
+    "E52": 32
+  },
+  "trainer.total_training_steps": {
+    "E17": 200,
+    "E20": 256,
+    "E50": 256,
+    "E52": 256
+  },
+  "trainer.validation_data_dir": {
+    "E17": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E17-20261024-000136-2558/validation",
+    "E20": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E20-20261025-003534-2563/validation",
+    "E50": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E50-fp16-20261027-175128-2564/validation",
+    "E52": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E52-bf16_fp32-20261028-154736-2569/validation"
+  }
+}
