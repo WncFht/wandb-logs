@@ -44,7 +44,7 @@
   "E51": {
     "source_sha256": "fd4c582c6db6e52230f5c991474541db94f6a4ca3940b4c5e42ab26845120cb3",
     "keys": 2277,
-    "position_reconstruction_max_error": 6.584795132769106e-09,
+    "position_reconstruction_max_error": 6.584795125830212e-09,
     "position_count_changes": 0,
     "alias_max_error": 0.0,
     "max_target_identity_error": 1.6993114242136453e-09,
@@ -102,7 +102,7 @@
   "E53": {
     "source_sha256": "c414b0cf7ee94056ee39f7dcf2cb7f12fbaf2745b576aaa9d06cd13cdcebe3fc",
     "keys": 2275,
-    "position_reconstruction_max_error": 1.1705810307183206e-08,
+    "position_reconstruction_max_error": 1.1705810334938782e-08,
     "position_count_changes": 0,
     "alias_max_error": 0.0,
     "max_target_identity_error": 2.3039162799776136e-09,
