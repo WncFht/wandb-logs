@@ -1,0 +1,19 @@
+{
+  "raw_sources_unchanged": true,
+  "synthetic_records": 0,
+  "reader_version": "0.28.1",
+  "completed_syncs": {
+    "j5uaal3j": "beta sync",
+    "zsnhqzts": "legacy replay, batched config writes",
+    "6j5knkmk": "legacy replay, batched config writes"
+  },
+  "source_status": "partial_snapshot",
+  "training_completion_inferred": false,
+  "canonical_history_rows": 2754,
+  "canonical_metrics_match": true,
+  "raw_read_duplicate_prefix_rows": {
+    "j5uaal3j": 0,
+    "zsnhqzts": 0,
+    "6j5knkmk": 306
+  }
+}

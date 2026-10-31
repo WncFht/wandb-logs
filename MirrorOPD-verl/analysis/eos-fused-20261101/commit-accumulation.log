@@ -1,0 +1,22 @@
+Source artifact policy passed: 4243 staged blobs
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /root/.cache/pre-commit/patch1793468024-1153450.
+ruff (legacy alias)..................................................................Passed
+ruff format..........................................................................Passed
+mypy.................................................................................Passed
+Reject raw experiment artifacts and large source files...............................Passed
+Generate and verify verl/trainer/config/_generated_*.yaml............................Passed
+Check docs Last updated info.........................................................Passed
+Check doc string coverage............................................................Passed
+Check license........................................................................Passed
+Check MirrorOPD staged documentation and maintenance contracts.......................Passed
+Check device API usage...............................................................Passed
+Check DataProto usage................................................................Passed
+Validate test structure..............................................................Passed
+Check naming conventions.............................................................Passed
+Check example script naming convention...............................................Passed
+Check uv runs only on the GPU branch.................................................Passed
+Compile all python files.............................................................Passed
+[INFO] Restored changes from /root/.cache/pre-commit/patch1793468024-1153450.
+[perf/eos-full-vocab-20261101 2be066d2] test(distillation): cover accumulated EOS updates
+ 3 files changed, 5 insertions(+), 3 deletions(-)

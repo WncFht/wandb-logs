@@ -1,0 +1,2 @@
+已停止，GPU 资源随进程退出释放。
+{"gpu": 1, "owner": "eos-fused-validation-20261101", "ready_for_model_job": true, "cleanup": {"stopped_at": 1793465314.945121, "gpu": 1, "run": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/runs/gpu-expansion-20261030/idle-occupancy/gpu1/run-1793464452898289848", "verified_own_processes_gone": true, "gpu_lock_free": true, "nvml_compute_idle": true}}

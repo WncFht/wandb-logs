@@ -1,0 +1,35 @@
+Markdown 257; noncanonical 0
+记录 2 个，封存文件 0 个，新增封存 0 个
+REVIEW: Long topic (26682 characters): examples/mirroropd/docs/experiments/teacher-transfer/optimizer-precision/mechanism/2026-10-26-MDPO内层KL反弹与数值链路审计.md; review ownership, not deletion quota
+REVIEW: Long topic (20397 characters): examples/mirroropd/docs/experiments/teacher-transfer/teacher-comparison/failure-matrix/2026-10-25-Sampled-token与Full-vocab失败复现方案.md; review ownership, not deletion quota
+REVIEW: Long topic (23647 characters): examples/mirroropd/docs/experiments/teacher-transfer/transfer-mechanism/2026-10-27-跨源蒸馏泛化研究总览.md; review ownership, not deletion quota
+REVIEW: Long topic (21469 characters): examples/mirroropd/docs/experiments/teacher-transfer/transfer-mechanism/capability-filter/2026-10-28-OPD能力筛选假说的受控实验.md; review ownership, not deletion quota
+REVIEW: Long topic (26607 characters): examples/mirroropd/docs/experiments/teacher-transfer/transfer-mechanism/r1/2026-10-28-跨源蒸馏边界分阶段实验计划.md; review ownership, not deletion quota
+REVIEW: Long topic (34194 characters): examples/mirroropd/docs/infra/model-compatibility/probes/2026-10-24-OPD实现验收与对齐诊断.md; review ownership, not deletion quota
+REVIEW: Long topic (29596 characters): examples/mirroropd/docs/infra/model-compatibility/qwen-e54/2026-10-29-E54长度膨胀诊断.md; review ownership, not deletion quota
+REVIEW: Long topic (28149 characters): examples/mirroropd/docs/infra/numerics/mirror-objectives/实现方案.md; review ownership, not deletion quota
+REVIEW: Long topic (26311 characters): examples/mirroropd/docs/infra/performance/2026-10-22-批量大小与GPU利用率调优.md; review ownership, not deletion quota
+REVIEW: Long topic (29818 characters): examples/mirroropd/docs/infra/performance/2026-10-22-训练与验证性能实测.md; review ownership, not deletion quota
+REVIEW: Long topic (20089 characters): examples/mirroropd/docs/infra/performance/full-vocab/training.md; review ownership, not deletion quota
+REVIEW: Long topic (25678 characters): examples/mirroropd/docs/infra/rollout/fusion/2026-10-28-Rollout双融合实现与验收记录.md; review ownership, not deletion quota
+REVIEW: Long topic (24788 characters): examples/mirroropd/docs/infra/rollout/fusion/2026-10-28-Rollout双融合实现细节与验收计划.md; review ownership, not deletion quota
+REVIEW: Long topic (35264 characters): examples/mirroropd/docs/infra/rollout/fusion/2026-10-28-vLLM双模型融合重构与优化方案.md; review ownership, not deletion quota
+REVIEW: Long topic (28339 characters): examples/mirroropd/docs/infra/rollout/fusion/2026-10-28-可组合Rollout策略架构与实现方案.md; review ownership, not deletion quota
+REVIEW: Long topic (25187 characters): examples/mirroropd/docs/literature/infra/2026-10-21-上游实现与论文基线.md; review ownership, not deletion quota
+REVIEW: Long topic (33242 characters): examples/mirroropd/docs/literature/learning-signal/2026-10-21-陈旧数据训练的指标与实验对照.md; review ownership, not deletion quota
+REVIEW: Long topic (20406 characters): examples/mirroropd/docs/literature/learning-signal/2026-10-31-Full-RKL的平均方式与MOPD及verl实现对照.md; review ownership, not deletion quota
+REVIEW: Long topic (22925 characters): examples/mirroropd/docs/literature/opd/2026-10-24-OPD失败复现设置与Full-vocab对照.md; review ownership, not deletion quota
+REVIEW: Long topic (31343 characters): examples/mirroropd/docs/literature/teacher-transfer/2026-10-26-策略蒸馏泛化的双重性实验与设置.md; review ownership, not deletion quota
+REVIEW: Long topic (23743 characters): examples/mirroropd/docs/literature/teacher-transfer/2026-10-31-Delta-OPD论文分类与研究问题综述.md; review ownership, not deletion quota
+REVIEW: Long topic (20022 characters): examples/mirroropd/docs/literature/teacher-transfer/2026-10-31-OPD训练数据与超参数及验证规模比较.md; review ownership, not deletion quota
+REVIEW: Long topic (20624 characters): examples/mirroropd/docs/literature/teacher-transfer/2026-10-31-同家族OPD缩放规律精读与实验启发.md; review ownership, not deletion quota
+REVIEW: Long topic (25606 characters): examples/mirroropd/docs/literature/transfer-generalization/2026-10-31-泛化迁移研究问题与证据综述.md; review ownership, not deletion quota
+REVIEW: Long topic (29024 characters): examples/mirroropd/docs/literature/transfer-generalization/papers/2026-10-31-既有文献逐篇证据与设置.md; review ownership, not deletion quota
+REVIEW: Long topic (37191 characters): examples/mirroropd/docs/progress/2026-11-01-周会报告.md; review ownership, not deletion quota
+REVIEW: Long topic (20434 characters): examples/mirroropd/docs/settings/teacher-transfer/2026-10-28-模型谱系图与论文配对扩展.md; review ownership, not deletion quota
+ERROR: /mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/examples/mirroropd/docs/infra/architecture/evaluation/代码走读与实施计划.md:113: missing Markdown anchor: ../../performance/full-vocab/training.md#parquet-%E5%9F%BA%E7%A1%80%E9%93%BE%E8%B7%AF%E7%9A%84%E5%9B%9B%E5%8D%A1-gpu-%E9%AA%8C%E6%94%B6
+ERROR: /mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/examples/mirroropd/docs/infra/architecture/evaluation/执行存储与可观测性.md:185: missing Markdown anchor: ../../performance/full-vocab/training.md#parquet-%E5%9F%BA%E7%A1%80%E9%93%BE%E8%B7%AF%E7%9A%84%E5%9B%9B%E5%8D%A1-gpu-%E9%AA%8C%E6%94%B6
+ERROR: /mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/examples/mirroropd/docs/infra/architecture/evaluation/执行存储与可观测性.md:223: missing Markdown anchor: ../../../experiments/teacher-transfer/transfer-mechanism/2026-10-31-%E5%9B%9B%E5%9F%9F%E5%8D%95%E5%9F%9F%E8%AE%AD%E7%BB%83%E4%B8%8ERKL%E8%AF%84%E4%BC%B0%E5%8D%8F%E8%AE%AE.md#6-%E7%94%9F%E6%88%90%E5%8F%82%E6%95%B0%E4%B8%8E%E8%AF%BB%E5%87%BA%E6%97%B6%E9%97%B4
+ERROR: /mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/examples/mirroropd/docs/progress/2026-11-01-周会报告.md:94: missing Markdown anchor: ../infra/performance/full-vocab/training.md#%E8%A7%84%E6%A8%A1%E4%B8%8E%E5%85%AD%E5%8D%A1%E6%A3%80%E6%9F%A5
+Document coverage: pages=257, local_links=3457, symbols=231, python_examples=7, unavailable_evidence=0
+make: *** [Makefile:109: docs-check] Error 1

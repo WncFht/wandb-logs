@@ -1,0 +1,154 @@
+audit r1-real initial 0.0 torch_fp32_pure {'median': 1.3225785094965118e-07, 'p95': 4.5214919685391306e-07, 'max': 5.92402852637293e-07}
+audit r1-real initial 0.0 torch_fp32_stable {'median': 1.3225785094965118e-07, 'p95': 4.5214919685392237e-07, 'max': 5.924028527601934e-07}
+audit r1-real initial 0.0 fused_fp32 {'median': 1.6338134434257912e-07, 'p95': 7.107299401381844e-07, 'max': 1.1653299887103549e-06}
+audit r1-real initial 0.0 fused_compensated {'median': 1.6338134434257912e-07, 'p95': 7.107299401381518e-07, 'max': 1.1653299887103549e-06}
+audit r1-real initial 0.5 torch_fp32_pure {'median': 1.876860445357359e-07, 'p95': 5.114111470075159e-07, 'max': 6.334340735210545e-07}
+audit r1-real initial 0.5 torch_fp32_stable {'median': 1.8768604453573598e-07, 'p95': 5.114111470075159e-07, 'max': 6.334340735210545e-07}
+audit r1-real initial 0.5 fused_fp32 {'median': 2.253612996129408e-07, 'p95': 7.765063937174632e-07, 'max': 1.3212852462978788e-06}
+audit r1-real initial 0.5 fused_compensated {'median': 2.253612996129408e-07, 'p95': 7.765063937174632e-07, 'max': 1.3212852462978788e-06}
+audit r1-real initial 1.0 torch_fp32_pure {'median': 1.886977253153813e-07, 'p95': 5.189143798837851e-07, 'max': 6.570183332477491e-07}
+audit r1-real initial 1.0 torch_fp32_stable {'median': 1.886977253153813e-07, 'p95': 5.189143798905958e-07, 'max': 6.570183332477491e-07}
+audit r1-real initial 1.0 fused_fp32 {'median': 2.039013327849143e-07, 'p95': 7.346843677433278e-07, 'max': 1.21852210396488e-06}
+audit r1-real initial 1.0 fused_compensated {'median': 2.039013327849143e-07, 'p95': 7.346843677433278e-07, 'max': 1.2185221039574103e-06}
+audit r1-real toward_teacher 0.0 torch_fp32_pure {'median': 1.3632809377469882e-07, 'p95': 4.3119778761078653e-07, 'max': 5.464652009856022e-07}
+audit r1-real toward_teacher 0.0 torch_fp32_stable {'median': 1.3632809377469882e-07, 'p95': 4.3119778761078653e-07, 'max': 5.464652009856022e-07}
+audit r1-real toward_teacher 0.0 fused_fp32 {'median': 1.692875083456025e-07, 'p95': 6.558734216782801e-07, 'max': 1.1195567200298426e-06}
+audit r1-real toward_teacher 0.0 fused_compensated {'median': 1.692875083456025e-07, 'p95': 6.558734221671626e-07, 'max': 1.1195567200296453e-06}
+audit r1-real toward_teacher 0.5 torch_fp32_pure {'median': 2.9801780881646555e-07, 'p95': 8.279070642268368e-07, 'max': 1.7721253321356588e-06}
+audit r1-real toward_teacher 0.5 torch_fp32_stable {'median': 2.9801780881646555e-07, 'p95': 8.279070642268368e-07, 'max': 1.7721253321356588e-06}
+audit r1-real toward_teacher 0.5 fused_fp32 {'median': 3.650036751573263e-07, 'p95': 1.1203930295981881e-06, 'max': 1.706081751636142e-06}
+audit r1-real toward_teacher 0.5 fused_compensated {'median': 3.650036751573263e-07, 'p95': 1.1203930295663346e-06, 'max': 1.7060817516360866e-06}
+audit r1-real toward_teacher 1.0 torch_fp32_pure {'median': 2.8386965294931124e-07, 'p95': 9.658599906168349e-07, 'max': 3.41819052390967e-06}
+audit r1-real toward_teacher 1.0 torch_fp32_stable {'median': 2.8386965294931124e-07, 'p95': 9.658599906168349e-07, 'max': 3.41819052390967e-06}
+audit r1-real toward_teacher 1.0 fused_fp32 {'median': 3.435366303684117e-07, 'p95': 1.3136896985903925e-06, 'max': 6.49613690864313e-06}
+audit r1-real toward_teacher 1.0 fused_compensated {'median': 3.4353663036841166e-07, 'p95': 1.313689689742325e-06, 'max': 6.49613690864313e-06}
+audit r1-real agreement_1e2 0.0 torch_fp32_pure {'median': 1.3578889193832272e-07, 'p95': 4.4571586398725726e-07, 'max': 6.505945099470403e-07}
+audit r1-real agreement_1e2 0.0 torch_fp32_stable {'median': 1.3578889193832274e-07, 'p95': 4.4571586398725716e-07, 'max': 6.505945099470403e-07}
+audit r1-real agreement_1e2 0.0 fused_fp32 {'median': 1.6178678869569277e-07, 'p95': 7.399727086782013e-07, 'max': 1.2749992119253196e-06}
+audit r1-real agreement_1e2 0.0 fused_compensated {'median': 1.6178678869569277e-07, 'p95': 7.399727010063815e-07, 'max': 1.2749992028046042e-06}
+audit r1-real agreement_1e2 0.5 torch_fp32_pure {'median': 1.463954736851269e-07, 'p95': 4.4346164410731183e-07, 'max': 6.599849864095469e-07}
+audit r1-real agreement_1e2 0.5 torch_fp32_stable {'median': 1.463954736851269e-07, 'p95': 4.4346164410731183e-07, 'max': 6.599849864095467e-07}
+audit r1-real agreement_1e2 0.5 fused_fp32 {'median': 1.6719846962115887e-07, 'p95': 7.448970508517138e-07, 'max': 1.2711121396490524e-06}
+audit r1-real agreement_1e2 0.5 fused_compensated {'median': 1.6719846962111414e-07, 'p95': 7.448970381336646e-07, 'max': 1.27111213087569e-06}
+audit r1-real agreement_1e2 1.0 torch_fp32_pure {'median': 1.47995798290225e-07, 'p95': 5.081917173428855e-07, 'max': 6.899417060780487e-07}
+audit r1-real agreement_1e2 1.0 torch_fp32_stable {'median': 1.47995798290225e-07, 'p95': 5.081917173428855e-07, 'max': 6.899417094176507e-07}
+audit r1-real agreement_1e2 1.0 fused_fp32 {'median': 1.952296954970887e-07, 'p95': 7.450025238764449e-07, 'max': 1.2846849193978344e-06}
+audit r1-real agreement_1e2 1.0 fused_compensated {'median': 1.952296954970857e-07, 'p95': 7.450025234707825e-07, 'max': 1.2846849110650743e-06}
+audit r1-real agreement_1e4 0.0 torch_fp32_pure {'median': 1.5307880159964584e-07, 'p95': 4.854710733773061e-07, 'max': 6.534613143883582e-07}
+audit r1-real agreement_1e4 0.0 torch_fp32_stable {'median': 1.5307880159964616e-07, 'p95': 4.85471073377302e-07, 'max': 6.534613256007063e-07}
+audit r1-real agreement_1e4 0.0 fused_fp32 {'median': 1.764663005376123e-07, 'p95': 7.663486608991891e-07, 'max': 1.2185715618151313e-06}
+audit r1-real agreement_1e4 0.0 fused_compensated {'median': 1.764663005375238e-07, 'p95': 7.663347060288211e-07, 'max': 1.2184453986288468e-06}
+audit r1-real agreement_1e4 0.5 torch_fp32_pure {'median': 1.5387098606965418e-07, 'p95': 4.722548283415793e-07, 'max': 6.59547172416558e-07}
+audit r1-real agreement_1e4 0.5 torch_fp32_stable {'median': 1.5387098606965418e-07, 'p95': 4.722548283418152e-07, 'max': 6.595471835153137e-07}
+audit r1-real agreement_1e4 0.5 fused_fp32 {'median': 2.0441463457883179e-07, 'p95': 7.939438070725517e-07, 'max': 1.3104274779804385e-06}
+audit r1-real agreement_1e4 0.5 fused_compensated {'median': 2.0441463438995548e-07, 'p95': 7.939438070761835e-07, 'max': 1.310310105135172e-06}
+audit r1-real agreement_1e4 1.0 torch_fp32_pure {'median': 1.422556411409789e-07, 'p95': 4.93880684376803e-07, 'max': 6.502884191123726e-07}
+audit r1-real agreement_1e4 1.0 torch_fp32_stable {'median': 1.422556411409789e-07, 'p95': 4.938806843768337e-07, 'max': 6.502884191123726e-07}
+audit r1-real agreement_1e4 1.0 fused_fp32 {'median': 1.8640826341953292e-07, 'p95': 7.98585497353895e-07, 'max': 1.2925556374799918e-06}
+audit r1-real agreement_1e4 1.0 fused_compensated {'median': 1.8814040980787566e-07, 'p95': 7.985755285730087e-07, 'max': 1.2924367260268767e-06}
+audit r1-real agreement_1e6 0.0 torch_fp32_pure {'median': 1.5585847473717446e-07, 'p95': 5.021240319032205e-07, 'max': 1.6602801953379874e-06}
+audit r1-real agreement_1e6 0.0 torch_fp32_stable {'median': 1.5585847473717446e-07, 'p95': 5.021240567712781e-07, 'max': 1.6941290204459097e-06}
+audit r1-real agreement_1e6 0.0 fused_fp32 {'median': 1.70571930828177e-07, 'p95': 7.348436587223624e-07, 'max': 2.101117631625739e-06}
+audit r1-real agreement_1e6 0.0 fused_compensated {'median': 1.7057192734238453e-07, 'p95': 7.348436580287806e-07, 'max': 2.100937227345042e-06}
+audit r1-real agreement_1e6 0.5 torch_fp32_pure {'median': 1.5748521034060577e-07, 'p95': 5.347171721416288e-07, 'max': 1.6258760616732318e-06}
+audit r1-real agreement_1e6 0.5 torch_fp32_stable {'median': 1.5748521034060577e-07, 'p95': 5.347171958721751e-07, 'max': 1.6258010720462345e-06}
+audit r1-real agreement_1e6 0.5 fused_fp32 {'median': 2.064475254823536e-07, 'p95': 7.911151537106069e-07, 'max': 2.118236570655077e-06}
+audit r1-real agreement_1e6 0.5 fused_compensated {'median': 2.0643847565870024e-07, 'p95': 7.911151535314643e-07, 'max': 2.1180579980297148e-06}
+audit r1-real agreement_1e6 1.0 torch_fp32_pure {'median': 1.7518889203937475e-07, 'p95': 5.262875362557151e-07, 'max': 1.6234702339091075e-06}
+audit r1-real agreement_1e6 1.0 torch_fp32_stable {'median': 1.7518889203937475e-07, 'p95': 5.262875378273618e-07, 'max': 1.6234004206938418e-06}
+audit r1-real agreement_1e6 1.0 fused_fp32 {'median': 2.0402154918893295e-07, 'p95': 7.447659261794959e-07, 'max': 2.0472215299887743e-06}
+audit r1-real agreement_1e6 1.0 fused_compensated {'median': 2.0402154888737554e-07, 'p95': 7.447659249448374e-07, 'max': 2.0471621035791955e-06}
+audit r1-real self 0.0 torch_fp32_pure None
+audit r1-real self 0.0 torch_fp32_stable None
+audit r1-real self 0.0 fused_fp32 None
+audit r1-real self 0.0 fused_compensated None
+audit r1-real self 0.5 torch_fp32_pure None
+audit r1-real self 0.5 torch_fp32_stable None
+audit r1-real self 0.5 fused_fp32 None
+audit r1-real self 0.5 fused_compensated None
+audit r1-real self 1.0 torch_fp32_pure None
+audit r1-real self 1.0 torch_fp32_stable None
+audit r1-real self 1.0 fused_fp32 None
+audit r1-real self 1.0 fused_compensated None
+audit qwen-real initial 0.0 torch_fp32_pure {'median': 1.1600937009580371e-07, 'p95': 4.1421999325840195e-07, 'max': 1.5940347963523855e-06}
+audit qwen-real initial 0.0 torch_fp32_stable {'median': 1.1600937009089365e-07, 'p95': 4.142200873318243e-07, 'max': 1.5940347484325314e-06}
+audit qwen-real initial 0.0 fused_fp32 {'median': 1.5588697135772782e-07, 'p95': 5.927327241721739e-07, 'max': 2.5070778969616814e-06}
+audit qwen-real initial 0.0 fused_compensated {'median': 1.532129685288828e-07, 'p95': 5.927327241721739e-07, 'max': 2.5070778708746632e-06}
+audit qwen-real initial 0.5 torch_fp32_pure {'median': 1.95397252079776e-07, 'p95': 4.890909590951597e-07, 'max': 3.0856522652807917e-06}
+audit qwen-real initial 0.5 torch_fp32_stable {'median': 1.95397252079776e-07, 'p95': 4.890909590951597e-07, 'max': 3.0856378274927494e-06}
+audit qwen-real initial 0.5 fused_fp32 {'median': 2.312015408192644e-07, 'p95': 5.304932503070343e-07, 'max': 8.165119018852041e-07}
+audit qwen-real initial 0.5 fused_compensated {'median': 2.312015408192644e-07, 'p95': 5.142682854051427e-07, 'max': 7.789700219120897e-07}
+audit qwen-real initial 1.0 torch_fp32_pure {'median': 2.226377386386761e-07, 'p95': 5.716042639813507e-07, 'max': 9.520589977345971e-07}
+audit qwen-real initial 1.0 torch_fp32_stable {'median': 2.226377386386761e-07, 'p95': 5.716042794505002e-07, 'max': 9.52051299590427e-07}
+audit qwen-real initial 1.0 fused_fp32 {'median': 2.1830321409489384e-07, 'p95': 7.578792836865214e-07, 'max': 1.990832840605006e-06}
+audit qwen-real initial 1.0 fused_compensated {'median': 2.165158234215006e-07, 'p95': 7.214857000798326e-07, 'max': 1.3561597034638703e-06}
+audit qwen-real toward_teacher 0.0 torch_fp32_pure {'median': 1.2663812549092841e-07, 'p95': 5.166866727291678e-07, 'max': 1.0538004863198958e-06}
+audit qwen-real toward_teacher 0.0 torch_fp32_stable {'median': 1.2663812549092926e-07, 'p95': 5.166866727291678e-07, 'max': 1.0538004863198958e-06}
+audit qwen-real toward_teacher 0.0 fused_fp32 {'median': 1.4696232407684616e-07, 'p95': 6.738670574966975e-07, 'max': 2.2164855340761268e-06}
+audit qwen-real toward_teacher 0.0 fused_compensated {'median': 1.433278181741338e-07, 'p95': 6.738353711535837e-07, 'max': 2.2164855340761268e-06}
+audit qwen-real toward_teacher 0.5 torch_fp32_pure {'median': 2.022581244409741e-07, 'p95': 1.2358929667160433e-06, 'max': 4.2770556029711264e-06}
+audit qwen-real toward_teacher 0.5 torch_fp32_stable {'median': 2.022581244409741e-07, 'p95': 1.2358929666483135e-06, 'max': 4.2770556029711264e-06}
+audit qwen-real toward_teacher 0.5 fused_fp32 {'median': 2.5426053008754786e-07, 'p95': 1.380889409391133e-06, 'max': 3.2495935215530438e-06}
+audit qwen-real toward_teacher 0.5 fused_compensated {'median': 2.545196100946899e-07, 'p95': 1.3214550921464244e-06, 'max': 3.2495935215530938e-06}
+audit qwen-real toward_teacher 1.0 torch_fp32_pure {'median': 2.293341219911585e-07, 'p95': 8.042068271603557e-07, 'max': 1.4278223157507745e-06}
+audit qwen-real toward_teacher 1.0 torch_fp32_stable {'median': 2.293341219911585e-07, 'p95': 8.042068271603557e-07, 'max': 1.4278223155771637e-06}
+audit qwen-real toward_teacher 1.0 fused_fp32 {'median': 2.5208938069602736e-07, 'p95': 8.104696264233565e-07, 'max': 4.355913942850115e-06}
+audit qwen-real toward_teacher 1.0 fused_compensated {'median': 2.412602406792652e-07, 'p95': 7.270441093747054e-07, 'max': 4.35591394285013e-06}
+audit qwen-real agreement_1e2 0.0 torch_fp32_pure {'median': 1.3318605108630825e-07, 'p95': 5.504970425648785e-07, 'max': 2.8511637736503728e-05}
+audit qwen-real agreement_1e2 0.0 torch_fp32_stable {'median': 1.3318605108630825e-07, 'p95': 5.504970425648785e-07, 'max': 2.8511637736497575e-05}
+audit qwen-real agreement_1e2 0.0 fused_fp32 {'median': 1.5118214127488717e-07, 'p95': 8.057385108011443e-07, 'max': 2.8573012356347783e-05}
+audit qwen-real agreement_1e2 0.0 fused_compensated {'median': 1.4687667487397554e-07, 'p95': 6.984615640663976e-07, 'max': 1.3875887860430308e-06}
+audit qwen-real agreement_1e2 0.5 torch_fp32_pure {'median': 1.479191457150798e-07, 'p95': 5.1308641862919e-07, 'max': 2.8480652545565128e-05}
+audit qwen-real agreement_1e2 0.5 torch_fp32_stable {'median': 1.479191457150798e-07, 'p95': 5.130863028030418e-07, 'max': 2.8480652545559032e-05}
+audit qwen-real agreement_1e2 0.5 fused_fp32 {'median': 1.6733685855041733e-07, 'p95': 5.918356175136073e-07, 'max': 2.8661821789678325e-05}
+audit qwen-real agreement_1e2 0.5 fused_compensated {'median': 1.5814300156329564e-07, 'p95': 5.106468381119781e-07, 'max': 1.1435279117809937e-06}
+audit qwen-real agreement_1e2 1.0 torch_fp32_pure {'median': 1.4104146652596876e-07, 'p95': 6.462127801295951e-07, 'max': 2.847977240241168e-05}
+audit qwen-real agreement_1e2 1.0 torch_fp32_stable {'median': 1.410414665079818e-07, 'p95': 6.462127801295951e-07, 'max': 2.8479772402405656e-05}
+audit qwen-real agreement_1e2 1.0 fused_fp32 {'median': 1.6629459097261513e-07, 'p95': 5.579446456110175e-07, 'max': 2.848060356708989e-05}
+audit qwen-real agreement_1e2 1.0 fused_compensated {'median': 1.6067223931174006e-07, 'p95': 5.2909830993095e-07, 'max': 1.0863782065557182e-06}
+audit qwen-real agreement_1e4 0.0 torch_fp32_pure {'median': 1.3657262919392623e-07, 'p95': 9.36671645772076e-07, 'max': 2.4181862180371857e-05}
+audit qwen-real agreement_1e4 0.0 torch_fp32_stable {'median': 1.3657262919792258e-07, 'p95': 9.366600494400269e-07, 'max': 2.418186218036586e-05}
+audit qwen-real agreement_1e4 0.0 fused_fp32 {'median': 1.5293578384800936e-07, 'p95': 1.0754598655146563e-06, 'max': 2.4182477511466894e-05}
+audit qwen-real agreement_1e4 0.0 fused_compensated {'median': 1.4567676645777937e-07, 'p95': 5.116508065658551e-07, 'max': 1.583582666190078e-06}
+audit qwen-real agreement_1e4 0.5 torch_fp32_pure {'median': 1.4703255029205452e-07, 'p95': 1.0125469052385948e-06, 'max': 2.4197102991515106e-05}
+audit qwen-real agreement_1e4 0.5 torch_fp32_stable {'median': 1.470325502920539e-07, 'p95': 1.0124809447033871e-06, 'max': 2.4197102991509102e-05}
+audit qwen-real agreement_1e4 0.5 fused_fp32 {'median': 1.7687289187239775e-07, 'p95': 8.26292200389272e-07, 'max': 2.4292657016143297e-05}
+audit qwen-real agreement_1e4 0.5 fused_compensated {'median': 1.692389994293627e-07, 'p95': 5.336571033187843e-07, 'max': 1.373989439443971e-06}
+audit qwen-real agreement_1e4 1.0 torch_fp32_pure {'median': 1.6440327837025382e-07, 'p95': 1.1512823484322435e-06, 'max': 2.4006150562748613e-05}
+audit qwen-real agreement_1e4 1.0 torch_fp32_stable {'median': 1.6440327837025382e-07, 'p95': 1.1512345714476101e-06, 'max': 2.4006150562742575e-05}
+audit qwen-real agreement_1e4 1.0 fused_fp32 {'median': 1.707648827388907e-07, 'p95': 6.93124543938879e-07, 'max': 2.419644478558809e-05}
+audit qwen-real agreement_1e4 1.0 fused_compensated {'median': 1.707648827388907e-07, 'p95': 6.75927997849358e-07, 'max': 1.3213129292197408e-06}
+audit qwen-real agreement_1e6 0.0 torch_fp32_pure {'median': 1.3231329221134756e-07, 'p95': 1.8513192469105097e-05, 'max': 0.0005948950970175773}
+audit qwen-real agreement_1e6 0.0 torch_fp32_stable {'median': 1.3231329221134756e-07, 'p95': 1.851310175701049e-05, 'max': 0.0005948950970175773}
+audit qwen-real agreement_1e6 0.0 fused_fp32 {'median': 1.5527925235314472e-07, 'p95': 1.8725126774504554e-05, 'max': 0.0005948979710423397}
+audit qwen-real agreement_1e6 0.0 fused_compensated {'median': 1.3448712897717124e-07, 'p95': 5.548108280402521e-07, 'max': 1.2841936389959053e-06}
+audit qwen-real agreement_1e6 0.5 torch_fp32_pure {'median': 1.5045319189661856e-07, 'p95': 1.849142033196801e-05, 'max': 0.0005948982357119429}
+audit qwen-real agreement_1e6 0.5 torch_fp32_stable {'median': 1.504531918966184e-07, 'p95': 1.8491329620279384e-05, 'max': 0.0005948982323445526}
+audit qwen-real agreement_1e6 0.5 fused_fp32 {'median': 1.7803628054796462e-07, 'p95': 1.8681841322860703e-05, 'max': 0.0005949026693085955}
+audit qwen-real agreement_1e6 0.5 fused_compensated {'median': 1.712727617661165e-07, 'p95': 5.631015872007941e-07, 'max': 1.2916790941620205e-06}
+audit qwen-real agreement_1e6 1.0 torch_fp32_pure {'median': 1.243403976348242e-07, 'p95': 1.8524719882068596e-05, 'max': 0.0005948918179499451}
+audit qwen-real agreement_1e6 1.0 torch_fp32_stable {'median': 1.243403976348242e-07, 'p95': 1.852462918732938e-05, 'max': 0.0005948918179499451}
+audit qwen-real agreement_1e6 1.0 fused_fp32 {'median': 1.8096632333998583e-07, 'p95': 1.862717090486477e-05, 'max': 0.0005949112258427172}
+audit qwen-real agreement_1e6 1.0 fused_compensated {'median': 1.779775097277537e-07, 'p95': 6.131198432797968e-07, 'max': 2.0013660347981416e-06}
+audit qwen-real self 0.0 torch_fp32_pure None
+audit qwen-real self 0.0 torch_fp32_stable None
+audit qwen-real self 0.0 fused_fp32 None
+audit qwen-real self 0.0 fused_compensated None
+audit qwen-real self 0.5 torch_fp32_pure None
+audit qwen-real self 0.5 torch_fp32_stable None
+audit qwen-real self 0.5 fused_fp32 None
+audit qwen-real self 0.5 fused_compensated None
+audit qwen-real self 1.0 torch_fp32_pure None
+audit qwen-real self 1.0 torch_fp32_stable None
+audit qwen-real self 1.0 fused_fp32 None
+audit qwen-real self 1.0 fused_compensated None
+boundary 1800
+bench 32 0.0 {'torch_fp64': 23.249737918376923, 'torch_fp32_pure': 8.683517575263977, 'torch_fp32_stable': 8.597850799560547, 'fused_fp32': 1.5842467546463013, 'fused_compensated': 1.680910587310791}
+bench 32 0.5 {'torch_fp64': 31.805090606212616, 'torch_fp32_pure': 10.775856673717499, 'torch_fp32_stable': 10.643720626831055, 'fused_fp32': 1.8443092703819275, 'fused_compensated': 2.0153671503067017}
+bench 32 1.0 {'torch_fp64': 17.4809992313385, 'torch_fp32_pure': 6.847202777862549, 'torch_fp32_stable': 6.6994428634643555, 'fused_fp32': 1.4255940914154053, 'fused_compensated': 1.5730559825897217}
+bench 128 0.0 {'torch_fp64': 81.29885047674179, 'torch_fp32_pure': 29.876358807086945, 'torch_fp32_stable': 29.848411679267883, 'fused_fp32': 2.899669110774994, 'fused_compensated': 3.346569836139679}
+bench 128 0.5 {'torch_fp64': 113.49594593048096, 'torch_fp32_pure': 38.12318295240402, 'torch_fp32_stable': 37.99997270107269, 'fused_fp32': 3.787018358707428, 'fused_compensated': 4.300393164157867}
+bench 128 1.0 {'torch_fp64': 59.82516705989838, 'torch_fp32_pure': 21.904006600379944, 'torch_fp32_stable': 21.804004907608032, 'fused_fp32': 2.7108564972877502, 'fused_compensated': 3.2746046781539917}
+bench 512 0.0 {'torch_fp64': 309.28029865026474, 'torch_fp32_pure': 108.95141214132309, 'torch_fp32_stable': 108.98923128843307, 'fused_fp32': 9.35671478509903, 'fused_compensated': 10.715268552303314}
+bench 512 0.5 {'torch_fp64': 435.1339563727379, 'torch_fp32_pure': 139.43694531917572, 'torch_fp32_stable': 139.4382268190384, 'fused_fp32': 12.815117835998535, 'fused_compensated': 14.32841271162033}
+bench 512 1.0 {'torch_fp64': 225.7995828986168, 'torch_fp32_pure': 78.67607474327087, 'torch_fp32_stable': 78.58724147081375, 'fused_fp32': 9.294800460338593, 'fused_compensated': 11.11970841884613}

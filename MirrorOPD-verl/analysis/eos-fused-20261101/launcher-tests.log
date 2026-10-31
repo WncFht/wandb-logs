@@ -1,0 +1,247 @@
+........................................................................ [ 30%]
+........................................................................ [ 61%]
+...........FFFFFFFF..................................................... [ 92%]
+.................                                                        [100%]
+=================================== FAILURES ===================================
+_ test_direct_hope_command_preserves_allocation_or_uses_job_local_fallback[None-0] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_direct_hope_command_prese0')
+devices = None, expected_code = 0
+
+    @pytest.mark.parametrize("devices,expected_code", [(None, 0), ("GPU-a,GPU-b", 2)])
+    def test_direct_hope_command_preserves_allocation_or_uses_job_local_fallback(tmp_path, devices, expected_code):
+        overrides = {} if devices is None else {"CUDA_VISIBLE_DEVICES": devices}
+>       result = _launch(tmp_path, command=_local_hope_command(), **overrides)
+                                           ^^^^^^^^^^^^^^^^^^^^^
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:884: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:875: in _local_hope_command
+    worker_command = config.get("roles", "worker.script")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../envs/mirroropd/lib/python3.12/configparser.py:765: in get
+    d = self._unify_values(section, vars)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <configparser.ConfigParser object at 0x7fcb3e7940e0>, section = 'roles'
+vars = None
+
+    def _unify_values(self, section, vars):
+        """Create a sequence of lookups with 'vars' taking priority over
+        the 'section' which takes priority over the DEFAULTSECT.
+    
+        """
+        sectiondict = {}
+        try:
+            sectiondict = self._sections[section]
+        except KeyError:
+            if section != self.default_section:
+>               raise NoSectionError(section) from None
+E               configparser.NoSectionError: No section: 'roles'
+
+../../../envs/mirroropd/lib/python3.12/configparser.py:1140: NoSectionError
+_ test_direct_hope_command_preserves_allocation_or_uses_job_local_fallback[GPU-a,GPU-b-2] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_direct_hope_command_prese1')
+devices = 'GPU-a,GPU-b', expected_code = 2
+
+    @pytest.mark.parametrize("devices,expected_code", [(None, 0), ("GPU-a,GPU-b", 2)])
+    def test_direct_hope_command_preserves_allocation_or_uses_job_local_fallback(tmp_path, devices, expected_code):
+        overrides = {} if devices is None else {"CUDA_VISIBLE_DEVICES": devices}
+>       result = _launch(tmp_path, command=_local_hope_command(), **overrides)
+                                           ^^^^^^^^^^^^^^^^^^^^^
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:884: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:875: in _local_hope_command
+    worker_command = config.get("roles", "worker.script")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../envs/mirroropd/lib/python3.12/configparser.py:765: in get
+    d = self._unify_values(section, vars)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <configparser.ConfigParser object at 0x7fcb3f65e420>, section = 'roles'
+vars = None
+
+    def _unify_values(self, section, vars):
+        """Create a sequence of lookups with 'vars' taking priority over
+        the 'section' which takes priority over the DEFAULTSECT.
+    
+        """
+        sectiondict = {}
+        try:
+            sectiondict = self._sections[section]
+        except KeyError:
+            if section != self.default_section:
+>               raise NoSectionError(section) from None
+E               configparser.NoSectionError: No section: 'roles'
+
+../../../envs/mirroropd/lib/python3.12/configparser.py:1140: NoSectionError
+_ test_hope_submission_and_worker_preview_match_eight_gpu_allocation[shared_sync-math] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_hope_submission_and_worke0')
+domain = 'math', mode = 'shared_sync'
+
+    @pytest.mark.parametrize("domain", ["math", "code", "if"])
+    @pytest.mark.parametrize("mode", ["shared_sync", "standalone"])
+    def test_hope_submission_and_worker_preview_match_eight_gpu_allocation(tmp_path, domain, mode):
+        """Exercise the real Make submission and worker config while stubbing only the Hope CLI."""
+        fake_bin = tmp_path / "bin"
+        fake_bin.mkdir()
+        hope = fake_bin / "hope"
+        record = tmp_path / "submission.txt"
+        hope.write_text('#!/bin/sh\nprintf "%s\\n" "$PWD" "$@" > "$HOPE_SUBMIT_RECORD"\n')
+        hope.chmod(0o755)
+        env = os.environ.copy()
+        env.update(PATH=str(fake_bin) + os.pathsep + env["PATH"], HOPE_SUBMIT_RECORD=str(record))
+        submitted = subprocess.run(["make", "opd-submit"], cwd=ROOT, env=env, capture_output=True, text=True)
+>       assert submitted.returncode == 0, submitted.stderr
+E       AssertionError: Hope file not found: hope/mirroropd/mirroropd.hope
+E         make: *** [Makefile:193: opd-submit] Error 1
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['make', 'opd-submit'], returncode=2, stdout='', stderr='Hope file not found: hope/mirroropd/mirroropd.hope\nmake: *** [Makefile:193: opd-submit] Error 1\n').returncode
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:903: AssertionError
+_ test_hope_submission_and_worker_preview_match_eight_gpu_allocation[shared_sync-code] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_hope_submission_and_worke1')
+domain = 'code', mode = 'shared_sync'
+
+    @pytest.mark.parametrize("domain", ["math", "code", "if"])
+    @pytest.mark.parametrize("mode", ["shared_sync", "standalone"])
+    def test_hope_submission_and_worker_preview_match_eight_gpu_allocation(tmp_path, domain, mode):
+        """Exercise the real Make submission and worker config while stubbing only the Hope CLI."""
+        fake_bin = tmp_path / "bin"
+        fake_bin.mkdir()
+        hope = fake_bin / "hope"
+        record = tmp_path / "submission.txt"
+        hope.write_text('#!/bin/sh\nprintf "%s\\n" "$PWD" "$@" > "$HOPE_SUBMIT_RECORD"\n')
+        hope.chmod(0o755)
+        env = os.environ.copy()
+        env.update(PATH=str(fake_bin) + os.pathsep + env["PATH"], HOPE_SUBMIT_RECORD=str(record))
+        submitted = subprocess.run(["make", "opd-submit"], cwd=ROOT, env=env, capture_output=True, text=True)
+>       assert submitted.returncode == 0, submitted.stderr
+E       AssertionError: Hope file not found: hope/mirroropd/mirroropd.hope
+E         make: *** [Makefile:193: opd-submit] Error 1
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['make', 'opd-submit'], returncode=2, stdout='', stderr='Hope file not found: hope/mirroropd/mirroropd.hope\nmake: *** [Makefile:193: opd-submit] Error 1\n').returncode
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:903: AssertionError
+_ test_hope_submission_and_worker_preview_match_eight_gpu_allocation[shared_sync-if] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_hope_submission_and_worke2')
+domain = 'if', mode = 'shared_sync'
+
+    @pytest.mark.parametrize("domain", ["math", "code", "if"])
+    @pytest.mark.parametrize("mode", ["shared_sync", "standalone"])
+    def test_hope_submission_and_worker_preview_match_eight_gpu_allocation(tmp_path, domain, mode):
+        """Exercise the real Make submission and worker config while stubbing only the Hope CLI."""
+        fake_bin = tmp_path / "bin"
+        fake_bin.mkdir()
+        hope = fake_bin / "hope"
+        record = tmp_path / "submission.txt"
+        hope.write_text('#!/bin/sh\nprintf "%s\\n" "$PWD" "$@" > "$HOPE_SUBMIT_RECORD"\n')
+        hope.chmod(0o755)
+        env = os.environ.copy()
+        env.update(PATH=str(fake_bin) + os.pathsep + env["PATH"], HOPE_SUBMIT_RECORD=str(record))
+        submitted = subprocess.run(["make", "opd-submit"], cwd=ROOT, env=env, capture_output=True, text=True)
+>       assert submitted.returncode == 0, submitted.stderr
+E       AssertionError: Hope file not found: hope/mirroropd/mirroropd.hope
+E         make: *** [Makefile:193: opd-submit] Error 1
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['make', 'opd-submit'], returncode=2, stdout='', stderr='Hope file not found: hope/mirroropd/mirroropd.hope\nmake: *** [Makefile:193: opd-submit] Error 1\n').returncode
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:903: AssertionError
+_ test_hope_submission_and_worker_preview_match_eight_gpu_allocation[standalone-math] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_hope_submission_and_worke3')
+domain = 'math', mode = 'standalone'
+
+    @pytest.mark.parametrize("domain", ["math", "code", "if"])
+    @pytest.mark.parametrize("mode", ["shared_sync", "standalone"])
+    def test_hope_submission_and_worker_preview_match_eight_gpu_allocation(tmp_path, domain, mode):
+        """Exercise the real Make submission and worker config while stubbing only the Hope CLI."""
+        fake_bin = tmp_path / "bin"
+        fake_bin.mkdir()
+        hope = fake_bin / "hope"
+        record = tmp_path / "submission.txt"
+        hope.write_text('#!/bin/sh\nprintf "%s\\n" "$PWD" "$@" > "$HOPE_SUBMIT_RECORD"\n')
+        hope.chmod(0o755)
+        env = os.environ.copy()
+        env.update(PATH=str(fake_bin) + os.pathsep + env["PATH"], HOPE_SUBMIT_RECORD=str(record))
+        submitted = subprocess.run(["make", "opd-submit"], cwd=ROOT, env=env, capture_output=True, text=True)
+>       assert submitted.returncode == 0, submitted.stderr
+E       AssertionError: Hope file not found: hope/mirroropd/mirroropd.hope
+E         make: *** [Makefile:193: opd-submit] Error 1
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['make', 'opd-submit'], returncode=2, stdout='', stderr='Hope file not found: hope/mirroropd/mirroropd.hope\nmake: *** [Makefile:193: opd-submit] Error 1\n').returncode
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:903: AssertionError
+_ test_hope_submission_and_worker_preview_match_eight_gpu_allocation[standalone-code] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_hope_submission_and_worke4')
+domain = 'code', mode = 'standalone'
+
+    @pytest.mark.parametrize("domain", ["math", "code", "if"])
+    @pytest.mark.parametrize("mode", ["shared_sync", "standalone"])
+    def test_hope_submission_and_worker_preview_match_eight_gpu_allocation(tmp_path, domain, mode):
+        """Exercise the real Make submission and worker config while stubbing only the Hope CLI."""
+        fake_bin = tmp_path / "bin"
+        fake_bin.mkdir()
+        hope = fake_bin / "hope"
+        record = tmp_path / "submission.txt"
+        hope.write_text('#!/bin/sh\nprintf "%s\\n" "$PWD" "$@" > "$HOPE_SUBMIT_RECORD"\n')
+        hope.chmod(0o755)
+        env = os.environ.copy()
+        env.update(PATH=str(fake_bin) + os.pathsep + env["PATH"], HOPE_SUBMIT_RECORD=str(record))
+        submitted = subprocess.run(["make", "opd-submit"], cwd=ROOT, env=env, capture_output=True, text=True)
+>       assert submitted.returncode == 0, submitted.stderr
+E       AssertionError: Hope file not found: hope/mirroropd/mirroropd.hope
+E         make: *** [Makefile:193: opd-submit] Error 1
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['make', 'opd-submit'], returncode=2, stdout='', stderr='Hope file not found: hope/mirroropd/mirroropd.hope\nmake: *** [Makefile:193: opd-submit] Error 1\n').returncode
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:903: AssertionError
+_ test_hope_submission_and_worker_preview_match_eight_gpu_allocation[standalone-if] _
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-255/test_hope_submission_and_worke5')
+domain = 'if', mode = 'standalone'
+
+    @pytest.mark.parametrize("domain", ["math", "code", "if"])
+    @pytest.mark.parametrize("mode", ["shared_sync", "standalone"])
+    def test_hope_submission_and_worker_preview_match_eight_gpu_allocation(tmp_path, domain, mode):
+        """Exercise the real Make submission and worker config while stubbing only the Hope CLI."""
+        fake_bin = tmp_path / "bin"
+        fake_bin.mkdir()
+        hope = fake_bin / "hope"
+        record = tmp_path / "submission.txt"
+        hope.write_text('#!/bin/sh\nprintf "%s\\n" "$PWD" "$@" > "$HOPE_SUBMIT_RECORD"\n')
+        hope.chmod(0o755)
+        env = os.environ.copy()
+        env.update(PATH=str(fake_bin) + os.pathsep + env["PATH"], HOPE_SUBMIT_RECORD=str(record))
+        submitted = subprocess.run(["make", "opd-submit"], cwd=ROOT, env=env, capture_output=True, text=True)
+>       assert submitted.returncode == 0, submitted.stderr
+E       AssertionError: Hope file not found: hope/mirroropd/mirroropd.hope
+E         make: *** [Makefile:193: opd-submit] Error 1
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['make', 'opd-submit'], returncode=2, stdout='', stderr='Hope file not found: hope/mirroropd/mirroropd.hope\nmake: *** [Makefile:193: opd-submit] Error 1\n').returncode
+
+tests/examples/test_mirroropd_math_launcher_on_cpu.py:903: AssertionError
+=========================== short test summary info ============================
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_direct_hope_command_preserves_allocation_or_uses_job_local_fallback[None-0]
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_direct_hope_command_preserves_allocation_or_uses_job_local_fallback[GPU-a,GPU-b-2]
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_hope_submission_and_worker_preview_match_eight_gpu_allocation[shared_sync-math]
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_hope_submission_and_worker_preview_match_eight_gpu_allocation[shared_sync-code]
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_hope_submission_and_worker_preview_match_eight_gpu_allocation[shared_sync-if]
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_hope_submission_and_worker_preview_match_eight_gpu_allocation[standalone-math]
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_hope_submission_and_worker_preview_match_eight_gpu_allocation[standalone-code]
+FAILED tests/examples/test_mirroropd_math_launcher_on_cpu.py::test_hope_submission_and_worker_preview_match_eight_gpu_allocation[standalone-if]
+8 failed, 225 passed in 336.49s (0:05:36)

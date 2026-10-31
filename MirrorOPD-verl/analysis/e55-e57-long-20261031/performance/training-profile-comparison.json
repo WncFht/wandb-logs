@@ -1,0 +1,390 @@
+{
+  "scope": "Training only. Common outer26–35 for production logs; historical GPU trace is rank0, outer4, first two updates on four H800s.",
+  "runs": {
+    "E45": {
+      "run_id": "625vw4ob",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "gpus": 8,
+      "student": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "teacher": "JustRL-DeepSeek-1.5B",
+      "source_commit": "8c3dda8cb91f0a9778e32d78f3959ac9a79f8218",
+      "raw_source": "MirrorOPD-verl/wandb/offline-run-20261026_030632-625vw4ob/run-625vw4ob.wandb",
+      "sha256": "b28dfebb82642fda7344633459f82e362b39b1d49c4dffad549f12c556135bd9",
+      "precision": null,
+      "reuse": 16,
+      "kappa": 0,
+      "eta": 0.3,
+      "backend": "precompute_fused",
+      "token_chunk": 128,
+      "termination_ids": [],
+      "async_write": true,
+      "prefetch": true,
+      "grad_no_sync": false,
+      "window": [
+        26,
+        35
+      ],
+      "input_tokens_per_outer": 376746.9,
+      "stage_seconds_per_outer": {
+        "outer": 140.32342863678932,
+        "rollout": 33.01393430437893,
+        "teacher_backbone": 1.8831652736291289,
+        "teacher_transfer": 0.9755265245214104,
+        "actor": 101.01696913968772,
+        "weight_sync": 3.388419022038579,
+        "anchor_inside_actor": 4.2125872611999515
+      },
+      "input_pass_tokens_per_second_per_gpu": 7459.08144361427,
+      "profiler": {
+        "tool": null,
+        "steps": null
+      },
+      "recorded_internal_stage_keys": []
+    },
+    "E51": {
+      "run_id": "6vv5o9b8",
+      "gpu": "NVIDIA A800-SXM4-80GB",
+      "gpus": 8,
+      "student": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "teacher": "JustRL-DeepSeek-1.5B",
+      "source_commit": "222e9db4296fdab64b2633ade5c3984bbdb88388",
+      "raw_source": "MirrorOPD-verl/wandb/offline-run-20261027_185655-6vv5o9b8/run-6vv5o9b8.wandb",
+      "sha256": "fd4c582c6db6e52230f5c991474541db94f6a4ca3940b4c5e42ab26845120cb3",
+      "precision": "fp16",
+      "reuse": 16,
+      "kappa": 0,
+      "eta": 0.3,
+      "backend": "precompute_fused",
+      "token_chunk": 128,
+      "termination_ids": [],
+      "async_write": true,
+      "prefetch": true,
+      "grad_no_sync": false,
+      "window": [
+        26,
+        35
+      ],
+      "input_tokens_per_outer": 373396.1,
+      "stage_seconds_per_outer": {
+        "outer": 178.8541072130203,
+        "rollout": 32.93252801913768,
+        "teacher_backbone": 1.7500953774899244,
+        "teacher_transfer": 0.713685660995543,
+        "actor": 140.61656947620213,
+        "weight_sync": 2.802071228250861,
+        "anchor_inside_actor": 3.316119885444641
+      },
+      "input_pass_tokens_per_second_per_gpu": 5310.840698089898,
+      "profiler": {
+        "tool": null,
+        "steps": null
+      },
+      "recorded_internal_stage_keys": []
+    },
+    "E53": {
+      "run_id": "k7db6qxl",
+      "gpu": "NVIDIA A800-SXM4-80GB",
+      "gpus": 8,
+      "student": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "teacher": "JustRL-DeepSeek-1.5B",
+      "source_commit": "222e9db4296fdab64b2633ade5c3984bbdb88388",
+      "raw_source": "MirrorOPD-verl/wandb/offline-run-20261029_032540-k7db6qxl/run-k7db6qxl.wandb",
+      "sha256": "c414b0cf7ee94056ee39f7dcf2cb7f12fbaf2745b576aaa9d06cd13cdcebe3fc",
+      "precision": "bf16_fp32",
+      "reuse": 16,
+      "kappa": 0,
+      "eta": 0.3,
+      "backend": "precompute_fused",
+      "token_chunk": 128,
+      "termination_ids": [],
+      "async_write": true,
+      "prefetch": true,
+      "grad_no_sync": false,
+      "window": [
+        26,
+        35
+      ],
+      "input_tokens_per_outer": 366340.8,
+      "stage_seconds_per_outer": {
+        "outer": 220.69750966392456,
+        "rollout": 32.65883080437779,
+        "teacher_backbone": 1.7504441672936082,
+        "teacher_transfer": 0.8804438529536128,
+        "actor": 182.3337923374027,
+        "weight_sync": 3.027874965593219,
+        "anchor_inside_actor": 4.647008776664734
+      },
+      "input_pass_tokens_per_second_per_gpu": 4018.35332116713,
+      "profiler": {
+        "tool": null,
+        "steps": null
+      },
+      "recorded_internal_stage_keys": []
+    },
+    "E55": {
+      "run_id": "j5uaal3j",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "gpus": 8,
+      "student": "Qwen3-1.7B-Base",
+      "teacher": "Qwen3-30B-A3B-Instruct-2507",
+      "source_commit": "9fd276af99b329d67f831881141b3b873b1cc428",
+      "raw_source": "MirrorOPD-verl/wandb/offline-run-20261030_094536-j5uaal3j/run-j5uaal3j.wandb",
+      "sha256": "40d4e08684e715a4e58b853ef4c2ac800faadf3b1bcbbe9b0e94afb9dcbe4c15",
+      "precision": null,
+      "reuse": 16,
+      "kappa": 0,
+      "eta": 0.1,
+      "backend": "precompute",
+      "token_chunk": 512,
+      "termination_ids": [
+        151643,
+        151645
+      ],
+      "async_write": true,
+      "prefetch": true,
+      "grad_no_sync": false,
+      "window": [
+        26,
+        35
+      ],
+      "input_tokens_per_outer": 681865.1,
+      "stage_seconds_per_outer": {
+        "outer": 1415.4870992962271,
+        "rollout": 117.88558769561351,
+        "teacher_backbone": 11.52677520494908,
+        "teacher_transfer": 9.732858557626605,
+        "actor": 1272.4038560837507,
+        "weight_sync": 3.89734049141407,
+        "anchor_inside_actor": 5.447452783584595
+      },
+      "input_pass_tokens_per_second_per_gpu": 1071.7746519547156,
+      "profiler": {
+        "tool": null,
+        "steps": null
+      },
+      "recorded_internal_stage_keys": []
+    },
+    "E56": {
+      "run_id": "zsnhqzts",
+      "gpu": "NVIDIA A800-SXM4-80GB",
+      "gpus": 8,
+      "student": "Qwen3-1.7B-Base",
+      "teacher": "Qwen3-30B-A3B-Instruct-2507",
+      "source_commit": "9fd276af99b329d67f831881141b3b873b1cc428",
+      "raw_source": "MirrorOPD-verl/wandb/offline-run-20261029_234048-zsnhqzts/run-zsnhqzts.wandb",
+      "sha256": "1d133df6c4526ffc3b121b088dca6243a95beebb0e83aa293bf90f9dac169729",
+      "precision": null,
+      "reuse": 16,
+      "kappa": 0.5,
+      "eta": 0.1,
+      "backend": "precompute",
+      "token_chunk": 512,
+      "termination_ids": [
+        151643,
+        151645
+      ],
+      "async_write": true,
+      "prefetch": true,
+      "grad_no_sync": false,
+      "window": [
+        26,
+        35
+      ],
+      "input_tokens_per_outer": 550627.2,
+      "stage_seconds_per_outer": {
+        "outer": 1350.1664562219753,
+        "rollout": 88.86902659256012,
+        "teacher_backbone": 8.92310703266412,
+        "teacher_transfer": 9.233822512440383,
+        "actor": 1239.2526889109984,
+        "weight_sync": 3.847626630589366,
+        "anchor_inside_actor": 4.977060174942016
+      },
+      "input_pass_tokens_per_second_per_gpu": 888.6439463510341,
+      "profiler": {
+        "tool": null,
+        "steps": null
+      },
+      "recorded_internal_stage_keys": []
+    },
+    "E57": {
+      "run_id": "6j5knkmk",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "gpus": 8,
+      "student": "Qwen3-1.7B-Base",
+      "teacher": "Qwen3-30B-A3B-Instruct-2507",
+      "source_commit": "9fd276af99b329d67f831881141b3b873b1cc428",
+      "raw_source": "MirrorOPD-verl/wandb/offline-run-20261030_015214-6j5knkmk/run-6j5knkmk.wandb",
+      "sha256": "69bcc72612bb6aa900d0787db8c9df0f9d81f67ee715028b7c33817393ec2ebe",
+      "precision": null,
+      "reuse": 16,
+      "kappa": 1,
+      "eta": 0.1,
+      "backend": "precompute",
+      "token_chunk": 512,
+      "termination_ids": [
+        151643,
+        151645
+      ],
+      "async_write": true,
+      "prefetch": true,
+      "grad_no_sync": false,
+      "window": [
+        26,
+        35
+      ],
+      "input_tokens_per_outer": 572704.8,
+      "stage_seconds_per_outer": {
+        "outer": 912.8090370567515,
+        "rollout": 87.2888164943084,
+        "teacher_backbone": 9.438975068926812,
+        "teacher_transfer": 9.016500376723707,
+        "actor": 803.0371216941625,
+        "weight_sync": 3.9865819558501245,
+        "anchor_inside_actor": 4.932608246803284
+      },
+      "input_pass_tokens_per_second_per_gpu": 1426.3470131785893,
+      "profiler": {
+        "tool": null,
+        "steps": null
+      },
+      "recorded_internal_stage_keys": []
+    }
+  },
+  "comparisons": [
+    {
+      "baseline": "E45",
+      "target": "E55",
+      "same_gpu_type": true,
+      "actor_wall_ratio": 12.59594172068509,
+      "input_ratio": 1.8098758078699517,
+      "per_input_pass_cost_ratio": 6.959561349963172,
+      "outer_delta_seconds": 1275.163670659438,
+      "stage_deltas_seconds": {
+        "actor": 1171.386886944063,
+        "rollout": 84.87165339123459,
+        "teacher_backbone": 9.643609931319952,
+        "teacher_transfer": 8.757332033105195,
+        "weight_sync": 0.5089214693754913
+      },
+      "actor_fraction_of_added_outer_time": 0.918616891224867,
+      "causal_speed_regression_claim": false,
+      "limits": "Models, teacher hidden width, eta/kappa, sequence distribution and precision may differ; token normalization is not FLOP matching."
+    },
+    {
+      "baseline": "E45",
+      "target": "E57",
+      "same_gpu_type": true,
+      "actor_wall_ratio": 7.949526980795783,
+      "input_ratio": 1.5201314197940314,
+      "per_input_pass_cost_ratio": 5.229499816451985,
+      "outer_delta_seconds": 772.4856084199622,
+      "stage_deltas_seconds": {
+        "actor": 702.0201525544747,
+        "rollout": 54.27488218992948,
+        "teacher_backbone": 7.555809795297683,
+        "teacher_transfer": 8.040973852202297,
+        "weight_sync": 0.5981629338115457
+      },
+      "actor_fraction_of_added_outer_time": 0.9087808820029448,
+      "causal_speed_regression_claim": false,
+      "limits": "Models, teacher hidden width, eta/kappa, sequence distribution and precision may differ; token normalization is not FLOP matching."
+    },
+    {
+      "baseline": "E51",
+      "target": "E56",
+      "same_gpu_type": true,
+      "actor_wall_ratio": 8.81299190790406,
+      "input_ratio": 1.474646360794877,
+      "per_input_pass_cost_ratio": 5.97634262844795,
+      "outer_delta_seconds": 1171.312349008955,
+      "stage_deltas_seconds": {
+        "actor": 1098.6361194347962,
+        "rollout": 55.93649857342244,
+        "teacher_backbone": 7.173011655174196,
+        "teacher_transfer": 8.52013685144484,
+        "weight_sync": 1.045555402338505
+      },
+      "actor_fraction_of_added_outer_time": 0.9379531602858538,
+      "causal_speed_regression_claim": false,
+      "limits": "Models, teacher hidden width, eta/kappa, sequence distribution and precision may differ; token normalization is not FLOP matching."
+    },
+    {
+      "baseline": "E53",
+      "target": "E56",
+      "same_gpu_type": true,
+      "actor_wall_ratio": 6.796615553401105,
+      "input_ratio": 1.5030463437323933,
+      "per_input_pass_cost_ratio": 4.521893540902817,
+      "outer_delta_seconds": 1129.4689465580507,
+      "stage_deltas_seconds": {
+        "actor": 1056.9188965735957,
+        "rollout": 56.210195788182325,
+        "teacher_backbone": 7.172662865370512,
+        "teacher_transfer": 8.35337865948677,
+        "weight_sync": 0.8197516649961472
+      },
+      "actor_fraction_of_added_outer_time": 0.9357662287170051,
+      "causal_speed_regression_claim": false,
+      "limits": "Models, teacher hidden width, eta/kappa, sequence distribution and precision may differ; token normalization is not FLOP matching."
+    }
+  ],
+  "historical_profile": {
+    "source": "examples/mirroropd/docs/infra/performance/full-vocab/data/mirror-observe-20261026/summary.json",
+    "source_sha256": "ec07c0e8bfe9315a8a73e0b68b3f3ef46f453b0372fe1c1bc652a3ac40422ba2",
+    "code_commit": "8c3dda8cb91f0a9778e32d78f3959ac9a79f8218",
+    "host_seconds_per_outer": {
+      "actor/forward_backward": 91.35661932575,
+      "actor/optimizer_step": 0.558368062125,
+      "full_vocab/head_loss": 20.5958141445,
+      "full_vocab/backbone": 18.0463350415,
+      "full_vocab/hidden_read": 6.08958277925,
+      "full_vocab/hidden_read_wait": 2.090111964,
+      "full_vocab/micro_batch_h2d": 1.79756553825,
+      "engine/transfer": 3.909566659875
+    },
+    "unprofiled_means": {
+      "rollout_batch_seconds": 19.89488362,
+      "rollout_pipeline_seconds": 22.837137777358294,
+      "teacher_transfer_seconds": 1.4601127095520496,
+      "teacher_forward_seconds": 3.088377296924591,
+      "update_actor_seconds": 98.3987108245492,
+      "update_weights_seconds": 1.1634862683713436,
+      "outer_step_seconds": 126.98543305322528,
+      "anchor_seconds_max": 3.263322591781616,
+      "actor_fraction_of_outer": 0.7748818778552804,
+      "actor_input_tokens_per_second_including_reuse": 62624.88551285582
+    },
+    "training_gpu": {
+      "kernel_sum_ms_by_category": {
+        "Fused KL": 262.0527189999992,
+        "Pointwise/reduce": 3032.4067589999804,
+        "GEMM": 5132.26249100002,
+        "Other": 205.33326200000002,
+        "NCCL": 1710.9273389999996,
+        "Attention": 1688.3224569999998
+      },
+      "compute_union_ms": 10250.585809082031,
+      "nccl_union_ms": 1710.9273383789061,
+      "kernel_union_ms": 10739.107771728515,
+      "overlap_ms": 1222.4053757324218,
+      "nccl_without_compute_ms": 488.5219626464844,
+      "first_to_last_kernel_ms": 12624.905416992187
+    },
+    "head_kernel_ms_first_two_updates": {
+      "full_vocab/mirror_rows": 270.1617409999992,
+      "full_vocab/head_loss": 36.99540900000014,
+      "full_vocab/grad_hidden": 279.98620300000033,
+      "full_vocab/grad_head": 1419.28659,
+      "full_vocab/teacher_projection_and_normalization": 476.8709420000002,
+      "full_vocab/anchor_projection_and_normalization": 474.2517399999992,
+      "full_vocab/mirror_target": 123.40993500000012,
+      "full_vocab/student_projection": 301.3092330000002,
+      "full_vocab/backward_apply": 7.896561
+    },
+    "head_fraction_of_kernel_work": 0.2817789380613308,
+    "trace_recomputed_and_matched": true
+  },
+  "path_change_commit": "cb890d2ea5a13e77d0fbf0387308330357f6728f",
+  "new_cuda_trace_available": false
+}

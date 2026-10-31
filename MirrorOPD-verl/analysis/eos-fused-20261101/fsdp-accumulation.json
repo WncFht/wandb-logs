@@ -1,0 +1,71 @@
+{
+  "activation_dtypes": {
+    "model.embed_tokens": [
+      "torch.bfloat16"
+    ],
+    "model.layers.0.mlp.gate_proj": [
+      "torch.bfloat16"
+    ],
+    "model.layers.1.mlp.gate_proj": [
+      "torch.bfloat16"
+    ],
+    "model.norm": [
+      "torch.bfloat16"
+    ]
+  },
+  "teacher_projection_dtypes": [
+    "torch.bfloat16"
+  ],
+  "precision": "bf16",
+  "sequence_length": 129,
+  "actor_token_budget": 129,
+  "scaler": null,
+  "objective": "mdpo",
+  "model_type": "qwen3",
+  "estimator": "full_vocab",
+  "eta": 0.1,
+  "backend": "precompute_fused",
+  "tied": true,
+  "checkpoint": false,
+  "world_size": 2,
+  "teacher_extra_rows": 0,
+  "termination_ids": [
+    1,
+    4
+  ],
+  "kappa": 0.5,
+  "compare_backend": "precompute",
+  "backend_max_parameter_abs_error": 0.0,
+  "records": [
+    {
+      "outer": 1,
+      "loss": [
+        0.006200035102665424,
+        0.007109983824193478,
+        0.0061022513546049595
+      ],
+      "updates": 3
+    },
+    {
+      "outer": 1,
+      "loss": [
+        0.006200035568326712,
+        0.007109983824193478,
+        0.0061022513546049595
+      ],
+      "updates": 3
+    },
+    {
+      "outer": 2,
+      "loss": [
+        0.005061449017375708,
+        0.005030175670981407,
+        0.0046324958093464375
+      ],
+      "updates": 3
+    }
+  ],
+  "frozen_anchor": true,
+  "endpoint_legacy_equal": false,
+  "actor_wrapper_and_timing": true
+}

@@ -1,0 +1,445 @@
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:32: UserWarning: torchtitan engine is not available: ModuleNotFoundError("No module named 'torchtitan'")
+  warnings.warn(f"torchtitan engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:41: UserWarning: veomni engine is not available: ModuleNotFoundError("No module named 'veomni'")
+  warnings.warn(f"veomni engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:50: UserWarning: automodel engine is not available: ModuleNotFoundError("No module named 'nemo_automodel'")
+  warnings.warn(f"automodel engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:60: UserWarning: mindspeed engine is not available: ModuleNotFoundError("No module named 'megatron'")
+  warnings.warn(f"mindspeed engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:69: UserWarning: megatron engine is not available: ModuleNotFoundError("No module named 'megatron'")
+  warnings.warn(f"megatron engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:32: UserWarning: torchtitan engine is not available: ModuleNotFoundError("No module named 'torchtitan'")
+  warnings.warn(f"torchtitan engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:41: UserWarning: veomni engine is not available: ModuleNotFoundError("No module named 'veomni'")
+  warnings.warn(f"veomni engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:50: UserWarning: automodel engine is not available: ModuleNotFoundError("No module named 'nemo_automodel'")
+  warnings.warn(f"automodel engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:60: UserWarning: mindspeed engine is not available: ModuleNotFoundError("No module named 'megatron'")
+  warnings.warn(f"mindspeed engine is not available: {e!r}", stacklevel=1)
+/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/.worktrees/eos-full-vocab/verl/workers/engine/__init__.py:69: UserWarning: megatron engine is not available: ModuleNotFoundError("No module named 'megatron'")
+  warnings.warn(f"megatron engine is not available: {e!r}", stacklevel=1)
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][AWriting model shards: 100%|██████████| 1/1 [00:00<00:00, 487.26it/s]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][AWriting model shards: 100%|██████████| 1/1 [00:00<00:00, 353.09it/s]
+[transformers] Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[transformers] Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[transformers] Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_2", dtype=torch.float16)`
+[transformers] Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_2", dtype=torch.float16)`
+
+Loading weights:   0%|          | 0/24 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 24/24 [00:00<00:00, 11341.07it/s]
+Monkey patch _flash_attention_forward in transformers.integrations.flash_attention
+Skipping monkey patch for Qwen3ForCausalLM as use_fused_kernels is False or fused_kernels_backend is None
+
+Loading weights:   0%|          | 0/24 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 24/24 [00:00<00:00, 14820.86it/s]
+Monkey patch _flash_attention_forward in transformers.integrations.flash_attention
+Skipping monkey patch for Qwen3ForCausalLM as use_fused_kernels is False or fused_kernels_backend is None
+Qwen3ForCausalLM contains 19.65K parameters
+Before FSDP, memory allocated (GB): 0.00, memory reserved (GB): 0.00, device memory used/total (GB): 0.51/79.10
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO cudaDriverVersion 12090
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NCCL version 2.28.9+cuda12.9
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Comm config Blocking set to 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO cudaDriverVersion 12090
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NCCL version 2.28.9+cuda12.9
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Comm config Blocking set to 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/Plugin: Loaded net plugin NCCL RDMA Plugin v8 (v8)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/Plugin: Loaded collnet plugin SHARP (v8)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Successfully loaded external network plugin /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO P2P plugin v8 IBext_v8
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/Plugin: Loaded net plugin NCCL RDMA Plugin v8 (v8)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/Plugin: Loaded collnet plugin SHARP (v8)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Successfully loaded external network plugin /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO P2P plugin v8 IBext_v8
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NCCL_IB_ADAPTIVE_ROUTING set by environment to 1.
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NCCL_IB_ADAPTIVE_ROUTING set by environment to 1.
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/IB : Using [0]mlx5_1:1/RoCE [1]mlx5_2:1/RoCE [2]mlx5_3:1/RoCE [3]mlx5_4:1/RoCE [4]mlx5_5:1/RoCE [5]mlx5_6:1/RoCE [6]mlx5_7:1/RoCE [7]mlx5_8:1/RoCE [RO]; OOB eth0:10.217.88.168<0>
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Initialized NET plugin NCCL RDMA Plugin v8
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/IB : Using [0]mlx5_1:1/RoCE [1]mlx5_2:1/RoCE [2]mlx5_3:1/RoCE [3]mlx5_4:1/RoCE [4]mlx5_5:1/RoCE [5]mlx5_6:1/RoCE [6]mlx5_7:1/RoCE [7]mlx5_8:1/RoCE [RO]; OOB eth0:10.217.88.168<0>
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Initialized NET plugin NCCL RDMA Plugin v8
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Assigned NET plugin NCCL RDMA Plugin v8 to comm
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Using network NCCL RDMA Plugin v8
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Assigned NET plugin NCCL RDMA Plugin v8 to comm
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Using network NCCL RDMA Plugin v8
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclCommInitRankConfig comm 0x562a408b64b0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 63000 commId 0x9ad396147e0e0142 - Init START
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclCommInitRankConfig comm 0x55f2f0ce2970 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 67000 commId 0x9ad396147e0e0142 - Init START
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO MNNVL busId 0x67000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO MNNVL busId 0x63000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NCCL_TOPO_FILE set by environment to /var/run/nvidia-topologyd/virtualTopology.xml
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NCCL_TOPO_FILE set by environment to /var/run/nvidia-topologyd/virtualTopology.xml
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Loading topology file /var/run/nvidia-topologyd/virtualTopology.xml
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Loading topology file /var/run/nvidia-topologyd/virtualTopology.xml
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO TOPO/NET : Importing network plugins to topology
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_1 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.0/0000:61:00.0/0000:62:01.0/0000:64:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_2 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.1/0000:65:00.0/0000:66:01.0/0000:68:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_3 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.2/0000:69:00.0/0000:6a:01.0/0000:6c:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_4 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.3/0000:6d:00.0/0000:6e:01.0/0000:70:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_5 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.0/0000:a1:00.0/0000:a2:01.0/0000:a4:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_6 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.1/0000:a5:00.0/0000:a6:01.0/0000:a8:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_7 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.2/0000:a9:00.0/0000:aa:01.0/0000:ac:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoPopulateNics : Filled mlx5_8 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.3/0000:ad:00.0/0000:ae:01.0/0000:b0:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO TOPO/NET : Importing network plugins to topology
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_1 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.0/0000:61:00.0/0000:62:01.0/0000:64:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_2 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.1/0000:65:00.0/0000:66:01.0/0000:68:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_3 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.2/0000:69:00.0/0000:6a:01.0/0000:6c:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_4 in topo with pciPath=/sys/devices/pci0000:60/0000:60:00.3/0000:6d:00.0/0000:6e:01.0/0000:70:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_5 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.0/0000:a1:00.0/0000:a2:01.0/0000:a4:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_6 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.1/0000:a5:00.0/0000:a6:01.0/0000:a8:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_7 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.2/0000:a9:00.0/0000:aa:01.0/0000:ac:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoPopulateNics : Filled mlx5_8 in topo with pciPath=/sys/devices/pci0000:a0/0000:a0:00.3/0000:ad:00.0/0000:ae:01.0/0000:b0:00.0 keep=1 coll=(null)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PXB
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PXB
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO === System : maxBw 164.8 totalBw 164.8 ===
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO CPU/0-0 (1/1/3)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-61000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - GPU/0-63000 (0)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 0 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NVL[164.8] - NVS/0-0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 0 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 1 / HCA 1 (distance 4 <= 5), read 0 mode Default
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-64000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-0 (0/ba29850003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-65000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-68000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO === System : maxBw 164.8 totalBw 164.8 ===
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-1 (0/7695b30003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO CPU/0-0 (1/1/3)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - GPU/0-67000 (1)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-61000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NVL[164.8] - NVS/0-0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - GPU/0-63000 (0)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-69000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NVL[164.8] - NVS/0-0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-6c000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-64000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-2 (0/8e95b30003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-0 (0/ba29850003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-65000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-6d000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-68000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-70000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-1 (0/7695b30003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-3 (0/b227850003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - GPU/0-67000 (1)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + SYS[22.0] - CPU/0-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NVL[164.8] - NVS/0-0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO CPU/0-1 (1/1/3)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-69000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-a1000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-6c000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-a4000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-2 (0/8e95b30003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-4 (0/f05d7a0003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-a5000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-6d000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-a8000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-70000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-5 (0/f8d37b0003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-3 (0/b227850003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-a9000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-ac000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + SYS[22.0] - CPU/0-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-6 (0/6693b30003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO CPU/0-1 (1/1/3)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + PCI[48.0] - PCI/0-ad000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-a1000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-a4000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO               + PCI[48.0] - NIC/0-b0000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-4 (0/f05d7a0003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-a5000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO                             + NET[50.0] - NET/0-7 (0/6228850003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-a8000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-5 (0/f8d37b0003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO + SYS[22.0] - CPU/0-0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ==========================================
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-a9000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU/0-63000 :GPU/0-63000 (0/5000.0/LOC) GPU/0-67000 (2/164.8/NVL) NVS/0-0 (1/164.8/NVL) CPU/0-0 (2/48.0/PHB) CPU/0-1 (3/22.0/SYS) NET/0-0 (3/48.0/PIX) NET/0-1 (5/48.0/PXN) NET/0-2 (5/48.0/PHB) NET/0-3 (5/48.0/PHB) NET/0-4 (6/22.0/SYS) NET/0-5 (6/22.0/SYS) NET/0-6 (6/22.0/SYS) NET/0-7 (6/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-ac000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-6 (0/6693b30003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO GPU/0-67000 :GPU/0-63000 (2/164.8/NVL) GPU/0-67000 (0/5000.0/LOC) NVS/0-0 (1/164.8/NVL) CPU/0-0 (2/48.0/PHB) CPU/0-1 (3/22.0/SYS) NET/0-0 (5/48.0/PXN) NET/0-1 (3/48.0/PIX) NET/0-2 (5/48.0/PHB) NET/0-3 (5/48.0/PHB) NET/0-4 (6/22.0/SYS) NET/0-5 (6/22.0/SYS) NET/0-6 (6/22.0/SYS) NET/0-7 (6/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + PCI[48.0] - PCI/0-ad000 (104c823200000000)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO               + PCI[48.0] - NIC/0-b0000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-0 :GPU/0-63000 (3/48.0/PIX) GPU/0-67000 (5/48.0/PHB) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (0/5000.0/LOC) NET/0-1 (6/48.0/PHB) NET/0-2 (6/48.0/PHB) NET/0-3 (6/48.0/PHB) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO                             + NET[50.0] - NET/0-7 (0/6228850003ae6d94/1/50.000000)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-1 :GPU/0-63000 (5/48.0/PHB) GPU/0-67000 (3/48.0/PIX) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (6/48.0/PHB) NET/0-1 (0/5000.0/LOC) NET/0-2 (6/48.0/PHB) NET/0-3 (6/48.0/PHB) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO + SYS[22.0] - CPU/0-0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ==========================================
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-2 :GPU/0-63000 (5/48.0/PHB) GPU/0-67000 (5/48.0/PHB) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (6/48.0/PHB) NET/0-1 (6/48.0/PHB) NET/0-2 (0/5000.0/LOC) NET/0-3 (6/48.0/PHB) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU/0-63000 :GPU/0-63000 (0/5000.0/LOC) GPU/0-67000 (2/164.8/NVL) NVS/0-0 (1/164.8/NVL) CPU/0-0 (2/48.0/PHB) CPU/0-1 (3/22.0/SYS) NET/0-0 (3/48.0/PIX) NET/0-1 (5/48.0/PXN) NET/0-2 (5/48.0/PHB) NET/0-3 (5/48.0/PHB) NET/0-4 (6/22.0/SYS) NET/0-5 (6/22.0/SYS) NET/0-6 (6/22.0/SYS) NET/0-7 (6/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-3 :GPU/0-63000 (5/48.0/PHB) GPU/0-67000 (5/48.0/PHB) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (6/48.0/PHB) NET/0-1 (6/48.0/PHB) NET/0-2 (6/48.0/PHB) NET/0-3 (0/5000.0/LOC) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO GPU/0-67000 :GPU/0-63000 (2/164.8/NVL) GPU/0-67000 (0/5000.0/LOC) NVS/0-0 (1/164.8/NVL) CPU/0-0 (2/48.0/PHB) CPU/0-1 (3/22.0/SYS) NET/0-0 (5/48.0/PXN) NET/0-1 (3/48.0/PIX) NET/0-2 (5/48.0/PHB) NET/0-3 (5/48.0/PHB) NET/0-4 (6/22.0/SYS) NET/0-5 (6/22.0/SYS) NET/0-6 (6/22.0/SYS) NET/0-7 (6/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-4 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (0/5000.0/LOC) NET/0-5 (6/48.0/PHB) NET/0-6 (6/48.0/PHB) NET/0-7 (6/48.0/PHB) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-0 :GPU/0-63000 (3/48.0/PIX) GPU/0-67000 (5/48.0/PHB) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (0/5000.0/LOC) NET/0-1 (6/48.0/PHB) NET/0-2 (6/48.0/PHB) NET/0-3 (6/48.0/PHB) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-5 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (6/48.0/PHB) NET/0-5 (0/5000.0/LOC) NET/0-6 (6/48.0/PHB) NET/0-7 (6/48.0/PHB) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-1 :GPU/0-63000 (5/48.0/PHB) GPU/0-67000 (3/48.0/PIX) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (6/48.0/PHB) NET/0-1 (0/5000.0/LOC) NET/0-2 (6/48.0/PHB) NET/0-3 (6/48.0/PHB) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-6 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (6/48.0/PHB) NET/0-5 (6/48.0/PHB) NET/0-6 (0/5000.0/LOC) NET/0-7 (6/48.0/PHB) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-2 :GPU/0-63000 (5/48.0/PHB) GPU/0-67000 (5/48.0/PHB) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (6/48.0/PHB) NET/0-1 (6/48.0/PHB) NET/0-2 (0/5000.0/LOC) NET/0-3 (6/48.0/PHB) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NET/0-7 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (6/48.0/PHB) NET/0-5 (6/48.0/PHB) NET/0-6 (6/48.0/PHB) NET/0-7 (0/5000.0/LOC) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-3 :GPU/0-63000 (5/48.0/PHB) GPU/0-67000 (5/48.0/PHB) CPU/0-0 (3/48.0/PHB) CPU/0-1 (4/22.0/SYS) NET/0-0 (6/48.0/PHB) NET/0-1 (6/48.0/PHB) NET/0-2 (6/48.0/PHB) NET/0-3 (0/5000.0/LOC) NET/0-4 (7/22.0/SYS) NET/0-5 (7/22.0/SYS) NET/0-6 (7/22.0/SYS) NET/0-7 (7/22.0/SYS) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 1 is 0-89. (GPU affinity = 0-89 ; CPU affinity = 0-89).
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-4 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (0/5000.0/LOC) NET/0-5 (6/48.0/PHB) NET/0-6 (6/48.0/PHB) NET/0-7 (6/48.0/PHB) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NCCL_NVLS_ENABLE set by environment to 1.
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-5 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (6/48.0/PHB) NET/0-5 (0/5000.0/LOC) NET/0-6 (6/48.0/PHB) NET/0-7 (6/48.0/PHB) 
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO NVLS multicast support is available on dev 1 (NVLS_NCHANNELS 16)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-6 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (6/48.0/PHB) NET/0-5 (6/48.0/PHB) NET/0-6 (0/5000.0/LOC) NET/0-7 (6/48.0/PHB) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NET/0-7 :GPU/0-63000 (6/22.0/SYS) GPU/0-67000 (6/22.0/SYS) CPU/0-0 (4/22.0/SYS) CPU/0-1 (3/48.0/PHB) NET/0-0 (7/22.0/SYS) NET/0-1 (7/22.0/SYS) NET/0-2 (7/22.0/SYS) NET/0-3 (7/22.0/SYS) NET/0-4 (6/48.0/PHB) NET/0-5 (6/48.0/PHB) NET/0-6 (6/48.0/PHB) NET/0-7 (0/5000.0/LOC) 
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 0-89. (GPU affinity = 0-89 ; CPU affinity = 0-89).
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 1.
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO NVLS multicast support is available on dev 0 (NVLS_NCHANNELS 16)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Pattern 4, crossNic 0, nChannels 8, bw 20.000000/20.000000, type NVL/PIX, sameChannels 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  0 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  1 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  2 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  3 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  4 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  5 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  6 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Pattern 4, crossNic 0, nChannels 8, bw 20.000000/20.000000, type NVL/PIX, sameChannels 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  7 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  0 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  1 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  2 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  3 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  4 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  5 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  6 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  7 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Pattern 1, crossNic 0, nChannels 8, bw 40.000000/40.000000, type NVL/PIX, sameChannels 0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  0 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  1 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  2 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  3 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  4 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  5 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  6 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  7 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Pattern 1, crossNic 0, nChannels 8, bw 40.000000/40.000000, type NVL/PIX, sameChannels 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  0 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  1 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  2 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  3 : GPU/0-63000 GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  4 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  5 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  6 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  7 : GPU/0-67000 GPU/0-63000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Pattern 5, crossNic 0, nChannels 2, bw 50.000000/60.000000, type NVL/PIX, sameChannels 0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  0 : GPU/0-63000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO  1 : GPU/0-67000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Pattern 5, crossNic 0, nChannels 2, bw 50.000000/60.000000, type NVL/PIX, sameChannels 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  0 : GPU/0-63000
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO  1 : GPU/0-67000
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO comm 0x55f2f0ce2970 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO comm 0x562a408b64b0 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 0 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 8 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 0 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 1 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 9 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 8 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 1 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 2 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 10 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 9 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 2 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 3 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 11 : 0 -> 1 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 10 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 3 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 4 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 12 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 11 : -1 -> 0 -> 1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 4 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 5 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 13 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 12 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 5 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 6 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 13 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 6 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 14 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 14 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 7 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 7 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Tree 15 : -1 -> 1 -> 0/-1/-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Tree 15 : 1 -> 0 -> -1/-1/-1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 00 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 00/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 01 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 01/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 02 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 03 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 02/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 04 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 03/16 : 0 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 04/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 05 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 06 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 05/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 07 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 06/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 08 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 07/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 09 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 08/16 : 0 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 09/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 10 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 11 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 10/16 : 0 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 11/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 12 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 12/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 13 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 13/16 : 0 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 14/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 14 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Ring 15 : 0 -> 1 -> 0
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 15/16 : 0 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0 [2] -1/-1/-1->1->0 [3] -1/-1/-1->1->0 [4] 0/-1/-1->1->-1 [5] 0/-1/-1->1->-1 [6] 0/-1/-1->1->-1 [7] 0/-1/-1->1->-1 [8] -1/-1/-1->1->0 [9] -1/-1/-1->1->0 [10] -1/-1/-1->1->0 [11] -1/-1/-1->1->0 [12] 0/-1/-1->1->-1 [13] 0/-1/-1->1->-1 [14] 0/-1/-1->1->-1 [15] 0/-1/-1->1->-1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 00 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO P2P Chunksize set to 524288
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 01 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 02 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 03 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 04 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 05 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 06 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 07 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 08 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 09 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 10 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 11 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 12 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 13 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 14 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Ring 15 : 1 -> 0 -> 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] -1/-1/-1->0->1 [5] -1/-1/-1->0->1 [6] -1/-1/-1->0->1 [7] -1/-1/-1->0->1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] -1/-1/-1->0->1 [13] -1/-1/-1->0->1 [14] -1/-1/-1->0->1 [15] -1/-1/-1->0->1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO P2P Chunksize set to 524288
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+bsud-quicksilver-hppk-13:1134159:1134703 [0] NCCL INFO [Proxy Service] Device 1 CPU core 12
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclP2pSchedule: group size used is 2
+bsud-quicksilver-hppk-13:1134159:1134704 [0] NCCL INFO [Proxy Service UDS] Device 1 CPU core 29
+bsud-quicksilver-hppk-13:1134158:1134705 [0] NCCL INFO [Proxy Service] Device 0 CPU core 66
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclP2pSchedule: group size used is 2
+bsud-quicksilver-hppk-13:1134158:1134706 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 15
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO 16 coll channels, 16 collnet channels, 16 nvls channels, 16 p2p channels, 16 p2p channels per peer
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO CC Off, workFifoBytes 1048576
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO 16 coll channels, 16 collnet channels, 16 nvls channels, 16 p2p channels, 16 p2p channels per peer
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ncclCommInitRankConfig comm 0x562a408b64b0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 63000 commId 0x9ad396147e0e0142 - Init COMPLETE
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ncclCommInitRankConfig comm 0x55f2f0ce2970 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 67000 commId 0x9ad396147e0e0142 - Init COMPLETE
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 2 total 1.20 (kernels 0.29, alloc 0.64, bootstrap 0.01, allgathers 0.00, topo 0.14, graphs 0.00, connections 0.11, rest 0.00)
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 2 total 1.20 (kernels 0.28, alloc 0.65, bootstrap 0.01, allgathers 0.00, topo 0.14, graphs 0.00, connections 0.11, rest 0.00)
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 09/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 12/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 13/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 14/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Channel 15/0 : 1[1] -> 0[0] via P2P/CUMEM
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+After FSDP, memory allocated (GB): 0.00, memory reserved (GB): 0.00, device memory used/total (GB): 1.28/79.10
+Total steps: 3, num_warmup_steps: 0
+
+Loading weights:   0%|          | 0/24 [00:00<?, ?it/s][A
+Loading weights:   0%|          | 0/24 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 24/24 [00:00<00:00, 10224.81it/s]
+Loading weights: 100%|██████████| 24/24 [00:00<00:00, 9428.05it/s]
+Monkey patch _flash_attention_forward in transformers.integrations.flash_attention
+Skipping monkey patch for Qwen3ForCausalLM as use_fused_kernels is False or fused_kernels_backend is None
+Monkey patch _flash_attention_forward in transformers.integrations.flash_attention
+Skipping monkey patch for Qwen3ForCausalLM as use_fused_kernels is False or fused_kernels_backend is None
+Qwen3ForCausalLM contains 19.65K parameters
+Before FSDP, memory allocated (GB): 0.00, memory reserved (GB): 0.00, device memory used/total (GB): 1.28/79.10
+After FSDP, memory allocated (GB): 0.00, memory reserved (GB): 0.00, device memory used/total (GB): 1.28/79.10
+INFO:2026-11-01 01:23:52,498:[Rank 1] Saved model to /tmp/mirror-fsdp-aeqqrc1p/initial/model_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:52,498:[Rank 0] Saved model to /tmp/mirror-fsdp-aeqqrc1p/initial/model_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:52,498:[Rank 1] Saved optim to /tmp/mirror-fsdp-aeqqrc1p/initial/optim_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:52,498:[Rank 0] Saved optim to /tmp/mirror-fsdp-aeqqrc1p/initial/optim_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:52,499:[Rank 1] Saved extra_state to /tmp/mirror-fsdp-aeqqrc1p/initial/extra_state_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:52,499:[Rank 0] Saved extra_state to /tmp/mirror-fsdp-aeqqrc1p/initial/extra_state_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:52,502:[Rank 0] Saved model config and tokenizer class to /tmp/mirror-fsdp-aeqqrc1p/initial/huggingface
+[rank1]:W1101 01:23:52.588000 1134159 torch/fx/_symbolic_trace.py:53] is_fx_tracing will return true for both fx.symbolic_trace and torch.export. Please use is_fx_tracing_symbolic_tracing() for specifically fx.symbolic_trace or torch.compiler.is_compiling() for specifically torch.export/compile.
+[rank0]:W1101 01:23:52.601000 1134158 torch/fx/_symbolic_trace.py:53] is_fx_tracing will return true for both fx.symbolic_trace and torch.export. Please use is_fx_tracing_symbolic_tracing() for specifically fx.symbolic_trace or torch.compiler.is_compiling() for specifically torch.export/compile.
+INFO:2026-11-01 01:23:56,006:[Rank 1] Saved model to /tmp/mirror-fsdp-aeqqrc1p/primary-after/model_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:56,007:[Rank 0] Saved model to /tmp/mirror-fsdp-aeqqrc1p/primary-after/model_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:56,010:[Rank 1] Saved optim to /tmp/mirror-fsdp-aeqqrc1p/primary-after/optim_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:56,010:[Rank 0] Saved optim to /tmp/mirror-fsdp-aeqqrc1p/primary-after/optim_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:56,011:[Rank 1] Saved extra_state to /tmp/mirror-fsdp-aeqqrc1p/primary-after/extra_state_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:56,011:[Rank 0] Saved extra_state to /tmp/mirror-fsdp-aeqqrc1p/primary-after/extra_state_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:56,014:[Rank 0] Saved model config and tokenizer class to /tmp/mirror-fsdp-aeqqrc1p/primary-after/huggingface
+INFO:2026-11-01 01:23:56,043:[Rank 1] Loaded model from /tmp/mirror-fsdp-aeqqrc1p/initial/model_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:56,044:[Rank 0] Loaded model from /tmp/mirror-fsdp-aeqqrc1p/initial/model_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:56,044:[Rank 1] Loaded optimizer from /tmp/mirror-fsdp-aeqqrc1p/initial/optim_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:56,044:[Rank 0] Loaded optimizer from /tmp/mirror-fsdp-aeqqrc1p/initial/optim_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:56,047:[Rank 1] Loaded rng from /tmp/mirror-fsdp-aeqqrc1p/initial/extra_state_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:56,047:[Rank 1] Loaded lr_scheduler from /tmp/mirror-fsdp-aeqqrc1p/initial/extra_state_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:56,047:[Rank 0] Loaded rng from /tmp/mirror-fsdp-aeqqrc1p/initial/extra_state_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:56,047:[Rank 0] Loaded lr_scheduler from /tmp/mirror-fsdp-aeqqrc1p/initial/extra_state_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:59,876:[Rank 1] Loaded model from /tmp/mirror-fsdp-aeqqrc1p/primary-after/model_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:59,877:[Rank 0] Loaded model from /tmp/mirror-fsdp-aeqqrc1p/primary-after/model_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:59,897:[Rank 1] Loaded optimizer from /tmp/mirror-fsdp-aeqqrc1p/primary-after/optim_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:59,897:[Rank 0] Loaded optimizer from /tmp/mirror-fsdp-aeqqrc1p/primary-after/optim_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:59,898:[Rank 1] Loaded rng from /tmp/mirror-fsdp-aeqqrc1p/primary-after/extra_state_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:59,898:[Rank 1] Loaded lr_scheduler from /tmp/mirror-fsdp-aeqqrc1p/primary-after/extra_state_world_size_2_rank_1.pt
+INFO:2026-11-01 01:23:59,898:[Rank 0] Loaded rng from /tmp/mirror-fsdp-aeqqrc1p/primary-after/extra_state_world_size_2_rank_0.pt
+INFO:2026-11-01 01:23:59,898:[Rank 0] Loaded lr_scheduler from /tmp/mirror-fsdp-aeqqrc1p/primary-after/extra_state_world_size_2_rank_0.pt
+{"activation_dtypes": {"model.embed_tokens": ["torch.bfloat16"], "model.layers.0.mlp.gate_proj": ["torch.bfloat16"], "model.layers.1.mlp.gate_proj": ["torch.bfloat16"], "model.norm": ["torch.bfloat16"]}, "teacher_projection_dtypes": ["torch.bfloat16"], "precision": "bf16", "sequence_length": 129, "actor_token_budget": 129, "scaler": null, "objective": "mdpo", "model_type": "qwen3", "estimator": "full_vocab", "eta": 0.1, "backend": "precompute_fused", "tied": true, "checkpoint": false, "world_size": 2, "teacher_extra_rows": 0, "termination_ids": [1, 4], "kappa": 0.5, "compare_backend": "precompute", "backend_max_parameter_abs_error": 0.0, "records": [{"outer": 1, "loss": [0.006200035102665424, 0.007109983824193478, 0.0061022513546049595], "updates": 3}, {"outer": 1, "loss": [0.006200035568326712, 0.007109983824193478, 0.0061022513546049595], "updates": 3}, {"outer": 2, "loss": [0.005061449017375708, 0.005030175670981407, 0.0046324958093464375], "updates": 3}], "frozen_anchor": true, "endpoint_legacy_equal": false, "actor_wrapper_and_timing": true}
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO comm 0x562a408b64b0 rank 0 nranks 2 cudaDev 0 busId 63000 - Destroy COMPLETE
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO Unloading plugin libnccl-net.so
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO comm 0x55f2f0ce2970 rank 1 nranks 2 cudaDev 1 busId 67000 - Destroy COMPLETE
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO Unloading plugin libnccl-net.so
+bsud-quicksilver-hppk-13:1134159:1134159 [1] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+bsud-quicksilver-hppk-13:1134158:1134158 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
