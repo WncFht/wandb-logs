@@ -31,7 +31,7 @@ wandb-logs/
 
 ## 安装与日常使用
 
-需要 Python 3.10 或更新版本、Git 和 Make。解码依赖固定为 `wandb==0.28.1`，安装在仓库自己的 `.venv`，不改训练环境。
+需要 Python 3.10 或更新版本、Git、Git LFS 和 Make。自 2026-11-03 起，`.wandb` 由 Git LFS 保存，避免 GitHub 的 100 MiB 单文件限制。首次使用先安装 Git LFS（macOS 可用 `brew install git-lfs`），再执行 `git lfs install --local`；已有 checkout 更新后执行 `git lfs pull` 取得原始日志。Git 提交中的 LFS 指针不能直接交给解码器或 W&B；常规 checkout 会还原原始文件，使用 `git archive` 的工具须额外解析 LFS 指针。解码依赖固定为 `wandb==0.28.1`，安装在仓库自己的 `.venv`，不改训练环境。
 
 ```bash
 cd ~/src/wandb-logs
