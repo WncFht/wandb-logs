@@ -1,0 +1,101 @@
+Loading student Qwen3-1.7B-Base
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s][A
+Loading weights:   0%|          | 1/310 [00:02<10:24,  2.02s/it][A
+Loading weights:   6%|▋         | 20/310 [00:02<00:35,  8.28it/s][A
+Loading weights:   8%|▊         | 24/310 [00:03<00:32,  8.85it/s][A
+Loading weights:  11%|█         | 34/310 [00:03<00:18, 14.87it/s][A
+Loading weights:  17%|█▋        | 53/310 [00:03<00:08, 29.94it/s][A
+Loading weights:  23%|██▎       | 71/310 [00:03<00:05, 45.74it/s][A
+Loading weights:  30%|███       | 93/310 [00:03<00:03, 68.28it/s][A
+Loading weights:  37%|███▋      | 115/310 [00:03<00:02, 90.42it/s][A
+Loading weights:  44%|████▍     | 136/310 [00:03<00:01, 110.84it/s][A
+Loading weights:  51%|█████     | 157/310 [00:04<00:01, 130.51it/s][A
+Loading weights:  57%|█████▋    | 176/310 [00:04<00:00, 141.34it/s][A
+Loading weights:  63%|██████▎   | 195/310 [00:04<00:00, 145.52it/s][A
+Loading weights:  69%|██████▊   | 213/310 [00:04<00:00, 111.15it/s][A
+Loading weights:  75%|███████▌  | 234/310 [00:04<00:00, 127.25it/s][A
+Loading weights:  82%|████████▏ | 254/310 [00:04<00:00, 142.32it/s][A
+Loading weights:  87%|████████▋ | 271/310 [00:04<00:00, 145.16it/s][A
+Loading weights:  94%|█████████▎| 290/310 [00:04<00:00, 155.37it/s][ALoading weights: 100%|██████████| 310/310 [00:05<00:00, 60.97it/s] 
+student 320 982
+student 338 1051
+student 356 1818
+student 374 2180
+student 520 336
+student 538 612
+student 588 768
+student 607 321
+Loading teacher Qwen3-30B-A3B-Instruct-2507
+
+Loading weights:   0%|          | 0/531 [00:00<?, ?it/s][A
+Loading weights:   0%|          | 1/531 [00:00<01:54,  4.65it/s][A
+Loading weights:   0%|          | 2/531 [00:01<09:37,  1.09s/it][A
+Loading weights:   1%|          | 4/531 [00:02<06:29,  1.35it/s][A
+Loading weights:   3%|▎         | 15/531 [00:04<01:53,  4.56it/s][A
+Loading weights:   5%|▍         | 26/531 [00:06<01:52,  4.47it/s][A
+Loading weights:   7%|▋         | 37/531 [00:07<01:26,  5.71it/s][A
+Loading weights:   9%|▉         | 48/531 [00:08<01:04,  7.43it/s][A
+Loading weights:  11%|█         | 59/531 [00:12<01:32,  5.11it/s][A
+Loading weights:  11%|█▏        | 60/531 [00:12<01:33,  5.02it/s][A
+Loading weights:  13%|█▎        | 70/531 [00:16<02:13,  3.46it/s][A
+Loading weights:  15%|█▌        | 81/531 [00:18<01:47,  4.18it/s][A
+Loading weights:  17%|█▋        | 92/531 [00:20<01:32,  4.75it/s][A
+Loading weights:  19%|█▉        | 103/531 [00:24<01:51,  3.85it/s][A
+Loading weights:  20%|█▉        | 104/531 [00:24<02:01,  3.53it/s][A
+Loading weights:  21%|██▏       | 114/531 [00:29<02:20,  2.96it/s][A
+Loading weights:  24%|██▎       | 125/531 [00:31<01:51,  3.63it/s][A
+Loading weights:  26%|██▌       | 136/531 [00:33<01:46,  3.70it/s][A
+Loading weights:  28%|██▊       | 147/531 [00:36<01:38,  3.91it/s][A
+Loading weights:  30%|██▉       | 158/531 [00:37<01:20,  4.66it/s][A
+Loading weights:  30%|██▉       | 159/531 [00:37<01:18,  4.74it/s][A
+Loading weights:  32%|███▏      | 169/531 [00:40<01:25,  4.25it/s][A
+Loading weights:  34%|███▍      | 180/531 [00:43<01:20,  4.36it/s][A
+Loading weights:  36%|███▌      | 191/531 [00:44<01:08,  4.94it/s][A
+Loading weights:  38%|███▊      | 202/531 [00:47<01:12,  4.51it/s][A
+Loading weights:  38%|███▊      | 203/531 [00:47<01:13,  4.44it/s][A
+Loading weights:  40%|████      | 213/531 [00:50<01:09,  4.56it/s][A
+Loading weights:  42%|████▏     | 224/531 [00:51<00:53,  5.78it/s][A
+Loading weights:  44%|████▍     | 235/531 [00:53<00:52,  5.64it/s][A
+Loading weights:  46%|████▋     | 246/531 [00:55<00:56,  5.02it/s][A
+Loading weights:  48%|████▊     | 257/531 [00:57<00:47,  5.78it/s][A
+Loading weights:  50%|█████     | 268/531 [00:58<00:42,  6.20it/s][A
+Loading weights:  53%|█████▎    | 279/531 [01:02<00:52,  4.76it/s][A
+Loading weights:  55%|█████▍    | 290/531 [01:04<00:50,  4.74it/s][A
+Loading weights:  57%|█████▋    | 301/531 [01:06<00:44,  5.19it/s][A
+Loading weights:  59%|█████▉    | 312/531 [01:08<00:43,  4.98it/s][A
+Loading weights:  59%|█████▉    | 313/531 [01:08<00:43,  5.03it/s][A
+Loading weights:  61%|██████    | 323/531 [01:10<00:38,  5.37it/s][A
+Loading weights:  63%|██████▎   | 334/531 [01:12<00:36,  5.34it/s][A
+Loading weights:  65%|██████▍   | 345/531 [01:14<00:33,  5.47it/s][A
+Loading weights:  65%|██████▌   | 346/531 [01:14<00:34,  5.34it/s][A
+Loading weights:  67%|██████▋   | 356/531 [01:17<00:39,  4.46it/s][A
+Loading weights:  69%|██████▉   | 367/531 [01:18<00:29,  5.48it/s][A
+Loading weights:  71%|███████   | 378/531 [01:20<00:27,  5.58it/s][A
+Loading weights:  71%|███████▏  | 379/531 [01:20<00:26,  5.68it/s][A
+Loading weights:  73%|███████▎  | 389/531 [01:23<00:30,  4.61it/s][A
+Loading weights:  75%|███████▌  | 400/531 [01:24<00:22,  5.74it/s][A
+Loading weights:  77%|███████▋  | 411/531 [01:26<00:19,  6.26it/s][A
+Loading weights:  79%|███████▉  | 422/531 [01:29<00:21,  5.02it/s][A
+Loading weights:  82%|████████▏ | 433/531 [01:30<00:15,  6.16it/s][A
+Loading weights:  84%|████████▎ | 444/531 [01:31<00:13,  6.58it/s][A
+Loading weights:  86%|████████▌ | 455/531 [01:33<00:12,  5.93it/s][A
+Loading weights:  86%|████████▌ | 456/531 [01:34<00:12,  5.81it/s][A
+Loading weights:  86%|████████▌ | 457/531 [01:34<00:12,  5.88it/s][A
+Loading weights:  88%|████████▊ | 466/531 [01:35<00:10,  5.97it/s][A
+Loading weights:  90%|████████▉ | 477/531 [01:37<00:08,  6.50it/s][A
+Loading weights:  92%|█████████▏| 488/531 [01:39<00:07,  5.73it/s][A
+Loading weights:  92%|█████████▏| 489/531 [01:39<00:07,  5.70it/s][A
+Loading weights:  92%|█████████▏| 490/531 [01:39<00:07,  5.68it/s][A
+Loading weights:  94%|█████████▍| 499/531 [01:41<00:06,  5.16it/s][A
+Loading weights:  96%|█████████▌| 510/531 [01:43<00:03,  5.87it/s][A
+Loading weights:  98%|█████████▊| 521/531 [01:44<00:01,  7.39it/s][ALoading weights: 100%|██████████| 531/531 [01:44<00:00,  5.10it/s]
+teacher 320 982
+teacher 338 1051
+teacher 356 1818
+teacher 374 2180
+teacher 520 336
+teacher 538 612
+teacher 588 768
+teacher 607 321
+Saved {'student': (128, 151936), 'student_hidden': (128, 2048), 'teacher': (128, 151936), 'teacher_hidden': (128, 2048)}

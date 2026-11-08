@@ -1,0 +1,25 @@
+Source artifact policy passed: 4242 staged blobs
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /root/.cache/pre-commit/patch1793466894-1110476.
+ruff (legacy alias)..................................................................Passed
+ruff format..........................................................................Passed
+mypy.................................................................................Passed
+Reject raw experiment artifacts and large source files...............................Passed
+Generate and verify verl/trainer/config/_generated_*.yaml............................Passed
+Check docs Last updated info.........................................................Passed
+Check doc string coverage............................................................Passed
+Check license........................................................................Passed
+Check MirrorOPD staged documentation and maintenance contracts.......................Passed
+Check device API usage...............................................................Passed
+Check DataProto usage................................................................Passed
+Validate test structure..............................................................Passed
+Check naming conventions.............................................................Passed
+Check example script naming convention...............................................Passed
+Check uv runs only on the GPU branch.................................................Passed
+Compile all python files.............................................................Passed
+[INFO] Restored changes from /root/.cache/pre-commit/patch1793466894-1110476.
+[perf/eos-full-vocab-20261101 36248937] perf(distillation): fuse termination-equivalent vocabulary losses
+ 15 files changed, 383 insertions(+), 99 deletions(-)
+ create mode 100644 tests/trainer/distillation/test_termination_action_map_on_cpu.py
+ create mode 100644 tests/trainer/distillation/test_termination_fused_on_gpu.py
+ create mode 100644 verl/trainer/distillation/termination.py

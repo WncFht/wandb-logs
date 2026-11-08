@@ -1,0 +1,38 @@
+{
+  "actor_rollout_ref.actor.fsdp_config.forward_precision": {
+    "E50": "fp16",
+    "E51": "fp16",
+    "E52": "bf16_fp32",
+    "E53": "bf16_fp32"
+  },
+  "actor_rollout_ref.rollout.trace.experiment_name": {
+    "E50": "math-opd-E50-fp16-20261027-175128-2564",
+    "E51": "math-opd-E51-mdpo-full_vocab-k0-eta0.3-fp16-20261027-185052-2575",
+    "E52": "math-opd-E52-bf16_fp32-20261028-154736-2569",
+    "E53": "math-opd-E53-mdpo-full_vocab-k0-eta0.3-bf16_fp32-20261029-031948-2574"
+  },
+  "distillation.distillation_loss.mirror.eta": {
+    "E50": 1,
+    "E51": 0.3,
+    "E52": 1,
+    "E53": 0.3
+  },
+  "trainer.default_local_dir": {
+    "E50": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E50-fp16-20261027-175128-2564/checkpoints",
+    "E51": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E51-mdpo-full_vocab-k0-eta0.3-fp16-20261027-185052-2575/checkpoints",
+    "E52": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E52-bf16_fp32-20261028-154736-2569/checkpoints",
+    "E53": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E53-mdpo-full_vocab-k0-eta0.3-bf16_fp32-20261029-031948-2574/checkpoints"
+  },
+  "trainer.experiment_name": {
+    "E50": "math-opd-E50-fp16-20261027-175128-2564",
+    "E51": "math-opd-E51-mdpo-full_vocab-k0-eta0.3-fp16-20261027-185052-2575",
+    "E52": "math-opd-E52-bf16_fp32-20261028-154736-2569",
+    "E53": "math-opd-E53-mdpo-full_vocab-k0-eta0.3-bf16_fp32-20261029-031948-2574"
+  },
+  "trainer.validation_data_dir": {
+    "E50": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E50-fp16-20261027-175128-2564/validation",
+    "E51": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E51-mdpo-full_vocab-k0-eta0.3-fp16-20261027-185052-2575/validation",
+    "E52": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E52-bf16_fp32-20261028-154736-2569/validation",
+    "E53": "/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-poistar/fanghaotian/MirrorOPD-verl/outputs/math-opd-E53-mdpo-full_vocab-k0-eta0.3-bf16_fp32-20261029-031948-2574/validation"
+  }
+}

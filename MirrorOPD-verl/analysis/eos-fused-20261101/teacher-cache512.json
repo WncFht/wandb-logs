@@ -1,0 +1,16 @@
+{
+  "teacher": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/model/hub/Qwen--Qwen3-30B-A3B-Instruct-2507/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+  "bank": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/runs/qwen-prefix-six-20261031/banks/S0/bank.json",
+  "bank_sha256": "abcc57bafd62d93bef6ecc8db000c6613355381ca972982e26a0446439283a75",
+  "responses": [
+    512,
+    512,
+    512,
+    512,
+    88,
+    243,
+    512,
+    273
+  ],
+  "precision": "native BF16 teacher, original FP32 buffers; no new generation"
+}

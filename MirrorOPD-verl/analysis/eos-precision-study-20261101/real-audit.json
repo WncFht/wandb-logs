@@ -1,0 +1,4802 @@
+[
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3225785094965118e-07,
+      "p95": 4.5214919685391306e-07,
+      "max": 5.92402852637293e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.863433199441397e-10,
+      "p95": 5.590947695912647e-09,
+      "max": 9.975398774462962e-09
+    },
+    "gradient_reference_l2": {
+      "median": 0.0032434414047365153,
+      "p95": 0.05799132459674681,
+      "max": 0.11009100614555199
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999941,
+    "loss_abs_max": 1.1098887897631471e-07,
+    "target_kl_abs_max": 1.0227621955426203e-07,
+    "target_kl_reference_max": 0.013135603160309713,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3225785094965118e-07,
+      "p95": 4.5214919685392237e-07,
+      "max": 5.924028527601934e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.863433199441397e-10,
+      "p95": 5.590947695912647e-09,
+      "max": 9.975398774462962e-09
+    },
+    "gradient_reference_l2": {
+      "median": 0.0032434414047365153,
+      "p95": 0.05799132459674681,
+      "max": 0.11009100614555199
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999941,
+    "loss_abs_max": 1.1098887897631471e-07,
+    "target_kl_abs_max": 1.0227621955426203e-07,
+    "target_kl_reference_max": 0.013135603160309713,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6338134434257912e-07,
+      "p95": 7.107299401381844e-07,
+      "max": 1.1653299887103549e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.9396279440267657e-10,
+      "p95": 7.91596785005508e-09,
+      "max": 1.9063000839274248e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0032434414047365153,
+      "p95": 0.05799132459674681,
+      "max": 0.11009100614555199
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996614,
+    "loss_abs_max": 7.419256670138097e-08,
+    "target_kl_abs_max": 7.247389716656671e-08,
+    "target_kl_reference_max": 0.013135603160309713,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6338134434257912e-07,
+      "p95": 7.107299401381518e-07,
+      "max": 1.1653299887103549e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.9396279440267657e-10,
+      "p95": 7.91596785005508e-09,
+      "max": 1.9063000839274248e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0032434414047365153,
+      "p95": 0.05799132459674681,
+      "max": 0.11009100614555199
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996614,
+    "loss_abs_max": 7.419256670138097e-08,
+    "target_kl_abs_max": 7.247389716656671e-08,
+    "target_kl_reference_max": 0.013135603160309713,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.876860445357359e-07,
+      "p95": 5.114111470075159e-07,
+      "max": 6.334340735210545e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 2.936329943784923e-10,
+      "p95": 1.1370320981260306e-08,
+      "max": 2.7680650627684186e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0027166585565445993,
+      "p95": 0.05336017942037871,
+      "max": 0.07366618962960225
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999339,
+    "loss_abs_max": 1.6740066393836073e-08,
+    "target_kl_abs_max": 1.8580436216301607e-08,
+    "target_kl_reference_max": 0.009315150822161982,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.8768604453573598e-07,
+      "p95": 5.114111470075159e-07,
+      "max": 6.334340735210545e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 2.936329943784923e-10,
+      "p95": 1.1370320981260306e-08,
+      "max": 2.7680650627684186e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0027166585565445993,
+      "p95": 0.05336017942037871,
+      "max": 0.07366618962960225
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999339,
+    "loss_abs_max": 1.6740066393836073e-08,
+    "target_kl_abs_max": 1.8580436216301607e-08,
+    "target_kl_reference_max": 0.009315150822161982,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.253612996129408e-07,
+      "p95": 7.765063937174632e-07,
+      "max": 1.3212852462978788e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.0915939123130227e-10,
+      "p95": 1.1638240837516423e-08,
+      "max": 3.5557759860026696e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0027166585565445993,
+      "p95": 0.05336017942037871,
+      "max": 0.07366618962960225
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996743,
+    "loss_abs_max": 4.754156332498205e-08,
+    "target_kl_abs_max": 3.5422503302101616e-08,
+    "target_kl_reference_max": 0.009315150822161982,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.253612996129408e-07,
+      "p95": 7.765063937174632e-07,
+      "max": 1.3212852462978788e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.0915939123130227e-10,
+      "p95": 1.1638240837516423e-08,
+      "max": 3.5557759860026696e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0027166585565445993,
+      "p95": 0.05336017942037871,
+      "max": 0.07366618962960225
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996745,
+    "loss_abs_max": 4.754156332498205e-08,
+    "target_kl_abs_max": 3.5422503302101616e-08,
+    "target_kl_reference_max": 0.009315150822161982,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.886977253153813e-07,
+      "p95": 5.189143798837851e-07,
+      "max": 6.570183332477491e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.8074400316264613e-10,
+      "p95": 9.764181402484892e-09,
+      "max": 2.818035560922414e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.002226042411165419,
+      "p95": 0.05026431013876291,
+      "max": 0.08154402140052393
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999613,
+    "loss_abs_max": 3.284813948969956e-08,
+    "target_kl_abs_max": 3.284813948969956e-08,
+    "target_kl_reference_max": 0.016426738043298045,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.886977253153813e-07,
+      "p95": 5.189143798905958e-07,
+      "max": 6.570183332477491e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.8074400316264613e-10,
+      "p95": 9.764181402484892e-09,
+      "max": 2.818035560922414e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.002226042411165419,
+      "p95": 0.05026431013876291,
+      "max": 0.08154402140052393
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999613,
+    "loss_abs_max": 3.284813948969956e-08,
+    "target_kl_abs_max": 3.284813948969956e-08,
+    "target_kl_reference_max": 0.016426738043298045,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.039013327849143e-07,
+      "p95": 7.346843677433278e-07,
+      "max": 1.21852210396488e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.938984566117806e-10,
+      "p95": 9.872980967662523e-09,
+      "max": 3.3220295218070545e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.002226042411165419,
+      "p95": 0.05026431013876291,
+      "max": 0.08154402140052393
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998894,
+    "loss_abs_max": 3.78408171099881e-08,
+    "target_kl_abs_max": 3.78408171099881e-08,
+    "target_kl_reference_max": 0.016426738043298045,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.039013327849143e-07,
+      "p95": 7.346843677433278e-07,
+      "max": 1.2185221039574103e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.938984566117806e-10,
+      "p95": 9.872980967662523e-09,
+      "max": 3.3220295218070545e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.002226042411165419,
+      "p95": 0.05026431013876291,
+      "max": 0.08154402140052393
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998895,
+    "loss_abs_max": 3.78408171099881e-08,
+    "target_kl_abs_max": 3.78408171099881e-08,
+    "target_kl_reference_max": 0.016426738043298045,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3632809377469882e-07,
+      "p95": 4.3119778761078653e-07,
+      "max": 5.464652009856022e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 1.830936020490578e-10,
+      "p95": 3.423133852010804e-09,
+      "max": 7.356368764175924e-09
+    },
+    "gradient_reference_l2": {
+      "median": 0.0016127040613970094,
+      "p95": 0.031785489810565726,
+      "max": 0.053145083720459986
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998878,
+    "loss_abs_max": 1.518536476077803e-08,
+    "target_kl_abs_max": 1.1557165487206117e-08,
+    "target_kl_reference_max": 0.0030549801132241164,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3632809377469882e-07,
+      "p95": 4.3119778761078653e-07,
+      "max": 5.464652009856022e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 1.830936020490578e-10,
+      "p95": 3.423133852010804e-09,
+      "max": 7.356368764175924e-09
+    },
+    "gradient_reference_l2": {
+      "median": 0.0016127040613970094,
+      "p95": 0.031785489810565726,
+      "max": 0.053145083720459986
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998878,
+    "loss_abs_max": 1.518536476077803e-08,
+    "target_kl_abs_max": 1.1557165487206117e-08,
+    "target_kl_reference_max": 0.0030549801132241164,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.692875083456025e-07,
+      "p95": 6.558734216782801e-07,
+      "max": 1.1195567200298426e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.04377237455688e-10,
+      "p95": 3.559634143831611e-09,
+      "max": 1.249940648199968e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0016127040613970094,
+      "p95": 0.031785489810565726,
+      "max": 0.053145083720459986
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999997148,
+    "loss_abs_max": 1.5571088751720197e-08,
+    "target_kl_abs_max": 2.8281221663151168e-08,
+    "target_kl_reference_max": 0.0030549801132241164,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.692875083456025e-07,
+      "p95": 6.558734221671626e-07,
+      "max": 1.1195567200296453e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.0437723745552833e-10,
+      "p95": 3.559634143831611e-09,
+      "max": 1.249940648199968e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0016127040613970094,
+      "p95": 0.031785489810565726,
+      "max": 0.053145083720459986
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999997148,
+    "loss_abs_max": 1.5571088751720197e-08,
+    "target_kl_abs_max": 2.8281221663151168e-08,
+    "target_kl_reference_max": 0.0030549801132241164,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.9801780881646555e-07,
+      "p95": 8.279070642268368e-07,
+      "max": 1.7721253321356588e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.9802958278457573e-10,
+      "p95": 9.363367633039674e-09,
+      "max": 3.31303478734393e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0010061167691222366,
+      "p95": 0.022407154728248623,
+      "max": 0.040138003461025064
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996446,
+    "loss_abs_max": 2.3302322316523516e-08,
+    "target_kl_abs_max": 1.6991528976580475e-08,
+    "target_kl_reference_max": 0.0030979845538116903,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.9801780881646555e-07,
+      "p95": 8.279070642268368e-07,
+      "max": 1.7721253321356588e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.9802958278457573e-10,
+      "p95": 9.363367633039674e-09,
+      "max": 3.31303478734393e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0010061167691222366,
+      "p95": 0.022407154728248623,
+      "max": 0.040138003461025064
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996446,
+    "loss_abs_max": 2.3302322316523516e-08,
+    "target_kl_abs_max": 1.6991528976580475e-08,
+    "target_kl_reference_max": 0.0030979845538116903,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 3.650036751573263e-07,
+      "p95": 1.1203930295981881e-06,
+      "max": 1.706081751636142e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.6037987019071797e-10,
+      "p95": 8.118909094163775e-09,
+      "max": 2.121711900715236e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0010061167691222366,
+      "p95": 0.022407154728248623,
+      "max": 0.040138003461025064
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999993526,
+    "loss_abs_max": 1.8645709443446123e-08,
+    "target_kl_abs_max": 2.995916201795415e-08,
+    "target_kl_reference_max": 0.0030979845538116903,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 3.650036751573263e-07,
+      "p95": 1.1203930295663346e-06,
+      "max": 1.7060817516360866e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.6037987019071797e-10,
+      "p95": 8.118909094163775e-09,
+      "max": 2.121711900715235e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0010061167691222366,
+      "p95": 0.022407154728248623,
+      "max": 0.040138003461025064
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999993526,
+    "loss_abs_max": 1.8645709443446123e-08,
+    "target_kl_abs_max": 2.995916201795415e-08,
+    "target_kl_reference_max": 0.0030979845538116903,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.8386965294931124e-07,
+      "p95": 9.658599906168349e-07,
+      "max": 3.41819052390967e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.529449717278775e-10,
+      "p95": 1.0124466965066145e-08,
+      "max": 2.4945290287830728e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0009133309487372565,
+      "p95": 0.027482802017782745,
+      "max": 0.0574459293359714
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999994849,
+    "loss_abs_max": 1.1291351554709034e-08,
+    "target_kl_abs_max": 1.1291351554709034e-08,
+    "target_kl_reference_max": 0.011091074760470937,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.8386965294931124e-07,
+      "p95": 9.658599906168349e-07,
+      "max": 3.41819052390967e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.529449717278775e-10,
+      "p95": 1.0124466965066145e-08,
+      "max": 2.4945290287830728e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0009133309487372565,
+      "p95": 0.027482802017782745,
+      "max": 0.0574459293359714
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999994849,
+    "loss_abs_max": 1.1291351554709034e-08,
+    "target_kl_abs_max": 1.1291351554709034e-08,
+    "target_kl_reference_max": 0.011091074760470937,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 3.435366303684117e-07,
+      "p95": 1.3136896985903925e-06,
+      "max": 6.49613690864313e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.3032069379397633e-10,
+      "p95": 8.528368995593456e-09,
+      "max": 3.062418140147727e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0009133309487372565,
+      "p95": 0.027482802017782745,
+      "max": 0.0574459293359714
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999789653,
+    "loss_abs_max": 6.101110278707716e-08,
+    "target_kl_abs_max": 6.101110278707716e-08,
+    "target_kl_reference_max": 0.011091074760470937,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 3.4353663036841166e-07,
+      "p95": 1.313689689742325e-06,
+      "max": 6.49613690864313e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.3032069379397633e-10,
+      "p95": 8.528368995593456e-09,
+      "max": 3.062418140147727e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0009133309487372565,
+      "p95": 0.027482802017782745,
+      "max": 0.0574459293359714
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999789653,
+    "loss_abs_max": 6.101110278707716e-08,
+    "target_kl_abs_max": 6.101110278707716e-08,
+    "target_kl_reference_max": 0.011091074760470937,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3578889193832272e-07,
+      "p95": 4.4571586398725726e-07,
+      "max": 6.505945099470403e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.5561480914235423e-12,
+      "p95": 6.085250466896893e-11,
+      "max": 1.1146080229655823e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.244004926958002e-05,
+      "p95": 0.0005799099327243595,
+      "max": 0.0011009083264345043
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999344,
+    "loss_abs_max": 2.1510946591817926e-12,
+    "target_kl_abs_max": 1.471605025829553e-13,
+    "target_kl_reference_max": 1.4079956492381064e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3578889193832274e-07,
+      "p95": 4.4571586398725716e-07,
+      "max": 6.505945099470403e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.5561480914235423e-12,
+      "p95": 6.085250466896893e-11,
+      "max": 1.1146080229655823e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.244004926958002e-05,
+      "p95": 0.0005799099327243595,
+      "max": 0.0011009083264345043
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999344,
+    "loss_abs_max": 2.1510946591817926e-12,
+    "target_kl_abs_max": 1.471605025829553e-13,
+    "target_kl_reference_max": 1.4079956492381064e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6178678869569277e-07,
+      "p95": 7.399727086782013e-07,
+      "max": 1.2749992119253196e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.1464353706924148e-12,
+      "p95": 8.454176816753208e-11,
+      "max": 1.3984344808721098e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.244004926958002e-05,
+      "p95": 0.0005799099327243595,
+      "max": 0.0011009083264345043
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999593,
+    "loss_abs_max": 3.060589360954721e-12,
+    "target_kl_abs_max": 2.3363477506505405e-13,
+    "target_kl_reference_max": 1.4079956492381064e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6178678869569277e-07,
+      "p95": 7.399727010063815e-07,
+      "max": 1.2749992028046042e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.1464353706924136e-12,
+      "p95": 8.454176816753207e-11,
+      "max": 1.3984344808721098e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.244004926958002e-05,
+      "p95": 0.0005799099327243595,
+      "max": 0.0011009083264345043
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999593,
+    "loss_abs_max": 3.060589360954721e-12,
+    "target_kl_abs_max": 2.3363477506505405e-13,
+    "target_kl_reference_max": 1.4079956492381064e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.463954736851269e-07,
+      "p95": 4.4346164410731183e-07,
+      "max": 6.599849864095469e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.3235749721590136e-12,
+      "p95": 7.45078635693784e-11,
+      "max": 1.611987570669252e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.237689919676889e-05,
+      "p95": 0.0005818753062804638,
+      "max": 0.0010994241696238194
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999508,
+    "loss_abs_max": 1.0921108301755584e-12,
+    "target_kl_abs_max": 3.5233672376670745e-13,
+    "target_kl_reference_max": 1.3951984121182724e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.463954736851269e-07,
+      "p95": 4.4346164410731183e-07,
+      "max": 6.599849864095467e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 3.3235749721590136e-12,
+      "p95": 7.45078635693784e-11,
+      "max": 1.611987570669252e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.237689919676889e-05,
+      "p95": 0.0005818753062804638,
+      "max": 0.0010994241696238194
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999508,
+    "loss_abs_max": 1.0921108301755584e-12,
+    "target_kl_abs_max": 3.5233672376670745e-13,
+    "target_kl_reference_max": 1.3951984121182724e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6719846962115887e-07,
+      "p95": 7.448970508517138e-07,
+      "max": 1.2711121396490524e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.7760102983063335e-12,
+      "p95": 5.778108313724023e-11,
+      "max": 1.3885296739116604e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.237689919676889e-05,
+      "p95": 0.0005818753062804638,
+      "max": 0.0010994241696238194
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995905,
+    "loss_abs_max": 9.93863028849037e-13,
+    "target_kl_abs_max": 3.6701213751347934e-13,
+    "target_kl_reference_max": 1.3951984121182724e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6719846962111414e-07,
+      "p95": 7.448970381336646e-07,
+      "max": 1.27111213087569e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.776010298306333e-12,
+      "p95": 5.778108313724023e-11,
+      "max": 1.3885296739116604e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.237689919676889e-05,
+      "p95": 0.0005818753062804638,
+      "max": 0.0010994241696238194
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995905,
+    "loss_abs_max": 9.93863028849037e-13,
+    "target_kl_abs_max": 3.6701213751347934e-13,
+    "target_kl_reference_max": 1.3951984121182724e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.47995798290225e-07,
+      "p95": 5.081917173428855e-07,
+      "max": 6.899417060780487e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 4.287518233457907e-12,
+      "p95": 6.53069433111206e-11,
+      "max": 1.2927118931958125e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.23139000543314e-05,
+      "p95": 0.000583857227337873,
+      "max": 0.001097959506045794
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999171,
+    "loss_abs_max": 2.1153160266650447e-13,
+    "target_kl_abs_max": 2.1153160266650447e-13,
+    "target_kl_reference_max": 1.382574814358421e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.47995798290225e-07,
+      "p95": 5.081917173428855e-07,
+      "max": 6.899417094176507e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 4.287518233457907e-12,
+      "p95": 6.53069433111206e-11,
+      "max": 1.2927118931958125e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.23139000543314e-05,
+      "p95": 0.000583857227337873,
+      "max": 0.001097959506045794
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999171,
+    "loss_abs_max": 2.1153160266650447e-13,
+    "target_kl_abs_max": 2.1153160266650447e-13,
+    "target_kl_reference_max": 1.382574814358421e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.952296954970887e-07,
+      "p95": 7.450025238764449e-07,
+      "max": 1.2846849193978344e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.7823624877254415e-12,
+      "p95": 7.556311494087673e-11,
+      "max": 2.8632196401002126e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.23139000543314e-05,
+      "p95": 0.000583857227337873,
+      "max": 0.001097959506045794
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995796,
+    "loss_abs_max": 6.454295802870103e-13,
+    "target_kl_abs_max": 6.454295802870103e-13,
+    "target_kl_reference_max": 1.382574814358421e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.952296954970857e-07,
+      "p95": 7.450025234707825e-07,
+      "max": 1.2846849110650743e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.7823624877254415e-12,
+      "p95": 7.556311494087673e-11,
+      "max": 2.8632196401002126e-10
+    },
+    "gradient_reference_l2": {
+      "median": 3.23139000543314e-05,
+      "p95": 0.000583857227337873,
+      "max": 0.001097959506045794
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995796,
+    "loss_abs_max": 6.454295802870103e-13,
+    "target_kl_abs_max": 6.454295802870103e-13,
+    "target_kl_reference_max": 1.382574814358421e-06,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5307880159964584e-07,
+      "p95": 4.854710733773061e-07,
+      "max": 6.534613143883582e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 4.015267639764505e-14,
+      "p95": 7.174967052891612e-13,
+      "max": 2.119008032873732e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.195843370081538e-07,
+      "p95": 5.797316580985123e-06,
+      "max": 1.1021064830610112e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999735,
+    "loss_abs_max": 3.2131948602423526e-16,
+    "target_kl_abs_max": 3.6307482958501e-17,
+    "target_kl_reference_max": 1.4217366604829685e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5307880159964616e-07,
+      "p95": 4.85471073377302e-07,
+      "max": 6.534613256007063e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 4.015267639764555e-14,
+      "p95": 7.174967052891612e-13,
+      "max": 2.119008032873732e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.195843370081538e-07,
+      "p95": 5.797316580985123e-06,
+      "max": 1.1021064830610112e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999735,
+    "loss_abs_max": 3.2131948602423526e-16,
+    "target_kl_abs_max": 3.6307482958501e-17,
+    "target_kl_reference_max": 1.4217366604829685e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.764663005376123e-07,
+      "p95": 7.663486608991891e-07,
+      "max": 1.2185715618151313e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.929608905168133e-14,
+      "p95": 8.965405824440815e-13,
+      "max": 1.404903263461452e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.195843370081538e-07,
+      "p95": 5.797316580985123e-06,
+      "max": 1.1021064830610112e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996111,
+    "loss_abs_max": 2.5673756256520286e-16,
+    "target_kl_abs_max": 1.7629574289073356e-17,
+    "target_kl_reference_max": 1.4217366604829685e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.764663005375238e-07,
+      "p95": 7.663347060288211e-07,
+      "max": 1.2184453986288468e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.929608896517511e-14,
+      "p95": 8.965405824434995e-13,
+      "max": 1.404903263461407e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.195843370081538e-07,
+      "p95": 5.797316580985123e-06,
+      "max": 1.1021064830610112e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996111,
+    "loss_abs_max": 2.5673756256520286e-16,
+    "target_kl_abs_max": 1.7629574289073356e-17,
+    "target_kl_reference_max": 1.4217366604829685e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5387098606965418e-07,
+      "p95": 4.722548283415793e-07,
+      "max": 6.59547172416558e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 2.944674406767214e-14,
+      "p95": 8.088083424015817e-13,
+      "max": 1.6958000301910664e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957820161472965e-07,
+      "p95": 5.797513505093601e-06,
+      "max": 1.1020921315363594e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999358,
+    "loss_abs_max": 1.3226508755183267e-16,
+    "target_kl_abs_max": 5.405940112465537e-17,
+    "target_kl_reference_max": 1.4216077112544126e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5387098606965418e-07,
+      "p95": 4.722548283418152e-07,
+      "max": 6.595471835153137e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 2.944674406767242e-14,
+      "p95": 8.088083424015817e-13,
+      "max": 1.6958000301910664e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957820161472965e-07,
+      "p95": 5.797513505093601e-06,
+      "max": 1.1020921315363594e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999356,
+    "loss_abs_max": 1.3226508755183267e-16,
+    "target_kl_abs_max": 5.405940112465537e-17,
+    "target_kl_reference_max": 1.4216077112544126e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.0441463457883179e-07,
+      "p95": 7.939438070725517e-07,
+      "max": 1.3104274779804385e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.944768183911559e-14,
+      "p95": 8.252033765245746e-13,
+      "max": 1.8273030912914735e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957820161472965e-07,
+      "p95": 5.797513505093601e-06,
+      "max": 1.1020921315363594e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995008,
+    "loss_abs_max": 9.225251247057609e-17,
+    "target_kl_abs_max": 5.405940112465537e-17,
+    "target_kl_reference_max": 1.4216077112544126e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.0441463438995548e-07,
+      "p95": 7.939438070761835e-07,
+      "max": 1.310310105135172e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.9447681837449636e-14,
+      "p95": 8.252033765039762e-13,
+      "max": 1.827303091291473e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957820161472965e-07,
+      "p95": 5.797513505093601e-06,
+      "max": 1.1020921315363594e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995006,
+    "loss_abs_max": 9.225251247057609e-17,
+    "target_kl_abs_max": 5.405940112465537e-17,
+    "target_kl_reference_max": 1.4216077112544126e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.422556411409789e-07,
+      "p95": 4.93880684376803e-07,
+      "max": 6.502884191123726e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 4.546092919163446e-14,
+      "p95": 7.019902927427351e-13,
+      "max": 1.8964979202388945e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957206636594145e-07,
+      "p95": 5.797710445728107e-06,
+      "max": 1.1020777819576234e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999599,
+    "loss_abs_max": 3.974623111827245e-17,
+    "target_kl_abs_max": 3.974623111827245e-17,
+    "target_kl_reference_max": 1.4214787796563227e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.422556411409789e-07,
+      "p95": 4.938806843768337e-07,
+      "max": 6.502884191123726e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 4.546092919163446e-14,
+      "p95": 7.019902927427349e-13,
+      "max": 1.8964979202388945e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957206636594145e-07,
+      "p95": 5.797710445728107e-06,
+      "max": 1.1020777819576234e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999598,
+    "loss_abs_max": 3.974623111827245e-17,
+    "target_kl_abs_max": 3.974623111827245e-17,
+    "target_kl_reference_max": 1.4214787796563227e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.8640826341953292e-07,
+      "p95": 7.98585497353895e-07,
+      "max": 1.2925556374799918e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.524068480326752e-14,
+      "p95": 9.489161869762539e-13,
+      "max": 2.073531027377023e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957206636594145e-07,
+      "p95": 5.797710445728107e-06,
+      "max": 1.1020777819576234e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995182,
+    "loss_abs_max": 5.3624018926086906e-17,
+    "target_kl_abs_max": 5.3624018926086906e-17,
+    "target_kl_reference_max": 1.4214787796563227e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.8814040980787566e-07,
+      "p95": 7.985755285730087e-07,
+      "max": 1.2924367260268767e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 4.524068480240845e-14,
+      "p95": 9.489161867823968e-13,
+      "max": 2.073531027377023e-12
+    },
+    "gradient_reference_l2": {
+      "median": 3.1957206636594145e-07,
+      "p95": 5.797710445728107e-06,
+      "max": 1.1020777819576234e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995183,
+    "loss_abs_max": 5.3624018926086906e-17,
+    "target_kl_abs_max": 5.3624018926086906e-17,
+    "target_kl_reference_max": 1.4214787796563227e-10,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5585847473717446e-07,
+      "p95": 5.021240319032205e-07,
+      "max": 1.6602801953379874e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.640453847323367e-16,
+      "p95": 8.147839974199958e-15,
+      "max": 1.1945854178879757e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531282293886032e-09,
+      "p95": 6.016721242023291e-08,
+      "max": 1.2808726554988655e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998646,
+    "loss_abs_max": 4.136388329604352e-20,
+    "target_kl_abs_max": 2.3700825522893118e-21,
+    "target_kl_reference_max": 1.727698436821829e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5585847473717446e-07,
+      "p95": 5.021240567712781e-07,
+      "max": 1.6941290204459097e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.6404538472767185e-16,
+      "p95": 8.147839974199958e-15,
+      "max": 1.1945854178879763e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531282293886032e-09,
+      "p95": 6.016721242023291e-08,
+      "max": 1.2808726554988655e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998646,
+    "loss_abs_max": 4.136388329604352e-20,
+    "target_kl_abs_max": 2.3700825522893118e-21,
+    "target_kl_reference_max": 1.727698436821829e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.70571930828177e-07,
+      "p95": 7.348436587223624e-07,
+      "max": 2.101117631625739e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.7376474258541655e-16,
+      "p95": 9.020731165258051e-15,
+      "max": 1.6787278036869176e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531282293886032e-09,
+      "p95": 6.016721242023291e-08,
+      "max": 1.2808726554988655e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998422,
+    "loss_abs_max": 4.136388329604352e-20,
+    "target_kl_abs_max": 2.2748552980457006e-21,
+    "target_kl_reference_max": 1.727698436821829e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.7057192734238453e-07,
+      "p95": 7.348436580287806e-07,
+      "max": 2.100937227345042e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.7376449268510684e-16,
+      "p95": 9.020729406432972e-15,
+      "max": 1.6787278028740416e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531282293886032e-09,
+      "p95": 6.016721242023291e-08,
+      "max": 1.2808726554988655e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998422,
+    "loss_abs_max": 4.136388329604352e-20,
+    "target_kl_abs_max": 2.2748552980457006e-21,
+    "target_kl_reference_max": 1.727698436821829e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5748521034060577e-07,
+      "p95": 5.347171721416288e-07,
+      "max": 1.6258760616732318e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.5376118640623678e-16,
+      "p95": 6.390274587689135e-15,
+      "max": 2.2508630541520877e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531277300286053e-09,
+      "p95": 6.016722185712944e-08,
+      "max": 1.2808724588780598e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999865,
+    "loss_abs_max": 1.3818914098921357e-20,
+    "target_kl_abs_max": 9.07006964058546e-21,
+    "target_kl_reference_max": 1.7276979058731178e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5748521034060577e-07,
+      "p95": 5.347171958721751e-07,
+      "max": 1.6258010720462345e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.5376118640623996e-16,
+      "p95": 6.390274587689135e-15,
+      "max": 2.2508630541520877e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531277300286053e-09,
+      "p95": 6.016722185712944e-08,
+      "max": 1.2808724588780598e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999865,
+    "loss_abs_max": 1.3818914098921357e-20,
+    "target_kl_abs_max": 9.07006964058546e-21,
+    "target_kl_reference_max": 1.7276979058731178e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.064475254823536e-07,
+      "p95": 7.911151537106069e-07,
+      "max": 2.118236570655077e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.8631913431657868e-16,
+      "p95": 1.1471292847401172e-14,
+      "max": 3.222017805584591e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531277300286053e-09,
+      "p95": 6.016722185712944e-08,
+      "max": 1.2808724588780598e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999732,
+    "loss_abs_max": 1.3818914098921357e-20,
+    "target_kl_abs_max": 7.37600374607686e-21,
+    "target_kl_reference_max": 1.7276979058731178e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.0643847565870024e-07,
+      "p95": 7.911151535314643e-07,
+      "max": 2.1180579980297148e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.8631913208695765e-16,
+      "p95": 1.1471292847400036e-14,
+      "max": 3.222017805584587e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531277300286053e-09,
+      "p95": 6.016722185712944e-08,
+      "max": 1.2808724588780598e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999732,
+    "loss_abs_max": 1.3818914098921357e-20,
+    "target_kl_abs_max": 7.37600374607686e-21,
+    "target_kl_reference_max": 1.7276979058731178e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.7518889203937475e-07,
+      "p95": 5.262875362557151e-07,
+      "max": 1.6234702339091075e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.1425750441908898e-16,
+      "p95": 1.0839752214052893e-14,
+      "max": 1.902818779847672e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531272306688543e-09,
+      "p95": 6.016723129403913e-08,
+      "max": 1.2808722622575593e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998627,
+    "loss_abs_max": 2.4416001092436315e-21,
+    "target_kl_abs_max": 2.4416001092436315e-21,
+    "target_kl_reference_max": 1.7276973749253246e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.7518889203937475e-07,
+      "p95": 5.262875378273618e-07,
+      "max": 1.6234004206938418e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.1425750441908898e-16,
+      "p95": 1.0839752214052893e-14,
+      "max": 1.902818779847672e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531272306688543e-09,
+      "p95": 6.016723129403913e-08,
+      "max": 1.2808722622575593e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998627,
+    "loss_abs_max": 2.4416001092436315e-21,
+    "target_kl_abs_max": 2.4416001092436315e-21,
+    "target_kl_reference_max": 1.7276973749253246e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.0402154918893295e-07,
+      "p95": 7.447659261794959e-07,
+      "max": 2.0472215299887743e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.8499890905189302e-16,
+      "p95": 1.1481631698867688e-14,
+      "max": 1.979039593875807e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531272306688543e-09,
+      "p95": 6.016723129403913e-08,
+      "max": 1.2808722622575593e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999825,
+    "loss_abs_max": 2.10666492369364e-21,
+    "target_kl_abs_max": 2.10666492369364e-21,
+    "target_kl_reference_max": 1.7276973749253246e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.0402154888737554e-07,
+      "p95": 7.447659249448374e-07,
+      "max": 2.0471621035791955e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.8499890812705454e-16,
+      "p95": 1.1481631695960374e-14,
+      "max": 1.9790395938757886e-14
+    },
+    "gradient_reference_l2": {
+      "median": 1.1531272306688543e-09,
+      "p95": 6.016723129403913e-08,
+      "max": 1.2808722622575593e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999998263,
+    "loss_abs_max": 2.10666492369364e-21,
+    "target_kl_abs_max": 2.10666492369364e-21,
+    "target_kl_reference_max": 1.7276973749253246e-14,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "r1-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.1600937009580371e-07,
+      "p95": 4.1421999325840195e-07,
+      "max": 1.5940347963523855e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.1081756631391252e-09,
+      "p95": 2.7497645801600593e-08,
+      "max": 7.976404573569558e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.02098652012898724,
+      "p95": 0.22524585539790754,
+      "max": 0.4192809808718018
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999993634,
+    "loss_abs_max": 4.823213461957465e-07,
+    "target_kl_abs_max": 7.073009933300511e-08,
+    "target_kl_reference_max": 0.22068274502358026,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.1600937009089365e-07,
+      "p95": 4.142200873318243e-07,
+      "max": 1.5940347484325314e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.1081756631391252e-09,
+      "p95": 2.7497645800785784e-08,
+      "max": 7.976404573264378e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.02098652012898724,
+      "p95": 0.22524585539790754,
+      "max": 0.4192809808718018
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999993634,
+    "loss_abs_max": 4.823213461957465e-07,
+    "target_kl_abs_max": 7.073009933300511e-08,
+    "target_kl_reference_max": 0.22068274502358026,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5588697135772782e-07,
+      "p95": 5.927327241721739e-07,
+      "max": 2.5070778969616814e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.245258967521544e-09,
+      "p95": 3.5677183207013494e-08,
+      "max": 1.1995679316152088e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.02098652012898724,
+      "p95": 0.22524585539790754,
+      "max": 0.4192809808718018
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999980791,
+    "loss_abs_max": 2.409883519405298e-07,
+    "target_kl_abs_max": 1.0562238840494675e-07,
+    "target_kl_reference_max": 0.22068274502358026,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.532129685288828e-07,
+      "p95": 5.927327241721739e-07,
+      "max": 2.5070778708746632e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.245258967521544e-09,
+      "p95": 2.7617588983386353e-08,
+      "max": 1.1995679316152088e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.02098652012898724,
+      "p95": 0.22524585539790754,
+      "max": 0.4192809808718018
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999980791,
+    "loss_abs_max": 2.409883519405298e-07,
+    "target_kl_abs_max": 1.0562238840494675e-07,
+    "target_kl_reference_max": 0.22068274502358026,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.95397252079776e-07,
+      "p95": 4.890909590951597e-07,
+      "max": 3.0856522652807917e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.291595762091008e-09,
+      "p95": 1.9852877607549777e-08,
+      "max": 7.446325575798561e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008373464102183014,
+      "p95": 0.07559745793354013,
+      "max": 0.1032316449444832
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999973787,
+    "loss_abs_max": 1.675844684967398e-07,
+    "target_kl_abs_max": 5.726401416505239e-08,
+    "target_kl_reference_max": 0.01904460214521365,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.95397252079776e-07,
+      "p95": 4.890909590951597e-07,
+      "max": 3.0856378274927494e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.291595762091008e-09,
+      "p95": 1.9852877607552427e-08,
+      "max": 7.446325575798561e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008373464102183014,
+      "p95": 0.07559745793354013,
+      "max": 0.1032316449444832
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999997379,
+    "loss_abs_max": 1.675844684967398e-07,
+    "target_kl_abs_max": 5.726401416505239e-08,
+    "target_kl_reference_max": 0.01904460214521365,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.312015408192644e-07,
+      "p95": 5.304932503070343e-07,
+      "max": 8.165119018852041e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 1.7191457505408753e-09,
+      "p95": 2.0268918673561987e-08,
+      "max": 4.3465261576135684e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008373464102183014,
+      "p95": 0.07559745793354013,
+      "max": 0.1032316449444832
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999023,
+    "loss_abs_max": 1.4229299827306363e-07,
+    "target_kl_abs_max": 8.660067526543996e-08,
+    "target_kl_reference_max": 0.01904460214521365,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.312015408192644e-07,
+      "p95": 5.142682854051427e-07,
+      "max": 7.789700219120897e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 1.7187072571505675e-09,
+      "p95": 2.0268918673561987e-08,
+      "max": 3.880909049548332e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008373464102183014,
+      "p95": 0.07559745793354013,
+      "max": 0.1032316449444832
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999999023,
+    "loss_abs_max": 1.4229299827306363e-07,
+    "target_kl_abs_max": 8.660067526543996e-08,
+    "target_kl_reference_max": 0.01904460214521365,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.226377386386761e-07,
+      "p95": 5.716042639813507e-07,
+      "max": 9.520589977345971e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 1.3095274451434435e-09,
+      "p95": 2.2095173233699245e-08,
+      "max": 7.221142554058387e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008725480401035577,
+      "p95": 0.06620506560370992,
+      "max": 0.10017392721599079
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999997378,
+    "loss_abs_max": 1.4177057487685385e-07,
+    "target_kl_abs_max": 1.4177057487685385e-07,
+    "target_kl_reference_max": 0.10314432461756957,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.226377386386761e-07,
+      "p95": 5.716042794505002e-07,
+      "max": 9.52051299590427e-07
+    },
+    "gradient_absolute_l2": {
+      "median": 1.309527445143441e-09,
+      "p95": 2.2095173233699245e-08,
+      "max": 7.221142554058387e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008725480401035577,
+      "p95": 0.06620506560370992,
+      "max": 0.10017392721599079
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999997378,
+    "loss_abs_max": 1.4177057487685385e-07,
+    "target_kl_abs_max": 1.4177057487685385e-07,
+    "target_kl_reference_max": 0.10314432461756957,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.1830321409489384e-07,
+      "p95": 7.578792836865214e-07,
+      "max": 1.990832840605006e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.6288129017178988e-09,
+      "p95": 3.392365928590679e-08,
+      "max": 8.274806655226599e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008725480401035577,
+      "p95": 0.06620506560370992,
+      "max": 0.10017392721599079
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999997513,
+    "loss_abs_max": 2.261426728933369e-07,
+    "target_kl_abs_max": 2.261426728933369e-07,
+    "target_kl_reference_max": 0.10314432461756957,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "initial",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.165158234215006e-07,
+      "p95": 7.214857000798326e-07,
+      "max": 1.3561597034638703e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.6288129017178988e-09,
+      "p95": 3.195036717777278e-08,
+      "max": 4.3399679915596286e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.008725480401035577,
+      "p95": 0.06620506560370992,
+      "max": 0.10017392721599079
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999997513,
+    "loss_abs_max": 2.261426728933369e-07,
+    "target_kl_abs_max": 2.261426728933369e-07,
+    "target_kl_reference_max": 0.10314432461756957,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.2663812549092841e-07,
+      "p95": 5.166866727291678e-07,
+      "max": 1.0538004863198958e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.1319931863509619e-09,
+      "p95": 1.805608200151064e-08,
+      "max": 1.0383226901639888e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.009832973050024974,
+      "p95": 0.11968359641082388,
+      "max": 0.4292078853541561
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996493,
+    "loss_abs_max": 5.353324001866611e-07,
+    "target_kl_abs_max": 1.51434044193266e-07,
+    "target_kl_reference_max": 0.30801099296559875,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.2663812549092926e-07,
+      "p95": 5.166866727291678e-07,
+      "max": 1.0538004863198958e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.1319931863509619e-09,
+      "p95": 1.805608200151064e-08,
+      "max": 1.0383226890402862e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.009832973050024974,
+      "p95": 0.11968359641082388,
+      "max": 0.4292078853541561
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999996493,
+    "loss_abs_max": 5.353324001866611e-07,
+    "target_kl_abs_max": 1.51434044193266e-07,
+    "target_kl_reference_max": 0.30801099296559875,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.4696232407684616e-07,
+      "p95": 6.738670574966975e-07,
+      "max": 2.2164855340761268e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.2966385295635177e-09,
+      "p95": 1.992994125899435e-08,
+      "max": 2.2298065977099126e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.009832973050024974,
+      "p95": 0.11968359641082388,
+      "max": 0.4292078853541561
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999997604,
+    "loss_abs_max": 2.921072534967095e-07,
+    "target_kl_abs_max": 2.4084101135635194e-07,
+    "target_kl_reference_max": 0.30801099296559875,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.433278181741338e-07,
+      "p95": 6.738353711535837e-07,
+      "max": 2.2164855340761268e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.296638529563403e-09,
+      "p95": 1.855095170925953e-08,
+      "max": 1.0380859851449883e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.009832973050024974,
+      "p95": 0.11968359641082388,
+      "max": 0.4292078853541561
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999997604,
+    "loss_abs_max": 2.921072534967095e-07,
+    "target_kl_abs_max": 1.0608943867840281e-07,
+    "target_kl_reference_max": 0.30801099296559875,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.022581244409741e-07,
+      "p95": 1.2358929667160433e-06,
+      "max": 4.2770556029711264e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.7834816173499914e-09,
+      "p95": 3.228700574150087e-08,
+      "max": 1.3685059397308073e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.00847459450762402,
+      "p95": 0.10489762519693613,
+      "max": 0.2151114056919023
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999958393,
+    "loss_abs_max": 1.6576097350284869e-07,
+    "target_kl_abs_max": 8.311499603147476e-08,
+    "target_kl_reference_max": 0.045893455880296474,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.022581244409741e-07,
+      "p95": 1.2358929666483135e-06,
+      "max": 4.2770556029711264e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 1.783481617350107e-09,
+      "p95": 3.228700574150087e-08,
+      "max": 1.3685059395083706e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.00847459450762402,
+      "p95": 0.10489762519693613,
+      "max": 0.2151114056919023
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999958393,
+    "loss_abs_max": 1.6576097350284869e-07,
+    "target_kl_abs_max": 8.311499603147476e-08,
+    "target_kl_reference_max": 0.045893455880296474,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.5426053008754786e-07,
+      "p95": 1.380889409391133e-06,
+      "max": 3.2495935215530438e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.0798128420094532e-09,
+      "p95": 2.5717737222092093e-08,
+      "max": 1.0704981597924427e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.00847459450762402,
+      "p95": 0.10489762519693613,
+      "max": 0.2151114056919023
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999981671,
+    "loss_abs_max": 1.514601167817986e-07,
+    "target_kl_abs_max": 7.275162401676472e-08,
+    "target_kl_reference_max": 0.045893455880296474,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.545196100946899e-07,
+      "p95": 1.3214550921464244e-06,
+      "max": 3.2495935215530938e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.0798128420094532e-09,
+      "p95": 2.5015172699701828e-08,
+      "max": 5.8615881906765835e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.00847459450762402,
+      "p95": 0.10489762519693613,
+      "max": 0.2151114056919023
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999981671,
+    "loss_abs_max": 1.514601167817986e-07,
+    "target_kl_abs_max": 7.275162401676472e-08,
+    "target_kl_reference_max": 0.045893455880296474,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.293341219911585e-07,
+      "p95": 8.042068271603557e-07,
+      "max": 1.4278223157507745e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.4400986876588254e-09,
+      "p95": 3.2339455014477294e-08,
+      "max": 1.7213444887641274e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.015491477183956924,
+      "p95": 0.09471758130095906,
+      "max": 0.22507581060302248
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999994147,
+    "loss_abs_max": 1.4668784512061883e-07,
+    "target_kl_abs_max": 1.4668784512061883e-07,
+    "target_kl_reference_max": 0.11910487199345013,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.293341219911585e-07,
+      "p95": 8.042068271603557e-07,
+      "max": 1.4278223155771637e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.4400986876588254e-09,
+      "p95": 3.2339455014477294e-08,
+      "max": 1.7213444887641274e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.015491477183956924,
+      "p95": 0.09471758130095906,
+      "max": 0.22507581060302248
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999994147,
+    "loss_abs_max": 1.4668784512061883e-07,
+    "target_kl_abs_max": 1.4668784512061883e-07,
+    "target_kl_reference_max": 0.11910487199345013,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.5208938069602736e-07,
+      "p95": 8.104696264233565e-07,
+      "max": 4.355913942850115e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.8354605545305603e-09,
+      "p95": 4.1832007335129266e-08,
+      "max": 1.7213438026857842e-07
+    },
+    "gradient_reference_l2": {
+      "median": 0.015491477183956924,
+      "p95": 0.09471758130095906,
+      "max": 0.22507581060302248
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999909458,
+    "loss_abs_max": 1.6903958691139032e-07,
+    "target_kl_abs_max": 1.6903958691139032e-07,
+    "target_kl_reference_max": 0.11910487199345013,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "toward_teacher",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 2.412602406792652e-07,
+      "p95": 7.270441093747054e-07,
+      "max": 4.35591394285013e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.8302660602927345e-09,
+      "p95": 2.9160692518764362e-08,
+      "max": 6.747954146094263e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.015491477183956924,
+      "p95": 0.09471758130095906,
+      "max": 0.22507581060302248
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999909458,
+    "loss_abs_max": 1.6903958691139032e-07,
+    "target_kl_abs_max": 1.6903958691139032e-07,
+    "target_kl_reference_max": 0.11910487199345013,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3318605108630825e-07,
+      "p95": 5.504970425648785e-07,
+      "max": 2.8511637736503728e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.8579455057062465e-11,
+      "p95": 5.834263734645136e-10,
+      "max": 2.737653762111357e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020987194737308383,
+      "p95": 0.0022855176211486576,
+      "max": 0.005596892517917852
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999963507,
+    "loss_abs_max": 1.3221913709767353e-09,
+    "target_kl_abs_max": 1.296349910911602e-10,
+    "target_kl_reference_max": 3.8167015084761384e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3318605108630825e-07,
+      "p95": 5.504970425648785e-07,
+      "max": 2.8511637736497575e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.8579455057062465e-11,
+      "p95": 5.834263734559098e-10,
+      "max": 2.737653762110766e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020987194737308383,
+      "p95": 0.0022855176211486576,
+      "max": 0.005596892517917852
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999963507,
+    "loss_abs_max": 1.3221913709767353e-09,
+    "target_kl_abs_max": 1.296349910911602e-10,
+    "target_kl_reference_max": 3.8167015084761384e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5118214127488717e-07,
+      "p95": 8.057385108011443e-07,
+      "max": 2.8573012356347783e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.884157278456656e-11,
+      "p95": 3.4425506806776065e-10,
+      "max": 2.743546880579929e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020987194737308383,
+      "p95": 0.0022855176211486576,
+      "max": 0.005596892517917852
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999996854,
+    "loss_abs_max": 1.325829349783827e-09,
+    "target_kl_abs_max": 1.309992331438196e-10,
+    "target_kl_reference_max": 3.8167015084761384e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.4687667487397554e-07,
+      "p95": 6.984615640663976e-07,
+      "max": 1.3875887860430308e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.8841572777831053e-11,
+      "p95": 2.8508149002181573e-10,
+      "max": 4.707949855424259e-10
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020987194737308383,
+      "p95": 0.0022855176211486576,
+      "max": 0.005596892517917852
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999282,
+    "loss_abs_max": 1.7868298258106458e-10,
+    "target_kl_abs_max": 4.868859167835721e-12,
+    "target_kl_reference_max": 3.8167015084761384e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.479191457150798e-07,
+      "p95": 5.1308641862919e-07,
+      "max": 2.8480652545565128e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.007843542497854e-11,
+      "p95": 4.990758415465266e-10,
+      "max": 2.7578917368464188e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0002066599156053774,
+      "p95": 0.002298861253319841,
+      "max": 0.005690187429693165
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999969963,
+    "loss_abs_max": 7.328144931083541e-10,
+    "target_kl_abs_max": 1.3277602075961286e-10,
+    "target_kl_reference_max": 3.945064113663212e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.479191457150798e-07,
+      "p95": 5.130863028030418e-07,
+      "max": 2.8480652545559032e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.007843542497854e-11,
+      "p95": 4.990758415465266e-10,
+      "max": 2.7578917368458285e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0002066599156053774,
+      "p95": 0.002298861253319841,
+      "max": 0.005690187429693165
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999969963,
+    "loss_abs_max": 7.328144931083541e-10,
+    "target_kl_abs_max": 1.3277602075961286e-10,
+    "target_kl_reference_max": 3.945064113663212e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6733685855041733e-07,
+      "p95": 5.918356175136073e-07,
+      "max": 2.8661821789678325e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.6619153561717016e-11,
+      "p95": 4.2820661864921954e-10,
+      "max": 2.775435055438264e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.0002066599156053774,
+      "p95": 0.002298861253319841,
+      "max": 0.005690187429693165
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999969337,
+    "loss_abs_max": 7.328144931083541e-10,
+    "target_kl_abs_max": 1.336855154613858e-10,
+    "target_kl_reference_max": 3.945064113663212e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5814300156329564e-07,
+      "p95": 5.106468381119781e-07,
+      "max": 1.1435279117809937e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.2503550089320014e-11,
+      "p95": 3.421789075762701e-10,
+      "max": 1.0457188836000149e-09
+    },
+    "gradient_reference_l2": {
+      "median": 0.0002066599156053774,
+      "p95": 0.002298861253319841,
+      "max": 0.005690187429693165
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999993524,
+    "loss_abs_max": 5.909829667739147e-11,
+    "target_kl_abs_max": 1.6964754836925992e-11,
+    "target_kl_reference_max": 3.945064113663212e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.4104146652596876e-07,
+      "p95": 6.462127801295951e-07,
+      "max": 2.847977240241168e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.3887470699947162e-11,
+      "p95": 4.6423583766004803e-10,
+      "max": 2.7814829915377885e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020350845839352792,
+      "p95": 0.002314160713657608,
+      "max": 0.005788010293743303
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999970686,
+    "loss_abs_max": 1.3674357315266952e-10,
+    "target_kl_abs_max": 1.3674357315266952e-10,
+    "target_kl_reference_max": 4.081950677124257e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.410414665079818e-07,
+      "p95": 6.462127801295951e-07,
+      "max": 2.8479772402405656e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.3887470699947162e-11,
+      "p95": 4.642358376639747e-10,
+      "max": 2.7814829915372002e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020350845839352792,
+      "p95": 0.002314160713657608,
+      "max": 0.005788010293743303
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999970686,
+    "loss_abs_max": 1.3674357315266952e-10,
+    "target_kl_abs_max": 1.3674357315266952e-10,
+    "target_kl_reference_max": 4.081950677124257e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6629459097261513e-07,
+      "p95": 5.579446456110175e-07,
+      "max": 2.848060356708989e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.302987478331843e-11,
+      "p95": 3.8273517862768994e-10,
+      "max": 2.7815641674117716e-08
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020350845839352792,
+      "p95": 0.002314160713657608,
+      "max": 0.005788010293743303
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999970262,
+    "loss_abs_max": 1.3719832050355598e-10,
+    "target_kl_abs_max": 1.3719832050355598e-10,
+    "target_kl_reference_max": 4.081950677124257e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e2",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6067223931174006e-07,
+      "p95": 5.2909830993095e-07,
+      "max": 1.0863782065557182e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.297882112558052e-11,
+      "p95": 2.9398829090600603e-10,
+      "max": 9.075486904178078e-10
+    },
+    "gradient_reference_l2": {
+      "median": 0.00020350845839352792,
+      "p95": 0.002314160713657608,
+      "max": 0.005788010293743303
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999994331,
+    "loss_abs_max": 1.6675642081922203e-11,
+    "target_kl_abs_max": 1.6675642081922203e-11,
+    "target_kl_reference_max": 4.081950677124257e-05,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3657262919392623e-07,
+      "p95": 9.36671645772076e-07,
+      "max": 2.4181862180371857e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.194689244551283e-13,
+      "p95": 4.63369417304773e-12,
+      "max": 2.3190041828087558e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0940080289503588e-06,
+      "p95": 2.2869439973109615e-05,
+      "max": 5.587012255341856e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999992988,
+    "loss_abs_max": 1.0937802073344012e-13,
+    "target_kl_abs_max": 1.0822630740110858e-14,
+    "target_kl_reference_max": 3.793251092244771e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3657262919792258e-07,
+      "p95": 9.366600494400269e-07,
+      "max": 2.418186218036586e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.194689244551283e-13,
+      "p95": 4.63364729493681e-12,
+      "max": 2.3190041828081806e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0940080289503588e-06,
+      "p95": 2.2869439973109615e-05,
+      "max": 5.587012255341856e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999929882,
+    "loss_abs_max": 1.0937802073344012e-13,
+    "target_kl_abs_max": 1.0822630740110858e-14,
+    "target_kl_reference_max": 3.793251092244771e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5293578384800936e-07,
+      "p95": 1.0754598655146563e-06,
+      "max": 2.4182477511466894e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.645046634299144e-13,
+      "p95": 5.226637483817696e-12,
+      "max": 2.319063192134529e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0940080289503588e-06,
+      "p95": 2.2869439973109615e-05,
+      "max": 5.587012255341856e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999925849,
+    "loss_abs_max": 1.0937802073344012e-13,
+    "target_kl_abs_max": 1.0933653042573374e-14,
+    "target_kl_reference_max": 3.793251092244771e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.4567676645777937e-07,
+      "p95": 5.116508065658551e-07,
+      "max": 1.583582666190078e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.6450466343661645e-13,
+      "p95": 3.6351569508849297e-12,
+      "max": 8.29252765771839e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.0940080289503588e-06,
+      "p95": 2.2869439973109615e-05,
+      "max": 5.587012255341856e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999999125,
+    "loss_abs_max": 4.26385139961951e-15,
+    "target_kl_abs_max": 4.3706595551779386e-16,
+    "target_kl_reference_max": 3.793251092244771e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.4703255029205452e-07,
+      "p95": 1.0125469052385948e-06,
+      "max": 2.4197102991515106e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.0618353088856764e-13,
+      "p95": 5.415699706094486e-12,
+      "max": 2.3206645726928642e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0936854893754865e-06,
+      "p95": 2.2870800503900935e-05,
+      "max": 5.588017000349459e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999993047,
+    "loss_abs_max": 5.977485818487646e-14,
+    "target_kl_abs_max": 1.078755775863668e-14,
+    "target_kl_reference_max": 3.794614426264341e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.470325502920539e-07,
+      "p95": 1.0124809447033871e-06,
+      "max": 2.4197102991509102e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.061835308885689e-13,
+      "p95": 5.415699705889259e-12,
+      "max": 2.3206645726922883e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0936854893754865e-06,
+      "p95": 2.2870800503900935e-05,
+      "max": 5.588017000349459e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999999993047,
+    "loss_abs_max": 5.977485818487646e-14,
+    "target_kl_abs_max": 1.078755775863668e-14,
+    "target_kl_reference_max": 3.794614426264341e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.7687289187239775e-07,
+      "p95": 8.26292200389272e-07,
+      "max": 2.4292657016143297e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.753920198185079e-13,
+      "p95": 4.7744297162005525e-12,
+      "max": 2.329828844953499e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0936854893754865e-06,
+      "p95": 2.2870800503900935e-05,
+      "max": 5.588017000349459e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999928879,
+    "loss_abs_max": 5.999690278980149e-14,
+    "target_kl_abs_max": 1.0843068909867937e-14,
+    "target_kl_reference_max": 3.794614426264341e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.692389994293627e-07,
+      "p95": 5.336571033187843e-07,
+      "max": 1.373989439443971e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.7358220718456033e-13,
+      "p95": 3.88118569608876e-12,
+      "max": 7.539668760349285e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.0936854893754865e-06,
+      "p95": 2.2870800503900935e-05,
+      "max": 5.588017000349459e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999994029,
+    "loss_abs_max": 2.7869599501762755e-15,
+    "target_kl_abs_max": 8.623904271747129e-16,
+    "target_kl_reference_max": 3.794614426264341e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6440327837025382e-07,
+      "p95": 1.1512823484322435e-06,
+      "max": 2.4006150562748613e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.6727658296703045e-13,
+      "p95": 5.617342571744644e-12,
+      "max": 2.3025482422397127e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0933630108721653e-06,
+      "p95": 2.2872162967349963e-05,
+      "max": 5.5890222144812055e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999929102,
+    "loss_abs_max": 1.0772138965349229e-14,
+    "target_kl_abs_max": 1.0772138965349229e-14,
+    "target_kl_reference_max": 3.795978642635134e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.6440327837025382e-07,
+      "p95": 1.1512345714476101e-06,
+      "max": 2.4006150562742575e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 2.6727658296703045e-13,
+      "p95": 5.617323409792392e-12,
+      "max": 2.3025482422391334e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0933630108721653e-06,
+      "p95": 2.2872162967349963e-05,
+      "max": 5.5890222144812055e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999929102,
+    "loss_abs_max": 1.0772138965349229e-14,
+    "target_kl_abs_max": 1.0772138965349229e-14,
+    "target_kl_reference_max": 3.795978642635134e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.707648827388907e-07,
+      "p95": 6.93124543938879e-07,
+      "max": 2.419644478558809e-05
+    },
+    "gradient_absolute_l2": {
+      "median": 3.44901554914364e-13,
+      "p95": 4.925644612571986e-12,
+      "max": 2.3208002992349447e-10
+    },
+    "gradient_reference_l2": {
+      "median": 2.0933630108721653e-06,
+      "p95": 2.2872162967349963e-05,
+      "max": 5.5890222144812055e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999927269,
+    "loss_abs_max": 1.0799894540964858e-14,
+    "target_kl_abs_max": 1.0799894540964858e-14,
+    "target_kl_reference_max": 3.795978642635134e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e4",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.707648827388907e-07,
+      "p95": 6.75927997849358e-07,
+      "max": 1.3213129292197408e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.4490155491238116e-13,
+      "p95": 3.8928621527232644e-12,
+      "max": 9.176926172850566e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.0933630108721653e-06,
+      "p95": 2.2872162967349963e-05,
+      "max": 5.5890222144812055e-05
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999995268,
+    "loss_abs_max": 9.970698172235594e-16,
+    "target_kl_abs_max": 9.970698172235594e-16,
+    "target_kl_reference_max": 3.795978642635134e-09,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3231329221134756e-07,
+      "p95": 1.8513192469105097e-05,
+      "max": 0.0005948950970175773
+    },
+    "gradient_absolute_l2": {
+      "median": 3.1021866205967558e-15,
+      "p95": 6.603711257902074e-13,
+      "max": 9.999108686612105e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.209459299542861e-08,
+      "p95": 2.4941626726073467e-07,
+      "max": 5.554199660248523e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999823171895,
+    "loss_abs_max": 1.2303828583959574e-16,
+    "target_kl_abs_max": 1.2304989079122938e-17,
+    "target_kl_reference_max": 3.839448020028025e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3231329221134756e-07,
+      "p95": 1.851310175701049e-05,
+      "max": 0.0005948950970175773
+    },
+    "gradient_absolute_l2": {
+      "median": 3.1021866205967558e-15,
+      "p95": 6.603662573305814e-13,
+      "max": 9.999108686612105e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.209459299542861e-08,
+      "p95": 2.4941626726073467e-07,
+      "max": 5.554199660248523e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.999999823171895,
+    "loss_abs_max": 1.2303828583959574e-16,
+    "target_kl_abs_max": 1.2304989079122938e-17,
+    "target_kl_reference_max": 3.839448020028025e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5527925235314472e-07,
+      "p95": 1.8725126774504554e-05,
+      "max": 0.0005948979710423397
+    },
+    "gradient_absolute_l2": {
+      "median": 2.987433879573886e-15,
+      "p95": 6.648946607948524e-13,
+      "max": 9.999156993760897e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.209459299542861e-08,
+      "p95": 2.4941626726073467e-07,
+      "max": 5.554199660248523e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999998231717568,
+    "loss_abs_max": 1.231467060568443e-16,
+    "target_kl_abs_max": 1.2304989079122938e-17,
+    "target_kl_reference_max": 3.839448020028025e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.3448712897717124e-07,
+      "p95": 5.548108280402521e-07,
+      "max": 1.2841936389959053e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 2.9874338744361804e-15,
+      "p95": 2.5446716223306933e-14,
+      "max": 5.863373139089903e-14
+    },
+    "gradient_reference_l2": {
+      "median": 2.209459299542861e-08,
+      "p95": 2.4941626726073467e-07,
+      "max": 5.554199660248523e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999994202,
+    "loss_abs_max": 1.1245255406744967e-18,
+    "target_kl_abs_max": 8.126221136128013e-20,
+    "target_kl_reference_max": 3.839448020028025e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.5045319189661856e-07,
+      "p95": 1.849142033196801e-05,
+      "max": 0.0005948982357119429
+    },
+    "gradient_absolute_l2": {
+      "median": 3.685137692279166e-15,
+      "p95": 6.604892170854376e-13,
+      "max": 9.999154984171698e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094541027719424e-08,
+      "p95": 2.494162400567063e-07,
+      "max": 5.554209592831657e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999998231677258,
+    "loss_abs_max": 6.764318140670137e-17,
+    "target_kl_abs_max": 1.2280209149970264e-17,
+    "target_kl_reference_max": 3.839473410360459e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.504531918966184e-07,
+      "p95": 1.8491329620279384e-05,
+      "max": 0.0005948982323445526
+    },
+    "gradient_absolute_l2": {
+      "median": 3.685137692279166e-15,
+      "p95": 6.604822523298077e-13,
+      "max": 9.999154927572007e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094541027719424e-08,
+      "p95": 2.494162400567063e-07,
+      "max": 5.554209592831657e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999998231677275,
+    "loss_abs_max": 6.764318140670137e-17,
+    "target_kl_abs_max": 1.2280209149970264e-17,
+    "target_kl_reference_max": 3.839473410360459e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.7803628054796462e-07,
+      "p95": 1.8681841322860703e-05,
+      "max": 0.0005949026693085955
+    },
+    "gradient_absolute_l2": {
+      "median": 3.4059302655246616e-15,
+      "p95": 6.606753108216337e-13,
+      "max": 9.999229504850037e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094541027719424e-08,
+      "p95": 2.494162400567063e-07,
+      "max": 5.554209592831657e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999998231678007,
+    "loss_abs_max": 6.769739151532565e-17,
+    "target_kl_abs_max": 1.2293761677126333e-17,
+    "target_kl_reference_max": 3.839473410360459e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.712727617661165e-07,
+      "p95": 5.631015872007941e-07,
+      "max": 1.2916790941620205e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.4059302655246616e-15,
+      "p95": 3.938866409543588e-14,
+      "max": 9.519715911395519e-14
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094541027719424e-08,
+      "p95": 2.494162400567063e-07,
+      "max": 5.554209592831657e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999992053,
+    "loss_abs_max": 3.9764987025071783e-19,
+    "target_kl_abs_max": 9.963130686741379e-20,
+    "target_kl_reference_max": 3.839473410360459e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.243403976348242e-07,
+      "p95": 1.8524719882068596e-05,
+      "max": 0.0005948918179499451
+    },
+    "gradient_absolute_l2": {
+      "median": 3.057468983219803e-15,
+      "p95": 6.610765618044224e-13,
+      "max": 9.999040655208273e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094489060162556e-08,
+      "p95": 2.4941621285292e-07,
+      "max": 5.55421952546087e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999998231739333,
+    "loss_abs_max": 1.2282533385723767e-17,
+    "target_kl_abs_max": 1.2282533385723767e-17,
+    "target_kl_reference_max": 3.839498800911813e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.243403976348242e-07,
+      "p95": 1.852462918732938e-05,
+      "max": 0.0005948918179499451
+    },
+    "gradient_absolute_l2": {
+      "median": 3.0574689826373038e-15,
+      "p95": 6.610718067040528e-13,
+      "max": 9.999040655208273e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094489060162556e-08,
+      "p95": 2.4941621285292e-07,
+      "max": 5.55421952546087e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999998231739333,
+    "loss_abs_max": 1.2282533385723767e-17,
+    "target_kl_abs_max": 1.2282533385723767e-17,
+    "target_kl_reference_max": 3.839498800911813e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.8096632333998583e-07,
+      "p95": 1.862717090486477e-05,
+      "max": 0.0005949112258427172
+    },
+    "gradient_absolute_l2": {
+      "median": 4.014865916425901e-15,
+      "p95": 6.631893461232502e-13,
+      "max": 9.999366866299103e-12
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094489060162556e-08,
+      "p95": 2.4941621285292e-07,
+      "max": 5.55421952546087e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999998231605914,
+    "loss_abs_max": 1.2289309649301801e-17,
+    "target_kl_abs_max": 1.2289309649301801e-17,
+    "target_kl_reference_max": 3.839498800911813e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "agreement_1e6",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 128,
+    "gradient_relative": {
+      "median": 1.779775097277537e-07,
+      "p95": 6.131198432797968e-07,
+      "max": 2.0013660347981416e-06
+    },
+    "gradient_absolute_l2": {
+      "median": 3.962295788629838e-15,
+      "p95": 3.5769212801602225e-14,
+      "max": 5.918204143847524e-14
+    },
+    "gradient_reference_l2": {
+      "median": 2.2094489060162556e-08,
+      "p95": 2.4941621285292e-07,
+      "max": 5.55421952546087e-07
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": 0.9999999999979974,
+    "loss_abs_max": 7.835168953820386e-20,
+    "target_kl_abs_max": 7.835168953820386e-20,
+    "target_kl_reference_max": 3.839498800911813e-13,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 0.5,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_pure",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "torch_fp32_stable",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_fp32",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  },
+  {
+    "dataset": "qwen-real",
+    "cohort": "self",
+    "kappa": 1.0,
+    "eta": 0.1,
+    "method": "fused_compensated",
+    "rows": 128,
+    "nonzero_reference_rows": 0,
+    "gradient_relative": null,
+    "gradient_absolute_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_reference_l2": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "gradient_rel_over_1e3": 0,
+    "gradient_rel_over_1e2": 0,
+    "zeroed_nonzero_rows": 0,
+    "dominant_zeroed": 0,
+    "cosine_min": null,
+    "loss_abs_max": 0.0,
+    "target_kl_abs_max": 0.0,
+    "target_kl_reference_max": 0.0,
+    "negative_target_kl": 0,
+    "finite": true
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "candidate_base": "2b372ea5235ec56a43e577c6bc83cce33378eb78",
+  "reference_code": "9fd276af99b329d67f831881141b3b873b1cc428",
+  "candidate_uncommitted": true,
+  "source_run": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/runs/eos-precision-study-20261101",
+  "input_files": {
+    "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/runs/eos-precision-study-20261101/qwen-fixed-logits.pt": "681b69081e7083b49d5f6e356ab8554c737be80b30ec85ef68a897014079bcfc",
+    "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/outputs/opd-numerical-audit-20261025/fixed_logits.pt": "390f5ea45f5e0ef3a68e616dc573f42d276d42b8de83e418741cb4c666a893e0"
+  },
+  "measurements": "single allocated H800; two warmups, five interleaved repeats per shape; exploratory operator/head measurements, no end-to-end training speed claim",
+  "gpu_released": true
+}

@@ -1,0 +1,20 @@
+{
+  "integrated_release_commit": "86d2f87186cf510bb9756aea2f0d2b2c183fe4e2",
+  "validated_worktree_commit": "a574e6059e099a603afb78ec1ee8fa9062b681fb",
+  "kernel_sha256": {
+    "verl/trainer/distillation/termination.py": "6590fc8c676762bf80952380f842ffa20fb38abd95af4e271f15a618f3292324",
+    "verl/trainer/distillation/full_vocab.py": "9f4127936fe2a2f74e7ed295bfcdb8c7af7d8140659ed087f62651aed1a76114",
+    "verl/trainer/distillation/full_vocab_triton.py": "0ca87bebd81e344906395ee702138e8e1a8f1d7921b90c3899a87a58dfaae8c1",
+    "verl/trainer/distillation/numerics.py": "169e8ba2e8b320f31ec0ba98a711fd245588e34c18d8f25426dd645d7d8e66ac",
+    "verl/workers/config/distillation.py": "240540ccfac9736561fb10d1d9d1d8ac2caa0fe345c0efe5425fa64c0007dd7f",
+    "examples/mirroropd/launchers/math_experiment.py": "c666ed238e36b9cd45ebd997116dbb74da664b4b6aa0d9ad8df2cc9aaf5b7957"
+  },
+  "actor_evidence": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/runs/eos-full-vocab-20261101",
+  "formal_E59_E62_started": false,
+  "gpu_released": true,
+  "analysis_commit": "2408c8e8f75e9ba21972f52a36c6db23e754ddad",
+  "final_documentation_checks": {
+    "committed_tree": "passed",
+    "shared_workspace": "four unrelated anchors in concurrent documentation edits failed"
+  }
+}

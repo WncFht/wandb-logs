@@ -1,0 +1,31 @@
+Source artifact policy passed: 4254 staged blobs
+ruff (legacy alias)..............................................(no files to check)Skipped
+ruff format......................................................(no files to check)Skipped
+mypy.............................................................(no files to check)Skipped
+Reject raw experiment artifacts and large source files...............................Passed
+Generate and verify verl/trainer/config/_generated_*.yaml............................Passed
+Check docs Last updated info.........................................................Passed
+Check doc string coverage............................................................Passed
+Check license....................................................(no files to check)Skipped
+Check MirrorOPD staged documentation and maintenance contracts.......................Passed
+Check device API usage...............................................................Passed
+Check DataProto usage................................................................Passed
+Validate test structure..............................................................Passed
+Check naming conventions.............................................................Passed
+Check example script naming convention...............................................Passed
+Check uv runs only on the GPU branch.................................................Passed
+Compile all python files.........................................(no files to check)Skipped
+[perf/eos-full-vocab-20261101 a574e605] feat(experiments): register validated fused EOS presets E59-E62
+ Date: Sun Nov 1 01:35:40 2026 +0800
+ 19 files changed, 284 insertions(+), 6 deletions(-)
+ create mode 100644 "examples/mirroropd/docs/infra/performance/full-vocab/2026-11-01-EOS\347\262\276\345\272\246\344\270\216\351\200\237\345\272\246\346\235\203\350\241\241.md"
+ create mode 100644 "examples/mirroropd/docs/infra/performance/full-vocab/2026-11-01-EOS\350\236\215\345\220\210\345\256\236\347\216\260\344\270\216\350\256\255\347\273\203\351\252\214\346\224\266.md"
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/boundary-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/boundary.pdf
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/boundary.png
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/latency-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/latency.pdf
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/latency.png
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/real-inputs-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/real-inputs.pdf
+ create mode 100644 examples/mirroropd/docs/infra/performance/full-vocab/figures/eos-precision-20261101/real-inputs.png

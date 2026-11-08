@@ -1,0 +1,238 @@
+{
+  "E17": {
+    "run_id": "cix5i2x2",
+    "source": "MirrorOPD-verl/wandb/offline-run-20261024_000719-cix5i2x2/run-cix5i2x2.wandb",
+    "sha256": "d2fcdd3c6e9a50e5f95ae66557fdfbd710ea3a8eafb0cb81c65f3e909b8eeb11",
+    "recorded_git": {
+      "commit": "df93f4d6f1210cfd31498de23a104ab110e9cb5d"
+    },
+    "initial_kl": 0.1119221615197477,
+    "outers": 200,
+    "updates": 3200,
+    "skipped": 0,
+    "first_rises": 0,
+    "end_worse": 0,
+    "end_improved": 200,
+    "adjacent_rises": 10,
+    "hardware": {
+      "gpu_type": "NVIDIA A100-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 128
+    },
+    "backend": "precompute",
+    "chunk": 512,
+    "precision": "historical BF16",
+    "test_freq": 20,
+    "save_freq": 100,
+    "recorded_outer_hours": 6.791340053276572,
+    "actor_hours": 4.611303369591219,
+    "response_mtokens": 73.175471,
+    "actor_peak_gib": 10.207581520080566,
+    "settings": {
+      "student": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "teacher": "JustRL-DeepSeek-1.5B",
+      "optimizer": {
+        "_target_": "verl.workers.config.FSDPOptimizerConfig",
+        "optimizer": "AdamW",
+        "optimizer_impl": "torch.optim",
+        "lr": 1e-06,
+        "lr_warmup_steps_ratio": 0.0,
+        "total_training_steps": 200,
+        "weight_decay": 0.01,
+        "lr_warmup_steps": 0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "clip_grad": 1.0,
+        "min_lr_ratio": 0.0,
+        "num_cycles": 0.5,
+        "lr_scheduler_type": "constant",
+        "zero_indexed_step": true,
+        "warmup_style": null,
+        "override_optimizer_config": null
+      },
+      "reuse": 16,
+      "batch": 64,
+      "response_cap": 7168,
+      "seed": 42
+    }
+  },
+  "E20": {
+    "run_id": "lwgb5eex",
+    "source": "MirrorOPD-verl/wandb/offline-run-20261025_004109-lwgb5eex/run-lwgb5eex.wandb",
+    "sha256": "bfdc62425d4091b9a5364df0776f6f4830aa1dc6b55f33060c5e6d493b0e3275",
+    "recorded_git": {
+      "commit": "376e8185ef5274c46df5cd86d81ff707180ed174"
+    },
+    "initial_kl": 0.11351961989540892,
+    "outers": 256,
+    "updates": 4096,
+    "skipped": 0,
+    "first_rises": 2,
+    "end_worse": 0,
+    "end_improved": 256,
+    "adjacent_rises": 15,
+    "hardware": {
+      "gpu_type": "NVIDIA A800-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 128
+    },
+    "backend": "precompute",
+    "chunk": 512,
+    "precision": "historical BF16",
+    "test_freq": 32,
+    "save_freq": 64,
+    "recorded_outer_hours": 8.653307074447058,
+    "actor_hours": 5.858483997060296,
+    "response_mtokens": 93.368451,
+    "actor_peak_gib": 10.200972080230713,
+    "settings": {
+      "student": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "teacher": "JustRL-DeepSeek-1.5B",
+      "optimizer": {
+        "_target_": "verl.workers.config.FSDPOptimizerConfig",
+        "optimizer": "AdamW",
+        "optimizer_impl": "torch.optim",
+        "lr": 1e-06,
+        "lr_warmup_steps_ratio": 0.0,
+        "total_training_steps": 256,
+        "weight_decay": 0.01,
+        "lr_warmup_steps": 0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "clip_grad": 1.0,
+        "min_lr_ratio": 0.0,
+        "num_cycles": 0.5,
+        "lr_scheduler_type": "constant",
+        "zero_indexed_step": true,
+        "warmup_style": null,
+        "override_optimizer_config": null
+      },
+      "reuse": 16,
+      "batch": 64,
+      "response_cap": 7168,
+      "seed": 42
+    }
+  },
+  "E50": {
+    "run_id": "rsi5krqd",
+    "source": "MirrorOPD-verl/wandb/offline-run-20261027_175711-rsi5krqd/run-rsi5krqd.wandb",
+    "sha256": "0447c27a53f4e9cbf3f625741b46cd50fcb1781068b37daa15e024e839280dfe",
+    "recorded_git": {
+      "commit": "222e9db4296fdab64b2633ade5c3984bbdb88388"
+    },
+    "initial_kl": 0.11369251289647433,
+    "outers": 256,
+    "updates": 4091,
+    "skipped": 5,
+    "first_rises": 0,
+    "end_worse": 0,
+    "end_improved": 256,
+    "adjacent_rises": 8,
+    "hardware": {
+      "gpu_type": "NVIDIA A100-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 128
+    },
+    "backend": "precompute_fused",
+    "chunk": 128,
+    "precision": "fp16",
+    "test_freq": 32,
+    "save_freq": 128,
+    "recorded_outer_hours": 11.690457091267922,
+    "actor_hours": 8.89350886077232,
+    "response_mtokens": 92.982861,
+    "actor_peak_gib": 10.240874290466309,
+    "settings": {
+      "student": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "teacher": "JustRL-DeepSeek-1.5B",
+      "optimizer": {
+        "_target_": "verl.workers.config.FSDPOptimizerConfig",
+        "optimizer": "AdamW",
+        "optimizer_impl": "torch.optim",
+        "lr": 1e-06,
+        "lr_warmup_steps_ratio": 0.0,
+        "total_training_steps": 256,
+        "weight_decay": 0.01,
+        "lr_warmup_steps": 0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "clip_grad": 1.0,
+        "min_lr_ratio": 0.0,
+        "num_cycles": 0.5,
+        "lr_scheduler_type": "constant",
+        "zero_indexed_step": true,
+        "warmup_style": null,
+        "override_optimizer_config": null
+      },
+      "reuse": 16,
+      "batch": 64,
+      "response_cap": 7168,
+      "seed": 42
+    }
+  },
+  "E52": {
+    "run_id": "7rwc1ioz",
+    "source": "MirrorOPD-verl/wandb/offline-run-20261028_155315-7rwc1ioz/run-7rwc1ioz.wandb",
+    "sha256": "db9b939e74622e49aedda6f1feddca4283eb4a9d1e2ab9ff1069fdb6260728f4",
+    "recorded_git": {
+      "commit": "222e9db4296fdab64b2633ade5c3984bbdb88388"
+    },
+    "initial_kl": 0.11087517538123258,
+    "outers": 256,
+    "updates": 4096,
+    "skipped": 0,
+    "first_rises": 1,
+    "end_worse": 0,
+    "end_improved": 256,
+    "adjacent_rises": 9,
+    "hardware": {
+      "gpu_type": "NVIDIA A100-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 128
+    },
+    "backend": "precompute_fused",
+    "chunk": 128,
+    "precision": "bf16_fp32",
+    "test_freq": 32,
+    "save_freq": 128,
+    "recorded_outer_hours": 13.2304081581326,
+    "actor_hours": 10.434224549577468,
+    "response_mtokens": 93.133537,
+    "actor_peak_gib": 14.961726665496826,
+    "settings": {
+      "student": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "teacher": "JustRL-DeepSeek-1.5B",
+      "optimizer": {
+        "_target_": "verl.workers.config.FSDPOptimizerConfig",
+        "optimizer": "AdamW",
+        "optimizer_impl": "torch.optim",
+        "lr": 1e-06,
+        "lr_warmup_steps_ratio": 0.0,
+        "total_training_steps": 256,
+        "weight_decay": 0.01,
+        "lr_warmup_steps": 0,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "clip_grad": 1.0,
+        "min_lr_ratio": 0.0,
+        "num_cycles": 0.5,
+        "lr_scheduler_type": "constant",
+        "zero_indexed_step": true,
+        "warmup_style": null,
+        "override_optimizer_config": null
+      },
+      "reuse": 16,
+      "batch": 64,
+      "response_cap": 7168,
+      "seed": 42
+    }
+  }
+}

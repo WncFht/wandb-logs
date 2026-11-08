@@ -1,0 +1,23 @@
+wandb: Syncing 1 run(s):
+wandb:   sync-copies/offline-run-20261030_094536-j5uaal3j/run-j5uaal3j.wandb
+wandb: [wandb sync] Loaded credentials for https://api.wandb.ai from WANDB_API_KEY.
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] setting up run j5uaal3j
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] View run math-opd-E55-mdpo-full_vocab-k0-eta0.1-20261030-093433-2566 at https://wandb.ai/wncfht/MirrorOPD-verl/runs/j5uaal3j
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata; uploading data
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata; uploading history steps 119-287, summary, console lines 0-295
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata; uploading wandb-metadata.json; uploading requirements.txt
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading wandb-metadata.json; uploading requirements.txt; updating run metadata
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading wandb-metadata.json; updating run metadata
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata; uploading history steps 288-457, console lines 296-537
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] updating run metadata; uploading history steps 458-475, summary, console lines 538-970
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading history steps 458-475, summary, console lines 538-970
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading history steps 476-627, summary, console lines 971-1195
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading history steps 476-627, summary, console lines 971-1195; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading history steps 476-627, summary, console lines 971-1195; uploading wandb-summary.json; uploading config.yaml
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading history steps 476-627, summary, console lines 971-1195; uploading config.yaml
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading history steps 476-627, summary, console lines 971-1195
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] uploading history steps 628-713, summary, console lines 1196-1518
+wandb: [wncfht/MirrorOPD-verl/j5uaal3j] Finished syncing sync-copies/offline-run-20261030_094536-j5uaal3j

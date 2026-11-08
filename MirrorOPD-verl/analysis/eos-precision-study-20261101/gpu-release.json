@@ -1,0 +1,1 @@
+{"gpu": 6, "desired": "released", "reason": "Fixed-input EOS precision and head benchmarks completed; restore idle reservation load"}

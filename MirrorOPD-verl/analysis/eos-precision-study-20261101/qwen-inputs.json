@@ -1,0 +1,202 @@
+{
+  "bank": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/MirrorOPD-verl/runs/qwen-prefix-six-20261031/banks/S0/bank.json",
+  "bank_sha256": "abcc57bafd62d93bef6ecc8db000c6613355381ca972982e26a0446439283a75",
+  "rows": [
+    {
+      "id": 320,
+      "prompt_tokens": 289,
+      "response_tokens": 694,
+      "positions": [
+        0,
+        46,
+        92,
+        138,
+        184,
+        231,
+        277,
+        323,
+        369,
+        415,
+        462,
+        508,
+        554,
+        600,
+        646,
+        693
+      ]
+    },
+    {
+      "id": 338,
+      "prompt_tokens": 65,
+      "response_tokens": 987,
+      "positions": [
+        0,
+        65,
+        131,
+        197,
+        262,
+        328,
+        394,
+        460,
+        525,
+        591,
+        657,
+        723,
+        788,
+        854,
+        920,
+        986
+      ]
+    },
+    {
+      "id": 356,
+      "prompt_tokens": 82,
+      "response_tokens": 1737,
+      "positions": [
+        0,
+        115,
+        231,
+        347,
+        462,
+        578,
+        694,
+        810,
+        925,
+        1041,
+        1157,
+        1273,
+        1388,
+        1504,
+        1620,
+        1736
+      ]
+    },
+    {
+      "id": 374,
+      "prompt_tokens": 133,
+      "response_tokens": 2048,
+      "positions": [
+        0,
+        136,
+        272,
+        409,
+        545,
+        682,
+        818,
+        955,
+        1091,
+        1228,
+        1364,
+        1501,
+        1637,
+        1774,
+        1910,
+        2047
+      ]
+    },
+    {
+      "id": 520,
+      "prompt_tokens": 249,
+      "response_tokens": 88,
+      "positions": [
+        0,
+        5,
+        11,
+        17,
+        23,
+        29,
+        34,
+        40,
+        46,
+        52,
+        58,
+        63,
+        69,
+        75,
+        81,
+        87
+      ]
+    },
+    {
+      "id": 538,
+      "prompt_tokens": 370,
+      "response_tokens": 243,
+      "positions": [
+        0,
+        16,
+        32,
+        48,
+        64,
+        80,
+        96,
+        112,
+        129,
+        145,
+        161,
+        177,
+        193,
+        209,
+        225,
+        242
+      ]
+    },
+    {
+      "id": 588,
+      "prompt_tokens": 59,
+      "response_tokens": 710,
+      "positions": [
+        0,
+        47,
+        94,
+        141,
+        189,
+        236,
+        283,
+        330,
+        378,
+        425,
+        472,
+        519,
+        567,
+        614,
+        661,
+        709
+      ]
+    },
+    {
+      "id": 607,
+      "prompt_tokens": 49,
+      "response_tokens": 273,
+      "positions": [
+        0,
+        18,
+        36,
+        54,
+        72,
+        90,
+        108,
+        126,
+        145,
+        163,
+        181,
+        199,
+        217,
+        235,
+        253,
+        272
+      ]
+    }
+  ],
+  "precision": "BF16 model operands, original FP32 RoPE buffers, FP32 head outputs",
+  "scope": "Initial Qwen3-1.7B-Base and Qwen3-30B-A3B-Instruct-2507 on existing chat-bank tokens; not E55-E57 trained checkpoints or their rollout distribution.",
+  "student": {
+    "model": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/model/Qwen3-1.7B-Base",
+    "config_sha256": "1bb33a92c3548fbc68b889b490e810440435253598835bd71dff0396060c12db",
+    "seconds": 13.633605815470219
+  },
+  "teacher": {
+    "model": "/mnt/tidalfs-bdsz01/dataset/llm_dataset/zkn_data/fht_data/model/Qwen3-30B-A3B-Instruct-2507",
+    "config_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+    "seconds": 118.84820798039436
+  }
+}

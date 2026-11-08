@@ -1,0 +1,42 @@
+Source artifact policy passed: 4274 staged blobs
+ruff (legacy alias)..................................................................Passed
+ruff format..........................................................................Passed
+mypy.................................................................................Passed
+Reject raw experiment artifacts and large source files...............................Passed
+Generate and verify verl/trainer/config/_generated_*.yaml............................Passed
+Check docs Last updated info.........................................................Passed
+Check doc string coverage............................................................Passed
+Check license........................................................................Passed
+Check MirrorOPD staged documentation and maintenance contracts.......................Passed
+Check device API usage...............................................................Passed
+Check DataProto usage................................................................Passed
+Validate test structure..............................................................Passed
+Check naming conventions.............................................................Passed
+Check example script naming convention...............................................Passed
+Check uv runs only on the GPU branch.................................................Passed
+Compile all python files.............................................................Passed
+[perf/eos-full-vocab-20261101 8f92d9b5] feat(research): publish E55-E57 snapshot analysis
+ 30 files changed, 2080 insertions(+), 256 deletions(-)
+ delete mode 100644 "examples/mirroropd/docs/infra/model-compatibility/qwen-e54/2026-10-30-E55\350\207\263E57\351\225\277\347\250\213\350\256\255\347\273\203\351\230\266\346\256\265\345\210\206\346\236\220.md"
+ create mode 100644 "examples/mirroropd/docs/infra/model-compatibility/qwen-e54/2026-10-31-E55\350\207\263E57\351\225\277\347\250\213\350\256\255\347\273\203\351\230\266\346\256\265\345\210\206\346\236\220.md"
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/.gitignore
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/optimization-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/optimization.pdf
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/optimization.png
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/summary.json
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/training-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/training.pdf
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/training.png
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-accuracy-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-accuracy.pdf
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-accuracy.png
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-cap_rate-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-cap_rate.pdf
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-cap_rate.png
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-length-audit.json
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-length.pdf
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation-length.png
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation.pdf
+ create mode 100644 examples/mirroropd/docs/infra/model-compatibility/qwen-e54/figures/e55-e57-20261031/validation.png
+ rename "examples/mirroropd/docs/infra/performance/full-vocab/2026-10-30-MDPO\351\225\277\347\250\213\350\256\255\347\273\203\344\270\216\351\252\214\350\257\201\350\200\227\346\227\266\350\257\212\346\226\255.md" => "examples/mirroropd/docs/infra/performance/full-vocab/2026-10-31-MDPO\351\225\277\347\250\213\350\256\255\347\273\203\344\270\216\351\252\214\350\257\201\350\200\227\346\227\266\350\257\212\346\226\255.md" (52%)

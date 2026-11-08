@@ -1,0 +1,4 @@
+wandb: WARNING --no-mark-synced is deprecated and will be removed.
+Find logs at: /tmp/debug-cli.root.log
+Syncing: https://wandb.ai/wncfht/MirrorOPD-verl/runs/zsnhqzts ... done.
+Batched legacy sync returned successfully: zsnhqzts

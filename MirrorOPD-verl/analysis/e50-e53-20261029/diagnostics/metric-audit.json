@@ -1,0 +1,118 @@
+{
+  "E50": {
+    "source_sha256": "0447c27a53f4e9cbf3f625741b46cd50fcb1781068b37daa15e024e839280dfe",
+    "keys": 2272,
+    "position_reconstruction_max_error": 8.59728464808196e-09,
+    "position_count_changes": 0,
+    "alias_max_error": 0.0,
+    "max_target_identity_error": 0.0,
+    "empty_mask_max": 0.0,
+    "staleness_max": 0.0,
+    "empty_mask_records": 256,
+    "staleness_records": 256,
+    "skipped_events": [
+      {
+        "outer": 156,
+        "reuse": 1,
+        "grad_norm": null
+      },
+      {
+        "outer": 156,
+        "reuse": 2,
+        "grad_norm": null
+      },
+      {
+        "outer": 156,
+        "reuse": 3,
+        "grad_norm": null
+      },
+      {
+        "outer": 156,
+        "reuse": 4,
+        "grad_norm": null
+      },
+      {
+        "outer": 227,
+        "reuse": 1,
+        "grad_norm": null
+      }
+    ],
+    "loss_flag_records": 4096,
+    "nonfinite_loss_count": 0,
+    "nonfinite_gradient_count": 5
+  },
+  "E51": {
+    "source_sha256": "fd4c582c6db6e52230f5c991474541db94f6a4ca3940b4c5e42ab26845120cb3",
+    "keys": 2277,
+    "position_reconstruction_max_error": 6.584795125830212e-09,
+    "position_count_changes": 0,
+    "alias_max_error": 0.0,
+    "max_target_identity_error": 1.6993114242136453e-09,
+    "empty_mask_max": 0.0,
+    "staleness_max": 0.0,
+    "empty_mask_records": 256,
+    "staleness_records": 256,
+    "skipped_events": [
+      {
+        "outer": 155,
+        "reuse": 3,
+        "grad_norm": null
+      },
+      {
+        "outer": 155,
+        "reuse": 4,
+        "grad_norm": null
+      },
+      {
+        "outer": 155,
+        "reuse": 5,
+        "grad_norm": null
+      },
+      {
+        "outer": 156,
+        "reuse": 7,
+        "grad_norm": null
+      },
+      {
+        "outer": 245,
+        "reuse": 6,
+        "grad_norm": null
+      }
+    ],
+    "loss_flag_records": 4096,
+    "nonfinite_loss_count": 0,
+    "nonfinite_gradient_count": 5
+  },
+  "E52": {
+    "source_sha256": "db9b939e74622e49aedda6f1feddca4283eb4a9d1e2ab9ff1069fdb6260728f4",
+    "keys": 2271,
+    "position_reconstruction_max_error": 9.969843284274305e-09,
+    "position_count_changes": 0,
+    "alias_max_error": 0.0,
+    "max_target_identity_error": 0.0,
+    "empty_mask_max": 0.0,
+    "staleness_max": 0.0,
+    "empty_mask_records": 256,
+    "staleness_records": 256,
+    "skipped_events": [],
+    "loss_flag_records": 4096,
+    "nonfinite_loss_count": 0,
+    "nonfinite_gradient_count": 0
+  },
+  "E53": {
+    "source_sha256": "c414b0cf7ee94056ee39f7dcf2cb7f12fbaf2745b576aaa9d06cd13cdcebe3fc",
+    "keys": 2275,
+    "position_reconstruction_max_error": 1.1705810334938782e-08,
+    "position_count_changes": 0,
+    "alias_max_error": 0.0,
+    "max_target_identity_error": 2.3039162799776136e-09,
+    "empty_mask_max": 0.0,
+    "staleness_max": 0.0,
+    "empty_mask_records": 103,
+    "staleness_records": 103,
+    "skipped_events": [],
+    "loss_flag_records": 1648,
+    "nonfinite_loss_count": 0,
+    "nonfinite_gradient_count": 0
+  }
+}

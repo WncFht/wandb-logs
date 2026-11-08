@@ -1,0 +1,96 @@
+{
+  "E50": {
+    "run_id": "rsi5krqd",
+    "decode_status": "finished",
+    "exit_code": 0,
+    "raw_source": "MirrorOPD-verl/wandb/offline-run-20261027_175711-rsi5krqd/run-rsi5krqd.wandb",
+    "sha256": "0447c27a53f4e9cbf3f625741b46cd50fcb1781068b37daa15e024e839280dfe",
+    "recorded_git": {
+      "commit": "222e9db4296fdab64b2633ade5c3984bbdb88388"
+    },
+    "history_rows": 4352,
+    "outer": 256,
+    "successful_updates": 4091,
+    "skipped_updates": 5,
+    "precision": "fp16",
+    "eta": 1,
+    "worse_batches": [],
+    "hardware": {
+      "gpu_type": "NVIDIA A100-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 128
+    }
+  },
+  "E51": {
+    "run_id": "6vv5o9b8",
+    "decode_status": "finished",
+    "exit_code": 0,
+    "raw_source": "MirrorOPD-verl/wandb/offline-run-20261027_185655-6vv5o9b8/run-6vv5o9b8.wandb",
+    "sha256": "fd4c582c6db6e52230f5c991474541db94f6a4ca3940b4c5e42ab26845120cb3",
+    "recorded_git": {
+      "commit": "222e9db4296fdab64b2633ade5c3984bbdb88388"
+    },
+    "history_rows": 4352,
+    "outer": 256,
+    "successful_updates": 4091,
+    "skipped_updates": 5,
+    "precision": "fp16",
+    "eta": 0.3,
+    "worse_batches": [
+      155
+    ],
+    "hardware": {
+      "gpu_type": "NVIDIA A800-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 64
+    },
+    "max_log_z_drift": 0.0,
+    "max_objective_residual": 1.0657439541983393e-08
+  },
+  "E52": {
+    "run_id": "7rwc1ioz",
+    "decode_status": "finished",
+    "exit_code": 0,
+    "raw_source": "MirrorOPD-verl/wandb/offline-run-20261028_155315-7rwc1ioz/run-7rwc1ioz.wandb",
+    "sha256": "db9b939e74622e49aedda6f1feddca4283eb4a9d1e2ab9ff1069fdb6260728f4",
+    "recorded_git": {
+      "commit": "222e9db4296fdab64b2633ade5c3984bbdb88388"
+    },
+    "history_rows": 4352,
+    "outer": 256,
+    "successful_updates": 4096,
+    "skipped_updates": 0,
+    "precision": "bf16_fp32",
+    "eta": 1,
+    "worse_batches": [],
+    "hardware": {
+      "gpu_type": "NVIDIA A100-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 128
+    }
+  },
+  "E53": {
+    "run_id": "k7db6qxl",
+    "decode_status": "partial_snapshot",
+    "exit_code": null,
+    "raw_source": "MirrorOPD-verl/wandb/offline-run-20261029_032540-k7db6qxl/run-k7db6qxl.wandb",
+    "sha256": "c414b0cf7ee94056ee39f7dcf2cb7f12fbaf2745b576aaa9d06cd13cdcebe3fc",
+    "recorded_git": {
+      "commit": "222e9db4296fdab64b2633ade5c3984bbdb88388"
+    },
+    "history_rows": 1751,
+    "outer": 103,
+    "successful_updates": 1648,
+    "skipped_updates": 0,
+    "precision": "bf16_fp32",
+    "eta": 0.3,
+    "worse_batches": [],
+    "hardware": {
+      "gpu_type": "NVIDIA A800-SXM4-80GB",
+      "gpu_count": 8,
+      "cpu_count": 128
+    },
+    "max_log_z_drift": 0.0,
+    "max_objective_residual": 1.7426842099097558e-08
+  }
+}

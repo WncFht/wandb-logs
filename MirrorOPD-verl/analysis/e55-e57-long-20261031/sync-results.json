@@ -1,0 +1,38 @@
+[
+  {
+    "run_id": "j5uaal3j",
+    "exit_code": 0,
+    "seconds": 37.079942405223846,
+    "source_status": "partial_snapshot",
+    "source_sha256": "40d4e08684e715a4e58b853ef4c2ac800faadf3b1bcbbe9b0e94afb9dcbe4c15",
+    "source_bytes": 48300032,
+    "upload_bytes": 48298447,
+    "history_rows": 595,
+    "synthetic_records": 0,
+    "source_unchanged": true
+  },
+  {
+    "run_id": "zsnhqzts",
+    "exit_code": 0,
+    "seconds": 44.940252870321274,
+    "source_status": "partial_snapshot",
+    "source_sha256": "1d133df6c4526ffc3b121b088dca6243a95beebb0e83aa293bf90f9dac169729",
+    "source_bytes": 63340544,
+    "upload_bytes": 63340015,
+    "history_rows": 986,
+    "synthetic_records": 0,
+    "source_unchanged": true
+  },
+  {
+    "run_id": "6j5knkmk",
+    "exit_code": 0,
+    "seconds": 42.668518245220184,
+    "source_status": "partial_snapshot",
+    "source_sha256": "69bcc72612bb6aa900d0787db8c9df0f9d81f67ee715028b7c33817393ec2ebe",
+    "source_bytes": 59277312,
+    "upload_bytes": 59276313,
+    "history_rows": 1173,
+    "synthetic_records": 0,
+    "source_unchanged": true
+  }
+]

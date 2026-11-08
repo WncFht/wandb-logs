@@ -1,0 +1,316 @@
+{
+  "core_commit": "36248937",
+  "cpu_checks": 101,
+  "cuda_checks": 144,
+  "launcher_checks": 233,
+  "actor_scope": "Paired real-model actor benchmark with frozen original tokens and EOS semantics.\n\nTeacher hidden states are prepared once. Timed calls include native actor/anchor\nFSDP2 execution, reuse, backward, AdamW (lr=0), and model/optimizer offload. They\nexclude teacher preparation, TQ and rollout. Parameter hashes verify fixed weights.\n",
+  "actor_input_tokens": 4460,
+  "actor_loss_tokens": 3164,
+  "actor_parameters_unchanged": true,
+  "actor_worker_exit": 0,
+  "actor": {
+    "precompute": {
+      "seconds": [
+        32.52234649658203,
+        36.37094497680664
+      ],
+      "median_seconds": 34.446645736694336,
+      "peak_allocated_gib": 25.604551315307617,
+      "loss": 0.41392916440963745,
+      "gradient_norm": 5.251047134399414
+    },
+    "precompute_fused": {
+      "seconds": [
+        11.57031536102295,
+        11.461565971374512
+      ],
+      "median_seconds": 11.51594066619873,
+      "peak_allocated_gib": 17.24941635131836,
+      "loss": 0.41392919421195984,
+      "gradient_norm": 5.252157211303711
+    }
+  },
+  "fsdp": {
+    "fsdp-bf16": {
+      "precision": "bf16",
+      "world_size": 2,
+      "termination_ids": [
+        1,
+        4
+      ],
+      "eta": 0.1,
+      "checkpoint": true,
+      "backend_max_parameter_abs_error": 0.0,
+      "endpoint_legacy_equal": false,
+      "records": [
+        {
+          "outer": 1,
+          "loss": [
+            0.006200035102665424,
+            0.007109983824193478,
+            0.0061022513546049595
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 1,
+          "loss": [
+            0.006200035568326712,
+            0.007109983824193478,
+            0.0061022513546049595
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 2,
+          "loss": [
+            0.005061449017375708,
+            0.005030175670981407,
+            0.0046324958093464375
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 3,
+          "loss": [
+            0.00418839231133461,
+            0.0036913957446813583,
+            0.003690647194162011
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 3,
+          "loss": [
+            0.00418839231133461,
+            0.0036913957446813583,
+            0.003690647194162011
+          ],
+          "updates": 3
+        }
+      ]
+    },
+    "fsdp-endpoint": {
+      "precision": "bf16",
+      "world_size": 2,
+      "termination_ids": [
+        1,
+        4
+      ],
+      "eta": 1.0,
+      "checkpoint": false,
+      "backend_max_parameter_abs_error": null,
+      "endpoint_legacy_equal": true,
+      "records": [
+        {
+          "outer": 1,
+          "loss": [
+            0.012099303305149078,
+            0.007486267946660519,
+            0.005097879096865654
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 1,
+          "loss": [
+            0.012099303305149078,
+            0.007486267946660519,
+            0.005097879096865654
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 2,
+          "loss": [
+            0.0034561892971396446,
+            0.0023175987880676985,
+            0.00161316292360425
+          ],
+          "updates": 3
+        }
+      ]
+    },
+    "fsdp-fp16": {
+      "precision": "fp16",
+      "world_size": 2,
+      "termination_ids": [
+        1,
+        4
+      ],
+      "eta": 0.1,
+      "checkpoint": true,
+      "backend_max_parameter_abs_error": 1.955777406692505e-08,
+      "endpoint_legacy_equal": false,
+      "records": [
+        {
+          "outer": 1,
+          "loss": [
+            0.0066257016733288765,
+            0.022799238562583923,
+            0.009893961250782013
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 1,
+          "loss": [
+            0.0066257016733288765,
+            0.022799177095294,
+            0.009893961250782013
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 2,
+          "loss": [
+            0.005583577789366245,
+            0.008227234706282616,
+            0.008203026838600636
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 3,
+          "loss": [
+            0.005540766753256321,
+            0.005032781045883894,
+            0.005053715780377388
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 3,
+          "loss": [
+            0.005540766753256321,
+            0.005032781045883894,
+            0.005053715780377388
+          ],
+          "updates": 3
+        }
+      ]
+    },
+    "fsdp-mixed": {
+      "precision": "bf16_fp32",
+      "world_size": 2,
+      "termination_ids": [
+        1,
+        4
+      ],
+      "eta": 0.1,
+      "checkpoint": true,
+      "backend_max_parameter_abs_error": 0.0,
+      "endpoint_legacy_equal": false,
+      "records": [
+        {
+          "outer": 1,
+          "loss": [
+            0.006625603884458542,
+            0.02265467308461666,
+            0.00984904170036316
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 1,
+          "loss": [
+            0.006625603884458542,
+            0.02265462465584278,
+            0.00984904170036316
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 2,
+          "loss": [
+            0.00558832660317421,
+            0.008196528069674969,
+            0.00816335715353489
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 3,
+          "loss": [
+            0.005538735538721085,
+            0.005018702708184719,
+            0.005058698356151581
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 3,
+          "loss": [
+            0.005538735538721085,
+            0.005018702708184719,
+            0.005058698356151581
+          ],
+          "updates": 3
+        }
+      ]
+    },
+    "fsdp-accumulation": {
+      "precision": "bf16",
+      "world_size": 2,
+      "termination_ids": [
+        1,
+        4
+      ],
+      "eta": 0.1,
+      "checkpoint": false,
+      "backend_max_parameter_abs_error": 0.0,
+      "endpoint_legacy_equal": false,
+      "records": [
+        {
+          "outer": 1,
+          "loss": [
+            0.006200035102665424,
+            0.007109983824193478,
+            0.0061022513546049595
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 1,
+          "loss": [
+            0.006200035568326712,
+            0.007109983824193478,
+            0.0061022513546049595
+          ],
+          "updates": 3
+        },
+        {
+          "outer": 2,
+          "loss": [
+            0.005061449017375708,
+            0.005030175670981407,
+            0.0046324958093464375
+          ],
+          "updates": 3
+        }
+      ],
+      "actor_token_budget": 129
+    }
+  },
+  "actor_speedup": 2.991214242515262,
+  "kernel_ms_two_updates_per_rank_mean": {
+    "precompute": {
+      "full_vocab/mirror_rows": 2530.5554455000092,
+      "full_vocab/student_projection": 3.1834605,
+      "full_vocab/teacher_projection_and_normalization": 3.2157324999999997,
+      "full_vocab/anchor_projection_and_normalization": 3.1873965,
+      "full_vocab/grad_hidden": 2.8138945,
+      "full_vocab/grad_head": 9.4909265
+    },
+    "precompute_fused": {
+      "full_vocab/mirror_rows": 84.90271399999995,
+      "full_vocab/student_projection": 3.1811065000000003,
+      "full_vocab/teacher_projection_and_normalization": 3.2163554999999997,
+      "full_vocab/anchor_projection_and_normalization": 3.1829965000000007,
+      "full_vocab/grad_hidden": 2.8357319999999997,
+      "full_vocab/grad_head": 9.51102
+    }
+  },
+  "trace_scope": "First run, two separate profiled updates per backend per rank; full producer artifact completed, outer tool reported 143 after cleanup. Speed table uses independent torchrun exit=0 repeat.",
+  "distributed_update_attempts": 63
+}

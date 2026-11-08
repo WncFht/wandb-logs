@@ -1,0 +1,20 @@
+{
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA H800",
+  "methods": [
+    "torch_fp64",
+    "torch_fp32_pure",
+    "torch_fp32_stable",
+    "fused_fp32",
+    "fused_compensated"
+  ],
+  "reference": "Frozen 9fd276af stable FP64 Torch on the same FP32 logits; boundary cases use independent 80-digit probability-space oracle.",
+  "scope": "EOS row algebra + gradient scatter; excludes projections, backbone, optimizer and distributed communication. All diagnostics enabled.",
+  "gradient_basis": "Unscaled d(eta*L)/d logits; global-token normalization and 1/eta are excluded equally for all methods.",
+  "note": "FP32-stable and fused still retain historical local FP64 differences. No claim of pure-FP32 instructions for them. Real agreement/progress cohorts interpolate logits; they are not trained checkpoints.",
+  "source_sha256": "86902aa79b5b45f19cd690a9d6d48d302069a1bb791025c4fa2ff08cc855e2f5",
+  "candidate_sha256": {
+    "verl/trainer/distillation/full_vocab_triton.py": "e97bea3802eb6dee8bf44284fe2720d6867d82d126a1cc50099437bc9091c7c6",
+    "verl/trainer/distillation/termination.py": "2f2ebde37948f1847fdb735b577186853b42b0299a4a1c19e05b381f91df4c3e"
+  }
+}
